@@ -1,4 +1,56 @@
-<template>
+import fs from 'node:fs'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
+const ROOT_VUE = path.resolve(__dirname, '..')
+const BASE_CODE = path.resolve(ROOT_VUE, '..')
+const DASHBOARD_DIR = path.resolve(BASE_CODE, 'crml-ui-dashboard')
+
+console.log('⚡ Enhancing Standalone CRML-UI Dashboard with Real CRML Components & Rich Aesthetics...')
+
+// 1. Update vite.config.ts with alias to crml-ui master source
+const viteConfigContent = `import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import path from 'path'
+
+export default defineConfig({
+  plugins: [vue()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+      'crml-ui': path.resolve(__dirname, '../crml-ui/src/index.ts')
+    }
+  },
+  server: {
+    host: '0.0.0.0',
+    port: 7171,
+    strictPort: true,
+    cors: true,
+    allowedHosts: ['ui.crml.my.id', '.crml.my.id', 'localhost', '127.0.0.1'],
+    headers: {
+      'Access-Control-Allow-Origin': '*'
+    }
+  },
+  preview: {
+    host: '0.0.0.0',
+    port: 7171,
+    strictPort: true,
+    allowedHosts: ['ui.crml.my.id', '.crml.my.id', 'localhost', '127.0.0.1']
+  }
+})
+`
+fs.writeFileSync(path.resolve(DASHBOARD_DIR, 'vite.config.ts'), viteConfigContent, 'utf8')
+console.log('  + Updated vite.config.ts')
+
+// 2. Read catalog.json
+const catalogPath = path.resolve(__dirname, 'catalog.json')
+const catalog = JSON.parse(fs.readFileSync(catalogPath, 'utf8'))
+
+// 3. Write rich App.vue using real CRML components
+const appVueContent = `<template>
   <div class="dashboard-root font-mono">
     <!-- Top Sticky CRML Navbar -->
     <div class="top-nav-sticky">
@@ -164,7 +216,7 @@
 
                   <div class="cdn-code-box">
                     <code>&lt;link rel="stylesheet" href="./css/crml-neubrutal.css"&gt;</code>
-                    <button class="tactile-btn variant-lime size-sm" @click="copyText('<link rel=\'stylesheet\' href=\'./css/crml-neubrutal.css\'>', 'cdnSnippet')">
+                    <button class="tactile-btn variant-lime size-sm" @click="copyText('<link rel=\\'stylesheet\\' href=\\'./css/crml-neubrutal.css\\'>', 'cdnSnippet')">
                       {{ copiedId === 'cdnSnippet' ? '✓ COPIED' : '📋 COPY' }}
                     </button>
                   </div>
@@ -485,7 +537,7 @@
                       <div class="slider-preview-box font-mono">
                         <div class="slider-info-row">
                           <span>PRICE RANGE:</span>
-                          <CrmlBadge :variant="demoVariant === 'lime' ? 'success' : 'primary'">${{ sliderMin }} — ${{ sliderMax }}</CrmlBadge>
+                          <CrmlBadge :variant="demoVariant === 'lime' ? 'success' : 'primary'">$\{{ sliderMin }} — $\{{ sliderMax }}</CrmlBadge>
                         </div>
                         <input type="range" min="0" max="1000" v-model.number="sliderMin" class="native-range-slider" />
                         <input type="range" min="0" max="1000" v-model.number="sliderMax" class="native-range-slider" />
@@ -713,7 +765,7 @@
       </div>
       <div class="footer-bottom-row">
         <span>© 2026 CRML-UI Ecosystem Team. Distributed under MIT License.</span>
-        <span>Independent Dashboard & Documentation Website at C:\Code\crml-ui-dashboard</span>
+        <span>Independent Dashboard & Documentation Website at C:\\Code\\crml-ui-dashboard</span>
       </div>
     </footer>
   </div>
@@ -793,7 +845,7 @@ const frameworkMeta: Record<FrameworkKey, {
       "const app = createApp(App);",
       "app.use(CrmlUI);",
       "app.mount('#app');"
-    ].join('\n')
+    ].join('\\n')
   },
   react: {
     fullName: 'React (crml-ui-react)',
@@ -813,12 +865,12 @@ const frameworkMeta: Record<FrameworkKey, {
       "export function App() {",
       "  return (",
       "    <div>",
-      "      <CrmlBouncyButton variant=\"lime\">TACTILE CTA</CrmlBouncyButton>",
-      "      <CrmlBadge variant=\"pink\">STATUS</CrmlBadge>",
+      "      <CrmlBouncyButton variant=\\"lime\\">TACTILE CTA</CrmlBouncyButton>",
+      "      <CrmlBadge variant=\\"pink\\">STATUS</CrmlBadge>",
       "    </div>",
       "  );",
       "}"
-    ].join('\n')
+    ].join('\\n')
   },
   svelte: {
     fullName: 'Svelte (crml-ui-svelte)',
@@ -834,11 +886,11 @@ const frameworkMeta: Record<FrameworkKey, {
       "<script>",
       "  import { CrmlBouncyButton, CrmlBadge } from 'crml-ui-svelte';",
       "  import 'crml-ui-svelte/dist/style.css';",
-      "<\/script>",
+      "<\\/script>",
       "",
-      "<CrmlBouncyButton variant=\"lime\">TACTILE SVELTE</CrmlBouncyButton>",
-      "<CrmlBadge variant=\"pink\">STATUS<\/CrmlBadge>"
-    ].join('\n')
+      "<CrmlBouncyButton variant=\\"lime\\">TACTILE SVELTE</CrmlBouncyButton>",
+      "<CrmlBadge variant=\\"pink\\">STATUS<\\/CrmlBadge>"
+    ].join('\\n')
   },
   html: {
     fullName: 'Vanilla HTML5 & CSS (crml-ui-html)',
@@ -851,12 +903,12 @@ const frameworkMeta: Record<FrameworkKey, {
     npmUrl: 'https://www.npmjs.com/search?q=crml-ui',
     quickSnippet: [
       "<!-- Quick Vanilla HTML5 usage: -->",
-      "<link rel=\"stylesheet\" href=\"./css/crml-neubrutal.css\">",
+      "<link rel=\\"stylesheet\\" href=\\"./css/crml-neubrutal.css\\">",
       "",
-      "<button class=\"crml-btn crml-btn--lime\">",
+      "<button class=\\"crml-btn crml-btn--lime\\">",
       "  TACTILE CTA",
       "</button>"
-    ].join('\n')
+    ].join('\\n')
   }
 }
 
@@ -965,90 +1017,90 @@ const activeComponentCode = computed(() => {
       return [
         '<!-- CrmlWavyDivider.vue (Vue 3 Composition API) -->',
         '<template>',
-        `  <CrmlWavyDivider styleType="${wavyStyle.value}" color="${getVariantColor(variant)}" :strokeWidth="4" />`,
+        \`  <CrmlWavyDivider styleType="\${wavyStyle.value}" color="\${getVariantColor(variant)}" :strokeWidth="4" />\`,
         '</template>',
         '',
         '<script setup lang="ts">',
         "import { CrmlWavyDivider } from 'crml-ui';",
-        '<\/script>'
-      ].join('\n')
+        '<\\/script>'
+      ].join('\\n')
     }
 
     const propsSnippet = (comp.apiData || [])
       .slice(0, 3)
       .map(p => {
-        if (p.prop === 'variant') return `variant="${variant}"`
+        if (p.prop === 'variant') return \`variant="\${variant}"\`
         if (p.prop.includes('model')) return 'v-model="modelValue"'
         if (p.type === 'boolean') return p.prop
-        return `:${p.prop}="${p.default.replace(/'/g, '')}"`
+        return \`:\${p.prop}="\${p.default.replace(/'/g, '')}"\`
       })
       .join(' ')
 
     return [
-      `<!-- ${name}.vue (Vue 3 Composition API) -->`,
+      \`<!-- \${name}.vue (Vue 3 Composition API) -->\`,
       '<template>',
-      `  <${name} ${propsSnippet}>`,
-      `    ${comp.type.toUpperCase()}`,
-      `  </${name}>`,
+      \`  <\${name} \${propsSnippet}>\`,
+      \`    \${comp.type.toUpperCase()}\`,
+      \`  </\${name}>\`,
       '</template>',
       '',
       '<script setup lang="ts">',
-      `import { ${name} } from 'crml-ui';`,
+      \`import { \${name} } from 'crml-ui';\`,
       'import { ref } from "vue";',
       '',
       'const modelValue = ref("");',
-      '<\/script>'
-    ].join('\n')
+      '<\\/script>'
+    ].join('\\n')
   }
 
   if (activeFw.value === 'react') {
     return [
-      `// ${name}.tsx (React 18 / 19)`,
+      \`// \${name}.tsx (React 18 / 19)\`,
       "import React, { useState } from 'react';",
-      `import { ${name} } from 'crml-ui-react';`,
+      \`import { \${name} } from 'crml-ui-react';\`,
       "import 'crml-ui-react/dist/style.css';",
       "",
-      `export function Demo${name}() {`,
+      \`export function Demo\${name}() {\`,
       '  const [val, setVal] = useState("");',
       '',
       '  return (',
-      `    <${name}`,
-      `      variant="${variant}"`,
+      \`    <\${name}\`,
+      \`      variant="\${variant}"\`,
       '      size="md"',
       '    >',
-      `      ${comp.type.toUpperCase()}`,
-      `    </${name}>`,
+      \`      \${comp.type.toUpperCase()}\`,
+      \`    </\${name}>\`,
       '  );',
       '}'
-    ].join('\n')
+    ].join('\\n')
   }
 
   if (activeFw.value === 'svelte') {
     return [
-      `<!-- ${name}.svelte (Svelte 5 / 4) -->`,
+      \`<!-- \${name}.svelte (Svelte 5 / 4) -->\`,
       '<script>',
-      `  import { ${name} } from 'crml-ui-svelte';`,
+      \`  import { \${name} } from 'crml-ui-svelte';\`,
       "  import 'crml-ui-svelte/dist/style.css';",
       '  let val = "";',
-      '<\/script>',
+      '<\\/script>',
       '',
-      `<${name} variant="${variant}" size="md">`,
-      `  ${comp.type.toUpperCase()}`,
-      `</${name}>`
-    ].join('\n')
+      \`<\${name} variant="\${variant}" size="md">\`,
+      \`  \${comp.type.toUpperCase()}\`,
+      \`</\${name}>\`
+    ].join('\\n')
   }
 
   // HTML5
   return [
-    `<!-- ${name} (Vanilla HTML5 & CSS) -->`,
+    \`<!-- \${name} (Vanilla HTML5 & CSS) -->\`,
     '<!-- 1. Include Tokens -->',
     '<link rel="stylesheet" href="./css/crml-neubrutal.css">',
     '',
     '<!-- 2. Semantic Tactile Component -->',
-    `<div class="${kebab} ${kebab}--${variant}">`,
-    `  <span class="${kebab}__label">${comp.type.toUpperCase()}</span>`,
+    \`<div class="\${kebab} \${kebab}--\${variant}">\`,
+    \`  <span class="\${kebab}__label">\${comp.type.toUpperCase()}</span>\`,
     '</div>'
-  ].join('\n')
+  ].join('\\n')
 })
 
 function copyText(text: string, id: string) {
@@ -1072,7 +1124,7 @@ function handleNavClick(item: NavItem) {
 }
 
 function triggerHtmlDownload() {
-  const htmlDoc = `<!DOCTYPE html>
+  const htmlDoc = \`<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -1089,7 +1141,7 @@ function triggerHtmlDownload() {
   <p>Production Neubrutalism & Y2K Cyber Mecha with 0% Ambient Blur.</p>
   <button class="crml-btn">TACTILE BUTTON</button>
 </body>
-</html>`
+</html>\`
 
   const blob = new Blob([htmlDoc], { type: 'text/html' })
   const url = URL.createObjectURL(blob)
@@ -1101,7 +1153,7 @@ function triggerHtmlDownload() {
 }
 
 function triggerCssDownload() {
-  const cssContent = `:root {
+  const cssContent = \`:root {
   --crt-electric-lime: #CCFF00;
   --crt-hot-pink: #FF007F;
   --crt-cyber-cyan: #00F0FF;
@@ -1110,7 +1162,7 @@ function triggerCssDownload() {
   --crt-pure-white: #FFFFFF;
   --crml-border-brutal: 3px solid #0D0D0D;
   --crml-shadow-brutal: 4px 4px 0px #0D0D0D;
-}`
+}\`
 
   const blob = new Blob([cssContent], { type: 'text/css' })
   const url = URL.createObjectURL(blob)
@@ -2034,3 +2086,9 @@ body {
   box-shadow: 3px 3px 0px var(--crt-hot-pink);
 }
 </style>
+`
+
+fs.writeFileSync(path.resolve(DASHBOARD_DIR, 'src/App.vue'), appVueContent, 'utf8')
+fs.writeFileSync(path.resolve(ROOT_VUE, 'playground/StandaloneDashboard.vue'), appVueContent, 'utf8')
+
+console.log('✅ Dashboard updated with real CRML components, sticky navbar, and zero cut-offs!')

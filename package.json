@@ -38,5 +38,13 @@
     "vite-plugin-dts": "^3.7.0",
     "vue": "^3.4.0",
     "vue-tsc": "^2.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Mocca130604",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mocca130604/crml-ui-vue.git"
   }
 }

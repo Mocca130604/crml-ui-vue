@@ -24,7 +24,7 @@
     <div class="toast-floating" v-if="showToast">
       <CrmlToast
         title="CRML-UI UNIFIED ECOSYSTEM READY"
-        message="70 Primitives aktif di port 7171 dengan dukungan Cloudflare Tunnel (ui.crml.my.id)!"
+        message="Semua 70 tactile primitives aktif dengan 100% keselarasan props dan tactile physics!"
         variant="lime"
         @close="showToast = false"
       />
@@ -715,14 +715,13 @@
           <a href="https://buymeacoffee.com/crml" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
             <CrmlBadge variant="warning">☕ BUY ME A COFFEE</CrmlBadge>
           </a>
-          <CrmlBadge variant="success">PORT 7171 READY</CrmlBadge>
-          <CrmlBadge variant="primary">CLOUDFLARE TUNNEL (ui.crml.my.id)</CrmlBadge>
+          <CrmlBadge variant="success">PRODUCTION READY</CrmlBadge>
           <CrmlBadge variant="warning">ZERO AMBIENT BLUR</CrmlBadge>
         </div>
       </div>
       <div class="footer-bottom-row">
         <span>© 2026 CRML-UI Ecosystem Team. Distributed under MIT License.</span>
-        <span>Independent Dashboard & Documentation Website at C:\Code\crml-ui-dashboard</span>
+        <span>Unified Documentation Hub & Component Playground</span>
       </div>
     </footer>
   </div>

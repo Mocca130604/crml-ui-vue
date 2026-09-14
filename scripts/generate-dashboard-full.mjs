@@ -72,8 +72,9 @@ export const CATALOG_DATA: CatalogCategory[] = ${JSON.stringify(catalog, null, 2
 `
 
 writeFile(path.resolve(DASHBOARD_DIR, 'src/catalog.ts'), catalogTsContent)
+writeFile(path.resolve(ROOT_VUE, 'playground/catalog.ts'), catalogTsContent)
 
-// 3. Update vite.config.ts in dashboard
+// 3. Update vite.config.ts in dashboard with allowedHosts: ['ui.crml.my.id', '.crml.my.id', 'localhost']
 const viteConfigContent = `import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
@@ -89,14 +90,33 @@ export default defineConfig({
     exclude: ['crml-ui', 'crml-ui-react', 'crml-ui-svelte']
   },
   server: {
-    port: 5180,
-    strictPort: false
+    host: '0.0.0.0',
+    port: 7171,
+    strictPort: true,
+    cors: true,
+    allowedHosts: ['ui.crml.my.id', '.crml.my.id', 'localhost', '127.0.0.1'],
+    headers: {
+      'Access-Control-Allow-Origin': '*'
+    }
+  },
+  preview: {
+    host: '0.0.0.0',
+    port: 7171,
+    strictPort: true,
+    allowedHosts: ['ui.crml.my.id', '.crml.my.id', 'localhost', '127.0.0.1']
   }
 })
 `
 writeFile(path.resolve(DASHBOARD_DIR, 'vite.config.ts'), viteConfigContent)
 
-// 4. Sync tokens
+// 4. Update package.json scripts
+const pkgPath = path.resolve(DASHBOARD_DIR, 'package.json')
+const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf8'))
+pkg.scripts.dev = 'vite --host 0.0.0.0 --port 7171'
+pkg.scripts.preview = 'vite preview --host 0.0.0.0 --port 7171'
+fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2), 'utf8')
+
+// 5. Sync tokens
 const tokensSrcDir = path.resolve(ROOT_VUE, 'src/tokens')
 const tokensDestDir = path.resolve(DASHBOARD_DIR, 'src/tokens')
 ensureDir(tokensDestDir)
@@ -105,7 +125,7 @@ for (const file of fs.readdirSync(tokensSrcDir).filter(f => f.endsWith('.css')))
 }
 console.log('  + Synced tokens to crml-ui-dashboard/src/tokens')
 
-// 5. Generate comprehensive App.vue for crml-ui-dashboard
+// 6. Generate comprehensive App.vue with NO cut-offs and RICH previews
 const appVueContent = `<template>
   <div class="dashboard-root font-mono">
     <!-- Top Cyber Banner -->
@@ -133,7 +153,7 @@ const appVueContent = `<template>
         <a href="#install" class="tactile-btn variant-lime">⚡ QUICK INSTALL</a>
         <a href="#catalog" class="tactile-btn variant-cyan">📚 70 COMPONENT DOCS</a>
         <a href="#parity" class="tactile-btn variant-yellow">📊 PARITY MATRIX</a>
-        <a href="https://github.com" target="_blank" class="tactile-btn variant-obsidian">★ GITHUB ↗</a>
+        <a href="https://github.com/Mocca130604/crml-ui-vue" target="_blank" class="tactile-btn variant-obsidian">★ GITHUB ↗</a>
       </div>
     </header>
 
@@ -309,7 +329,7 @@ const appVueContent = `<template>
               type="text"
               v-model="searchQuery"
               class="tactile-input font-mono search-input"
-              placeholder="Cari component (e.g. Button, Input, DatePicker, Dialog, Telemetry)..."
+              placeholder="Cari component (e.g. WavyDivider, Button, DatePicker, Telemetry, Modal)..."
             />
             <button v-if="searchQuery" class="clear-search-btn font-mono" @click="searchQuery = ''">✕</button>
           </div>
@@ -407,8 +427,8 @@ const appVueContent = `<template>
               </div>
             </div>
 
-            <!-- Interactive Demo & Preview Card -->
-            <div class="doc-section-card">
+            <!-- Interactive Demo & Preview Card (NEVER CUT OFF) -->
+            <div class="doc-section-card preview-card-outer">
               <div class="card-bar font-mono">
                 <span>🎮 LIVE PREVIEW & VISUAL BLUEPRINT // {{ activeComp.name }}</span>
                 <span class="live-dot">● INTERACTIVE</span>
@@ -446,13 +466,64 @@ const appVueContent = `<template>
                       </button>
                     </div>
                   </div>
+
+                  <div class="ctrl-item">
+                    <label>INTERACTIVE RESET:</label>
+                    <button class="tactile-btn variant-outline size-sm font-mono" @click="resetDemo">
+                      🔄 RESET DEMO
+                    </button>
+                  </div>
                 </div>
 
-                <!-- Preview Area -->
+                <!-- Preview Stage Area -->
                 <div class="preview-stage">
                   <div class="demo-element-container">
-                    <!-- Button Types -->
-                    <template v-if="activeComp.id.includes('Button')">
+                    <!-- 1. Wavy Divider / Divider Preview -->
+                    <template v-if="activeComp.id.includes('Wavy') || activeComp.id.includes('Divider')">
+                      <div class="demo-wavy-container">
+                        <div class="divider-meta-tag font-mono">
+                          <span>STYLE: {{ wavyStyle.toUpperCase() }}</span>
+                          <div class="mini-pills" style="margin-left: 0.5rem;">
+                            <button class="mini-pill-btn" :class="{ active: wavyStyle === 'wave' }" @click="wavyStyle = 'wave'">WAVE</button>
+                            <button class="mini-pill-btn" :class="{ active: wavyStyle === 'zigzag' }" @click="wavyStyle = 'zigzag'">ZIGZAG</button>
+                          </div>
+                        </div>
+
+                        <!-- Wave SVG -->
+                        <div v-if="wavyStyle === 'wave'" class="wavy-svg-wrapper">
+                          <svg class="wavy-svg" viewBox="0 0 1200 28" preserveAspectRatio="none">
+                            <path
+                              d="M0,14 C150,28 350,0 500,14 C650,28 850,0 1000,14 C1100,24 1150,6 1200,14"
+                              fill="none"
+                              :stroke="getVariantColor(demoVariant)"
+                              stroke-width="5"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                        </div>
+
+                        <!-- Zigzag SVG -->
+                        <div v-else class="wavy-svg-wrapper">
+                          <svg class="wavy-svg" viewBox="0 0 1200 24" preserveAspectRatio="none">
+                            <path
+                              d="M0,12 L30,0 L60,24 L90,0 L120,24 L150,0 L180,24 L210,0 L240,24 L270,0 L300,24 L330,0 L360,24 L390,0 L420,24 L450,0 L480,24 L510,0 L540,24 L570,0 L600,24 L630,0 L660,24 L690,0 L720,24 L750,0 L780,24 L810,0 L840,24 L870,0 L900,24 L930,0 L960,24 L990,0 L1020,24 L1050,0 L1080,24 L1110,0 L1140,24 L1170,0 L1200,12"
+                              fill="none"
+                              :stroke="getVariantColor(demoVariant)"
+                              stroke-width="4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+
+                        <div class="divider-center-badge font-mono" :style="{ backgroundColor: getVariantColor(demoVariant) }">
+                          ★ CRML WAVY DIVIDER • ZERO BLUR ★
+                        </div>
+                      </div>
+                    </template>
+
+                    <!-- 2. Button Types -->
+                    <template v-else-if="activeComp.id.includes('Button')">
                       <button
                         :class="['tactile-btn', \`variant-\${demoVariant}\`, \`size-\${demoSize}\`]"
                         @click="demoClicks++"
@@ -461,14 +532,65 @@ const appVueContent = `<template>
                       </button>
                     </template>
 
-                    <!-- Badge Types -->
+                    <!-- 3. Badge Types -->
                     <template v-else-if="activeComp.id.includes('Badge')">
-                      <span :class="['badge-chip', \`variant-\${demoVariant}\`]">
-                        ★ {{ activeComp.name }} // ACTIVE STATUS
+                      <span :class="['badge-chip', \`variant-\${demoVariant}\`, 'demo-badge-large']">
+                        ★ {{ activeComp.name }} // SYSTEM ACTIVE 100%
                       </span>
                     </template>
 
-                    <!-- Input / Textarea / Form Types -->
+                    <!-- 4. Marquee Banner -->
+                    <template v-else-if="activeComp.id.includes('Marquee')">
+                      <div class="demo-marquee-box font-mono" :class="\`accent-\${demoVariant}\`">
+                        <div class="marquee-inner">
+                          ⚡ CRML TACTILE MARQUEE // 0% AMBIENT BLUR // 100% REBOUND PHYSICS // ECOSYSTEM v5.5 ⚡
+                        </div>
+                      </div>
+                    </template>
+
+                    <!-- 5. Avatar Types -->
+                    <template v-else-if="activeComp.id.includes('Avatar')">
+                      <div class="demo-avatar-box font-heading" :class="\`variant-\${demoVariant}\`">
+                        <span class="avatar-letter">K</span>
+                        <span class="avatar-online-dot">●</span>
+                      </div>
+                    </template>
+
+                    <!-- 6. Kbd Keycap -->
+                    <template v-else-if="activeComp.id.includes('Kbd')">
+                      <div class="demo-kbd-row font-mono">
+                        <kbd class="tactile-kbd">⌘</kbd>
+                        <kbd class="tactile-kbd">SHIFT</kbd>
+                        <kbd class="tactile-kbd" :class="\`variant-\${demoVariant}\`">K</kbd>
+                      </div>
+                    </template>
+
+                    <!-- 7. Speech Bubble -->
+                    <template v-else-if="activeComp.id.includes('Speech')">
+                      <div class="demo-speech-bubble font-mono" :class="\`variant-\${demoVariant}\`">
+                        <span>"Zero ambient blur, strict ink borders, and physical spring rebound physics!"</span>
+                        <div class="bubble-pointer" />
+                      </div>
+                    </template>
+
+                    <!-- 8. Progress -->
+                    <template v-else-if="activeComp.id.includes('Progress')">
+                      <div class="demo-progress-wrap font-mono">
+                        <div class="progress-bar-head">
+                          <span>SYSTEM TELEMETRY</span>
+                          <span>{{ demoProgress }}%</span>
+                        </div>
+                        <div class="progress-track">
+                          <div class="progress-fill" :class="\`variant-\${demoVariant}\`" :style="{ width: demoProgress + '%' }" />
+                        </div>
+                        <div class="progress-ctrls">
+                          <button class="mini-pill-btn" @click="demoProgress = Math.max(0, demoProgress - 15)">- 15%</button>
+                          <button class="mini-pill-btn" @click="demoProgress = Math.min(100, demoProgress + 15)">+ 15%</button>
+                        </div>
+                      </div>
+                    </template>
+
+                    <!-- 9. Input / Textarea / Form Types -->
                     <template v-else-if="activeComp.id.includes('Input') || activeComp.id.includes('Textarea') || activeComp.id.includes('Date') || activeComp.id.includes('Time') || activeComp.id.includes('Color')">
                       <div class="demo-form-group font-mono">
                         <label class="form-group-lbl">{{ activeComp.name.toUpperCase() }}</label>
@@ -476,14 +598,14 @@ const appVueContent = `<template>
                           type="text"
                           class="tactile-input font-mono"
                           :class="\`variant-\${demoVariant}\`"
-                          :value="demoInputVal || '@crml_user'"
+                          :value="demoInputVal || '@crml_pilot'"
                           @input="demoInputVal = ($event.target as HTMLInputElement).value"
                         />
                         <span class="form-hint">Solid 2.5px ink border with 3D offset ink shadow.</span>
                       </div>
                     </template>
 
-                    <!-- Switch / Checkbox / Toggle -->
+                    <!-- 10. Switch / Checkbox / Toggle -->
                     <template v-else-if="activeComp.id.includes('Switch') || activeComp.id.includes('Check') || activeComp.id.includes('Toggle')">
                       <div class="demo-toggle-row font-mono" @click="demoToggle = !demoToggle">
                         <div class="switch-track" :class="[{ active: demoToggle }, \`variant-\${demoVariant}\`]">
@@ -493,7 +615,21 @@ const appVueContent = `<template>
                       </div>
                     </template>
 
-                    <!-- Card / Container / Dialog / Banner Types -->
+                    <!-- 11. Dual Slider -->
+                    <template v-else-if="activeComp.id.includes('Slider')">
+                      <div class="demo-slider-box font-mono">
+                        <div class="slider-head">
+                          <span>RANGE FILTER:</span>
+                          <span :class="['badge-chip', \`variant-\${demoVariant}\`]">$\{{ sliderMin }} — $\{{ sliderMax }}</span>
+                        </div>
+                        <div class="slider-track-wrap">
+                          <input type="range" min="0" max="1000" v-model.number="sliderMin" class="native-range" />
+                          <input type="range" min="0" max="1000" v-model.number="sliderMax" class="native-range" />
+                        </div>
+                      </div>
+                    </template>
+
+                    <!-- 12. Generic Card / Container / Organisms -->
                     <template v-else>
                       <div class="demo-generic-card font-mono" :class="\`accent-\${demoVariant}\`">
                         <div class="generic-card-top font-heading">
@@ -822,13 +958,17 @@ const activeFwMeta = computed(() => frameworkMeta[activeFw.value])
 // -------------------------------------------------------------
 const searchQuery = ref('')
 const selectedCategory = ref('ALL')
-const selectedCompId = ref('CrmlButton')
+const selectedCompId = ref('CrmlWavyDivider')
 
 const demoVariant = ref<'lime' | 'pink' | 'cyan' | 'yellow'>('lime')
 const demoSize = ref<'sm' | 'md' | 'lg'>('md')
 const demoClicks = ref(0)
 const demoToggle = ref(true)
 const demoInputVal = ref('')
+const demoProgress = ref(68)
+const wavyStyle = ref<'wave' | 'zigzag'>('wave')
+const sliderMin = ref(250)
+const sliderMax = ref(750)
 
 const copiedId = ref('')
 
@@ -863,6 +1003,26 @@ const activeComp = computed<CatalogItem>(() => {
   return CATALOG_DATA[0].items[0]
 })
 
+function getVariantColor(v: 'lime' | 'pink' | 'cyan' | 'yellow'): string {
+  switch (v) {
+    case 'lime': return '#CCFF00'
+    case 'pink': return '#FF007F'
+    case 'cyan': return '#00F0FF'
+    case 'yellow': return '#FFD600'
+    default: return '#CCFF00'
+  }
+}
+
+function resetDemo() {
+  demoClicks.value = 0
+  demoToggle.value = true
+  demoInputVal.value = ''
+  demoProgress.value = 68
+  wavyStyle.value = 'wave'
+  sliderMin.value = 250
+  sliderMax.value = 750
+}
+
 // Parity Matrix Computed
 const matrixSearch = ref('')
 const matrixCat = ref('ALL')
@@ -892,6 +1052,19 @@ const activeComponentCode = computed(() => {
   const variant = demoVariant.value
 
   if (activeFw.value === 'vue') {
+    if (name.includes('Wavy')) {
+      return [
+        '<!-- CrmlWavyDivider.vue (Vue 3 Composition API) -->',
+        '<template>',
+        \`  <CrmlWavyDivider styleType="\${wavyStyle.value}" color="\${getVariantColor(variant)}" strokeWidth="4" />\`,
+        '</template>',
+        '',
+        '<script setup lang="ts">',
+        "import { CrmlWavyDivider } from 'crml-ui';",
+        '<\\/script>'
+      ].join('\\n')
+    }
+
     const propsSnippet = (comp.apiData || [])
       .slice(0, 3)
       .map(p => {
@@ -1070,6 +1243,7 @@ function triggerCssDownload() {
 body {
   background-color: var(--crml-bg-base);
   color: var(--crml-text-main);
+  overflow-x: hidden;
 }
 
 .font-heading {
@@ -1579,11 +1753,11 @@ body {
   transform: translate(-1px, -1px);
 }
 
-/* Master-Detail Split */
+/* Master-Detail Split: NO CUT-OFFS */
 .catalog-split-layout {
   display: grid;
   grid-template-columns: 360px 1fr;
-  min-height: 800px;
+  min-height: 850px;
 }
 @media (max-width: 1024px) {
   .catalog-split-layout { grid-template-columns: 1fr; }
@@ -1595,7 +1769,7 @@ body {
   background: var(--crml-bg-base);
   display: flex;
   flex-direction: column;
-  max-height: 900px;
+  height: 950px;
 }
 
 .nav-aside-header {
@@ -1606,6 +1780,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .nav-hint { color: var(--crt-electric-lime); }
@@ -1648,14 +1823,14 @@ body {
   font-weight: 700;
 }
 
-/* Detail Main Panel */
+/* Detail Main Panel: EXPANDABLE, NO CRUSHING */
 .catalog-detail-main {
-  padding: 1.75rem;
+  padding: 2rem;
   background: var(--crt-pure-white);
   display: flex;
   flex-direction: column;
-  gap: 1.75rem;
-  max-height: 900px;
+  gap: 2rem;
+  height: 950px;
   overflow-y: auto;
 }
 
@@ -1667,6 +1842,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  flex-shrink: 0;
 }
 
 .doc-title-row {
@@ -1747,23 +1923,27 @@ body {
   color: #333;
 }
 
-/* Sections inside detail */
+/* Sections inside detail: flex-shrink 0 ensures NO compression/cut-offs */
 .doc-section-card {
   border: var(--crml-border-brutal);
   border-radius: 8px;
-  overflow: hidden;
   background: var(--crt-pure-white);
   box-shadow: var(--crml-shadow-brutal-sm);
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .card-bar {
   background: var(--crt-obsidian);
   color: var(--crt-pure-white);
-  padding: 0.65rem 1rem;
+  padding: 0.75rem 1.25rem;
   font-size: 0.85rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .card-bar-tag { color: var(--crt-cyber-cyan); font-size: 0.72rem; }
@@ -1773,26 +1953,32 @@ body {
   color: var(--crt-obsidian);
   border: 2px solid var(--crt-obsidian);
   border-radius: 4px;
-  padding: 0.25rem 0.65rem;
+  padding: 0.3rem 0.75rem;
   font-size: 0.75rem;
   font-weight: 800;
   cursor: pointer;
-  box-shadow: 1px 1px 0px var(--crt-obsidian);
+  box-shadow: 2px 2px 0px var(--crt-obsidian);
 }
-.mini-copy-btn:active { transform: translate(1px, 1px); box-shadow: none; }
+.mini-copy-btn:active { transform: translate(1px, 1px); box-shadow: 1px 1px 0px var(--crt-obsidian); }
 
-/* Preview Sandbox Area */
+/* Preview Sandbox Area: TACTILE, FLEXIBLE, NEVER CUT OFF */
+.preview-card-outer {
+  min-height: fit-content;
+}
+
 .preview-canvas-wrap {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .canvas-controls-bar {
-  padding: 0.75rem 1rem;
-  background: var(--crml-bg-elevated);
+  padding: 0.85rem 1.25rem;
+  background: #F3E8FF; /* Lilac Neubrutal Accent */
   border-bottom: 2px solid var(--crt-obsidian);
   display: flex;
   gap: 1.5rem;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -1806,67 +1992,202 @@ body {
 
 .mini-pills {
   display: flex;
-  border: 1px solid var(--crt-obsidian);
+  border: 1.5px solid var(--crt-obsidian);
   border-radius: 4px;
   overflow: hidden;
 }
 
 .mini-pill-btn {
-  padding: 0.2rem 0.5rem;
+  padding: 0.25rem 0.55rem;
   background: #FFF;
   border: none;
   border-right: 1px solid #CCC;
   font-size: 0.7rem;
-  font-weight: 700;
+  font-weight: 800;
   cursor: pointer;
 }
 .mini-pill-btn:last-child { border-right: none; }
 .mini-pill-btn.active { background: var(--crt-electric-lime); }
 
 .preview-stage {
-  padding: 2.5rem 1.5rem;
-  background: #FDFDFD;
-  background-image: radial-gradient(#0D0D0D 1px, transparent 1px);
-  background-size: 16px 16px;
+  padding: 3rem 2rem;
+  background: #FAFAFA;
+  background-image: radial-gradient(#0D0D0D 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 180px;
+  min-height: 250px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
 }
 
 .demo-element-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 500px;
   width: 100%;
+  max-width: 650px;
 }
 
+/* ================= WAVY DIVIDER SPECIFIC PREVIEW ================= */
+.demo-wavy-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  background: #FFFFFF;
+  border: var(--crml-border-brutal);
+  border-radius: 8px;
+  box-shadow: var(--crml-shadow-brutal);
+  padding: 2rem 1.5rem;
+}
+
+.divider-meta-tag {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.wavy-svg-wrapper {
+  width: 100%;
+  padding: 0.75rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wavy-svg {
+  width: 100%;
+  height: 32px;
+  display: block;
+}
+
+.divider-center-badge {
+  padding: 0.4rem 1rem;
+  border: 2.5px solid #0D0D0D;
+  border-radius: 6px;
+  box-shadow: var(--crml-shadow-brutal-sm);
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: #0D0D0D;
+}
+
+/* Marquee Preview */
+.demo-marquee-box {
+  width: 100%;
+  background: #0D0D0D;
+  color: #CCFF00;
+  border: var(--crml-border-brutal);
+  border-radius: 6px;
+  box-shadow: var(--crml-shadow-brutal);
+  padding: 0.85rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.demo-marquee-box.accent-pink { color: #FF007F; }
+.demo-marquee-box.accent-cyan { color: #00F0FF; }
+.demo-marquee-box.accent-yellow { color: #FFD600; }
+.marquee-inner {
+  display: inline-block;
+  animation: marqueeAnim 12s linear infinite;
+  font-weight: 800;
+}
+@keyframes marqueeAnim {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Avatar Preview */
+.demo-avatar-box {
+  width: 72px;
+  height: 72px;
+  border: var(--crml-border-brutal);
+  border-radius: 50%;
+  box-shadow: var(--crml-shadow-brutal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.demo-avatar-box.variant-lime { background: var(--crt-electric-lime); }
+.demo-avatar-box.variant-pink { background: var(--crt-hot-pink); color: #FFF; }
+.demo-avatar-box.variant-cyan { background: var(--crt-cyber-cyan); }
+.demo-avatar-box.variant-yellow { background: var(--crt-sunburst-yellow); }
+.avatar-letter { font-size: 2rem; }
+.avatar-online-dot { position: absolute; bottom: 0px; right: 0px; color: #00C853; font-size: 1.25rem; }
+
+/* Kbd Preview */
+.demo-kbd-row { display: flex; gap: 0.5rem; align-items: center; }
+.tactile-kbd {
+  padding: 0.5rem 0.85rem;
+  background: #FFF;
+  border: var(--crml-border-brutal);
+  border-radius: 6px;
+  box-shadow: 3px 3px 0px #0D0D0D;
+  font-weight: 800;
+  font-size: 1rem;
+}
+.tactile-kbd.variant-lime { background: var(--crt-electric-lime); }
+.tactile-kbd.variant-pink { background: var(--crt-hot-pink); color: #FFF; }
+.tactile-kbd.variant-cyan { background: var(--crt-cyber-cyan); }
+.tactile-kbd.variant-yellow { background: var(--crt-sunburst-yellow); }
+
+/* Speech Bubble Preview */
+.demo-speech-bubble {
+  background: #FFF;
+  border: var(--crml-border-brutal);
+  border-radius: 12px;
+  box-shadow: var(--crml-shadow-brutal);
+  padding: 1.25rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  position: relative;
+  max-width: 450px;
+}
+.demo-speech-bubble.variant-lime { background: #F1F8E9; border-color: #0D0D0D; }
+.demo-speech-bubble.variant-pink { background: #FCE4EC; border-color: #0D0D0D; }
+.demo-speech-bubble.variant-cyan { background: #E0F7FA; border-color: #0D0D0D; }
+.demo-speech-bubble.variant-yellow { background: #FFFDE7; border-color: #0D0D0D; }
+
+/* Progress Preview */
+.demo-progress-wrap { width: 100%; max-width: 450px; display: flex; flex-direction: column; gap: 0.5rem; }
+.progress-bar-head { display: flex; justify-content: space-between; font-weight: 800; font-size: 0.8rem; }
+.progress-track { width: 100%; height: 24px; background: #FFF; border: var(--crml-border-brutal); border-radius: 6px; box-shadow: var(--crml-shadow-brutal-sm); overflow: hidden; }
+.progress-fill { height: 100%; transition: width 0.3s ease; }
+.progress-fill.variant-lime { background: var(--crt-electric-lime); }
+.progress-fill.variant-pink { background: var(--crt-hot-pink); }
+.progress-fill.variant-cyan { background: var(--crt-cyber-cyan); }
+.progress-fill.variant-yellow { background: var(--crt-sunburst-yellow); }
+.progress-ctrls { display: flex; gap: 0.5rem; justify-content: flex-end; }
+
+/* Form Group Demo */
 .demo-form-group {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.5rem;
   width: 100%;
-  max-width: 360px;
+  max-width: 400px;
 }
+.form-group-lbl { font-size: 0.8rem; font-weight: 900; }
+.form-hint { font-size: 0.725rem; color: var(--crml-text-muted); }
 
-.form-group-lbl {
-  font-size: 0.75rem;
-  font-weight: 900;
-}
-
-.form-hint {
-  font-size: 0.7rem;
-  color: var(--crml-text-muted);
-}
-
+/* Switch Demo */
 .demo-toggle-row {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.85rem;
   cursor: pointer;
+  background: #FFF;
+  border: var(--crml-border-brutal);
+  padding: 0.85rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--crml-shadow-brutal);
 }
-
 .switch-track {
   width: 54px;
   height: 28px;
@@ -1876,11 +2197,10 @@ body {
   position: relative;
   transition: all 0.2s ease;
 }
-
-.switch-track.active {
-  background: var(--crt-electric-lime);
-}
-
+.switch-track.active.variant-lime { background: var(--crt-electric-lime); }
+.switch-track.active.variant-pink { background: var(--crt-hot-pink); }
+.switch-track.active.variant-cyan { background: var(--crt-cyber-cyan); }
+.switch-track.active.variant-yellow { background: var(--crt-sunburst-yellow); }
 .switch-thumb {
   width: 20px;
   height: 20px;
@@ -1892,39 +2212,58 @@ body {
   left: 2px;
   transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-
 .switch-track.active .switch-thumb {
   transform: translateX(24px);
   background: #0D0D0D;
 }
+.toggle-state-text { font-size: 0.85rem; font-weight: 800; }
 
+/* Dual Slider Demo */
+.demo-slider-box {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: #FFF;
+  border: var(--crml-border-brutal);
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: var(--crml-shadow-brutal);
+}
+.slider-head { display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; font-weight: 800; }
+.slider-track-wrap { display: flex; flex-direction: column; gap: 0.5rem; }
+.native-range { width: 100%; accent-color: #0D0D0D; cursor: pointer; }
+
+/* Generic Card Demo */
 .demo-generic-card {
   background: #FFF;
   border: var(--crml-border-brutal);
   border-radius: 8px;
   box-shadow: var(--crml-shadow-brutal);
-  padding: 1.25rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 1rem;
   width: 100%;
+  box-sizing: border-box;
 }
-.demo-generic-card.accent-lime { border-top: 6px solid var(--crt-electric-lime); }
-.demo-generic-card.accent-pink { border-top: 6px solid var(--crt-hot-pink); }
-.demo-generic-card.accent-cyan { border-top: 6px solid var(--crt-cyber-cyan); }
-.demo-generic-card.accent-yellow { border-top: 6px solid var(--crt-sunburst-yellow); }
+.demo-generic-card.accent-lime { border-top: 8px solid var(--crt-electric-lime); }
+.demo-generic-card.accent-pink { border-top: 8px solid var(--crt-hot-pink); }
+.demo-generic-card.accent-cyan { border-top: 8px solid var(--crt-cyber-cyan); }
+.demo-generic-card.accent-yellow { border-top: 8px solid var(--crt-sunburst-yellow); }
 
 .generic-card-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
-
 .card-status-dot { color: #00C853; font-size: 0.75rem; }
-.generic-card-body { font-size: 0.825rem; color: var(--crml-text-muted); line-height: 1.4; }
+.generic-card-body { font-size: 0.85rem; color: var(--crml-text-muted); line-height: 1.5; }
 .generic-card-footer { display: flex; justify-content: space-between; align-items: center; }
-.footer-tag { font-size: 0.7rem; color: #888; }
+.footer-tag { font-size: 0.72rem; color: #888; }
+.demo-badge-large { font-size: 0.9rem; padding: 0.4rem 0.85rem; }
 
 /* Code Snippet Box */
 .code-snippet-pre {
@@ -1950,14 +2289,14 @@ body {
 .doc-spec-table th {
   background: var(--crml-bg-elevated);
   border-bottom: 2px solid var(--crt-obsidian);
-  padding: 0.75rem 1rem;
+  padding: 0.85rem 1.25rem;
   text-align: left;
   font-weight: 800;
   font-size: 0.75rem;
 }
 
 .doc-spec-table td {
-  padding: 0.75rem 1rem;
+  padding: 0.85rem 1.25rem;
   border-bottom: 1px solid #E0E0E0;
   vertical-align: top;
 }
@@ -1965,7 +2304,7 @@ body {
 .prop-tag {
   background: var(--crt-electric-lime);
   border: 1px solid var(--crt-obsidian);
-  padding: 0.15rem 0.45rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 4px;
   font-size: 0.8rem;
   font-weight: 800;
@@ -1977,7 +2316,7 @@ body {
 
 .type-tag {
   background: var(--crml-bg-elevated);
-  padding: 0.15rem 0.45rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 4px;
   font-size: 0.78rem;
   color: #D32F2F;
@@ -1985,19 +2324,19 @@ body {
 
 .default-tag {
   background: #E8F5E9;
-  padding: 0.15rem 0.45rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 4px;
   font-size: 0.78rem;
   color: #2E7D32;
 }
 
 .desc-cell {
-  line-height: 1.4;
+  line-height: 1.5;
   color: #333;
 }
 
 .empty-spec-message {
-  padding: 1.5rem;
+  padding: 1.75rem;
   text-align: center;
   color: var(--crml-text-muted);
   font-size: 0.85rem;
@@ -2154,7 +2493,6 @@ body {
 `
 
 writeFile(path.resolve(DASHBOARD_DIR, 'src/App.vue'), appVueContent)
-// Also sync to StandaloneDashboard.vue in crml-ui playground so it's backed up in both repos
 writeFile(path.resolve(ROOT_VUE, 'playground/StandaloneDashboard.vue'), appVueContent)
 
-console.log('✅ Standalone CRML-UI Dashboard generated successfully!')
+console.log('✅ Standalone CRML-UI Dashboard updated successfully with no cutoffs and allowedHosts!')

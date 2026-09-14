@@ -6,8 +6,9 @@
         brand-text="CRML - UI"
         brand-badge="ECOSYSTEM v1.0"
         :items="navItems"
+        action-text="☕ BUY ME A COFFEE"
+        action-href="https://buymeacoffee.com/crml"
         @search-click="scrollToSection('catalog')"
-        @action-click="scrollToSection('install')"
         @nav-click="handleNavClick"
       />
     </div>
@@ -78,6 +79,11 @@
             <CrmlBouncyButton variant="cyan" size="lg" @click="scrollToSection('install')">
               📦 INSTALASI & DOWNLOAD
             </CrmlBouncyButton>
+            <a href="https://buymeacoffee.com/crml" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+              <CrmlBouncyButton variant="yellow" size="lg">
+                ☕ BUY ME A COFFEE
+              </CrmlBouncyButton>
+            </a>
           </div>
         </div>
 
@@ -706,6 +712,9 @@
           <p class="footer-sub">Tactile Neubrutalism, Y2K Cyber Mecha, and Streetwear Design System.</p>
         </div>
         <div class="footer-badges">
+          <a href="https://buymeacoffee.com/crml" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+            <CrmlBadge variant="warning">☕ BUY ME A COFFEE</CrmlBadge>
+          </a>
           <CrmlBadge variant="success">PORT 7171 READY</CrmlBadge>
           <CrmlBadge variant="primary">CLOUDFLARE TUNNEL (ui.crml.my.id)</CrmlBadge>
           <CrmlBadge variant="warning">ZERO AMBIENT BLUR</CrmlBadge>
@@ -739,7 +748,7 @@ import {
   CrmlNeonSwitch,
   CrmlNeubrutalCard,
   type NavItem
-} from 'crml-ui'
+} from '../src'
 
 import { CATALOG_DATA, type CatalogItem } from './catalog'
 

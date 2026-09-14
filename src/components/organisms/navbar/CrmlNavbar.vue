@@ -14,10 +14,14 @@ const props = withDefaults(
     brandText?: string
     brandBadge?: string
     items?: NavItem[]
+    actionText?: string
+    actionHref?: string
   }>(),
   {
     brandText: 'CRML - UI',
     brandBadge: 'v5.0',
+    actionText: '☕ BUY ME A COFFEE',
+    actionHref: 'https://buymeacoffee.com/crml',
     items: () => [
       { id: 'home', label: 'OVERVIEW', active: true },
       { id: 'docs', label: 'DOCS', badge: 'NEW' },
@@ -71,9 +75,26 @@ const isMobileOpen = ref(false)
           <span class="cmd-kbd font-mono">⌘K</span>
         </button>
 
-        <button class="action-btn cta-btn font-heading" @click="emit('action-click')">
-          <span>⚡ GO PRO</span>
-        </button>
+        <slot name="action">
+          <a
+            v-if="actionHref"
+            :href="actionHref"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="action-btn cta-btn font-heading"
+            style="text-decoration: none;"
+            @click="emit('action-click')"
+          >
+            <span>{{ actionText }}</span>
+          </a>
+          <button
+            v-else
+            class="action-btn cta-btn font-heading"
+            @click="emit('action-click')"
+          >
+            <span>{{ actionText }}</span>
+          </button>
+        </slot>
 
         <!-- Mobile Hamburger Toggle -->
         <button class="mobile-toggle-btn" @click="isMobileOpen = !isMobileOpen">
@@ -94,6 +115,17 @@ const isMobileOpen = ref(false)
       >
         <span>{{ item.label }}</span>
         <span v-if="item.badge" class="item-badge">{{ item.badge }}</span>
+      </a>
+      <a
+        v-if="actionHref"
+        :href="actionHref"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="mobile-nav-link cta-btn font-heading"
+        style="text-decoration: none; text-align: center; justify-content: center; margin-top: 4px;"
+        @click="isMobileOpen = false; emit('action-click')"
+      >
+        <span>{{ actionText }}</span>
       </a>
     </div>
   </nav>

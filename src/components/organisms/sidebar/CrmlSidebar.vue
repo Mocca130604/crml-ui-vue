@@ -257,7 +257,7 @@ function selectItem(item: SidebarItem) {
   height: 8px;
   border-radius: 50%;
   background: #2ed573;
-  border: 1px solid #000;
+  border: 1px solid var(--crml-border-ink, #000);
 }
 
 .user-handle {

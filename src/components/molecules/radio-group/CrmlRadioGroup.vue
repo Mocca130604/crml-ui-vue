@@ -167,7 +167,7 @@ const selectOption = (val: string, option: RadioOption) => {
   height: 1.15rem;
   border: 2px solid var(--crt-obsidian, #0d0d0d);
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: var(--crml-bg-surface);
   outline: none;
   cursor: pointer;
   flex-shrink: 0;

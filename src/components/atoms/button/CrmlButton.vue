@@ -139,9 +139,9 @@ const handleClick = (e: MouseEvent) => {
 .crml-button--obsidian { background-color: var(--crt-obsidian); color: var(--crt-electric-lime); }
 .crml-button--obsidian:hover:not(:disabled) { background-color: #1a1a1a; }
 
-.crml-button--outline { background-color: #FFFFFF; color: var(--crml-text-main); border: 2.5px solid var(--crt-obsidian); }
+.crml-button--outline { background-color: var(--crml-bg-surface); color: var(--crml-text-main); border: 2.5px solid var(--crml-border-ink, var(--crt-obsidian)); }
 .crml-button--ghost { background-color: transparent; color: var(--crml-text-main); border: 2.5px solid transparent; box-shadow: none; }
-.crml-button--ghost:hover:not(:disabled) { background-color: rgba(0,0,0,0.05); transform: none; box-shadow: none; }
+.crml-button--ghost:hover:not(:disabled) { background-color: var(--crml-bg-elevated); transform: none; box-shadow: none; }
 .crml-button--danger { background-color: var(--crt-hot-pink); color: #FFFFFF; }
 
 .crml-button--disabled { opacity: 0.55; cursor: not-allowed; transform: none !important; box-shadow: 2px 2px 0px var(--crt-obsidian) !important; }

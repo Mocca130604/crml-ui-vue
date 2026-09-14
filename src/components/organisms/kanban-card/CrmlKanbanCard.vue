@@ -145,9 +145,9 @@ const emit = defineEmits<{
 }
 
 .priority-P0 { background-color: var(--crt-hot-pink, #ff007f); color: #ffffff; }
-.priority-P1 { background-color: var(--crt-sunburst-yellow, #ffd600); color: #0d0d0d; }
-.priority-P2 { background-color: var(--crt-electric-lime, #ccff00); color: #0d0d0d; }
-.priority-P3 { background-color: var(--crml-bg-elevated, #e0e0e0); color: #0d0d0d; }
+.priority-P1 { background-color: var(--crt-sunburst-yellow, #ffd600); color: var(--crml-text-on-accent, #0d0d0d); }
+.priority-P2 { background-color: var(--crt-electric-lime, #ccff00); color: var(--crml-text-on-accent, #0d0d0d); }
+.priority-P3 { background-color: var(--crml-bg-elevated, #e0e0e0); color: var(--crml-text-main, #0d0d0d); }
 
 .task-title {
   font-size: 0.875rem;

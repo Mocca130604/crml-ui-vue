@@ -197,7 +197,7 @@ const emit = defineEmits<{
 }
 .crml-table tr:last-child td { border-bottom: none; }
 
-.crml-table.is-striped tbody tr:nth-child(even) { background-color: rgba(0, 0, 0, 0.03); }
+.crml-table.is-striped tbody tr:nth-child(even) { background-color: var(--crml-bg-card-alt); }
 
 .crml-table.is-hoverable tbody tr { transition: background-color 0.15s ease; }
 .crml-table.is-hoverable tbody tr:hover { background-color: rgba(255, 224, 102, 0.2); cursor: pointer; }

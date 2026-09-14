@@ -190,19 +190,20 @@ const props = withDefaults(
 }
 
 .badge-success,
-.badge-lime { background-color: var(--crt-electric-lime, #ccff00); color: #0d0d0d; }
+.badge-lime { background-color: var(--crt-electric-lime, #ccff00); color: var(--crml-text-on-accent, #0d0d0d); }
 .badge-primary,
-.badge-cyan { background-color: var(--crt-cyber-cyan, #00f0ff); color: #0d0d0d; }
+.badge-cyan { background-color: var(--crt-cyber-cyan, #00f0ff); color: var(--crml-text-on-accent, #0d0d0d); }
 .badge-warning,
-.badge-yellow { background-color: var(--crt-sunburst-yellow, #ffd600); color: #0d0d0d; }
+.badge-yellow { background-color: var(--crt-sunburst-yellow, #ffd600); color: var(--crml-text-on-accent, #0d0d0d); }
 .badge-danger,
-.badge-pink { background-color: var(--crt-hot-pink, #ff007f); color: #ffffff; }
+.badge-pink { background-color: var(--crt-hot-pink, #ff007f); color: #fff; }
+.badge-default { background-color: var(--crml-bg-elevated, #e0e0e0); }
 .badge-obsidian { background-color: var(--crt-obsidian, #0d0d0d); color: var(--crt-electric-lime, #ccff00); }
 
-.node-lime { background-color: var(--crt-electric-lime, #ccff00) !important; color: #0d0d0d !important; }
-.node-pink { background-color: var(--crt-hot-pink, #ff007f) !important; color: #ffffff !important; }
-.node-cyan { background-color: var(--crt-cyber-cyan, #00f0ff) !important; color: #0d0d0d !important; }
-.node-yellow { background-color: var(--crt-sunburst-yellow, #ffd600) !important; color: #0d0d0d !important; }
+.node-lime { background-color: var(--crt-electric-lime, #ccff00) !important; color: var(--crml-text-on-accent, #0d0d0d) !important; }
+.node-pink { background-color: var(--crt-hot-pink, #ff007f) !important; color: #fff !important; }
+.node-cyan { background-color: var(--crt-cyber-cyan, #00f0ff) !important; color: var(--crml-text-on-accent, #0d0d0d) !important; }
+.node-yellow { background-color: var(--crt-sunburst-yellow, #ffd600) !important; color: var(--crml-text-on-accent, #0d0d0d) !important; }
 .node-obsidian { background-color: var(--crt-obsidian, #0d0d0d) !important; color: var(--crt-electric-lime, #ccff00) !important; }
 
 .connector-dashed .step-connector-line {

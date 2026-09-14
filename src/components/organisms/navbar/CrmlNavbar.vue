@@ -321,7 +321,7 @@ const isMobileOpen = ref(false)
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background: #ffffff;
+  background: var(--crml-bg-surface);
   border: 2px solid var(--crt-obsidian, #0d0d0d);
   border-radius: 6px;
   text-decoration: none;

@@ -136,7 +136,7 @@ const handleGenerate = () => {
 }
 
 .prompt-textarea:focus {
-  background-color: #ffffff;
+  background-color: var(--crml-bg-surface);
   border-color: var(--crt-obsidian, #0d0d0d);
   box-shadow: 3px 3px 0px var(--crt-hot-pink, #ff007f);
 }

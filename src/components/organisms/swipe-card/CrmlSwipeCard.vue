@@ -170,10 +170,10 @@ function handleSuperlike() {
 .card-stack-bg {
   position: absolute;
   inset: 0;
-  border: 3px solid #000;
+  border: 3px solid var(--crml-border-ink, #000);
   border-radius: 12px;
-  background: #f0f0f0;
-  box-shadow: 4px 4px 0 #000;
+  background: var(--crml-bg-card-alt, #f0f0f0);
+  box-shadow: 4px 4px 0 var(--crml-shadow-ink, #000);
 }
 
 .card-3 {
@@ -189,10 +189,10 @@ function handleSuperlike() {
 .swipe-card-front {
   position: absolute;
   inset: 0;
-  border: 3px solid #000;
+  border: 3px solid var(--crml-border-ink, #000);
   border-radius: 12px;
   padding: 16px;
-  box-shadow: 5px 5px 0 #000;
+  box-shadow: 5px 5px 0 var(--crml-shadow-ink, #000);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -226,7 +226,7 @@ function handleSuperlike() {
 }
 
 .card-deck-idx {
-  background: #000;
+  background: var(--crt-obsidian, #000);
   color: #fff;
   padding: 2px 6px;
   border-radius: 4px;
@@ -234,8 +234,8 @@ function handleSuperlike() {
 
 .card-status-badge {
   background: #00f0ff;
-  color: #000;
-  border: 2px solid #000;
+  color: var(--crml-text-on-accent, #000);
+  border: 2px solid var(--crml-border-ink, #000);
   padding: 2px 6px;
   font-weight: 900;
 }
@@ -250,10 +250,10 @@ function handleSuperlike() {
 .card-avatar-box {
   width: 64px;
   height: 64px;
-  background: #fff;
-  border: 3px solid #000;
+  background: var(--crml-bg-surface);
+  border: 3px solid var(--crml-border-ink, #000);
   border-radius: 10px;
-  box-shadow: 3px 3px 0 #000;
+  box-shadow: 3px 3px 0 var(--crml-shadow-ink, #000);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -270,7 +270,7 @@ function handleSuperlike() {
   margin: 0;
   font-size: 20px;
   font-weight: 900;
-  color: #000;
+  color: var(--crml-text-main);
   letter-spacing: -0.5px;
 }
 
@@ -278,7 +278,7 @@ function handleSuperlike() {
   margin: 0;
   font-size: 12px;
   font-weight: 700;
-  color: #333;
+  color: var(--crml-text-secondary);
 }
 
 .card-tags {
@@ -289,21 +289,21 @@ function handleSuperlike() {
 }
 
 .tag-pill {
-  background: #fff;
-  border: 2px solid #000;
+  background: var(--crml-bg-surface);
+  border: 2px solid var(--crml-border-ink, #000);
   font-size: 10px;
   font-weight: 800;
   padding: 1px 6px;
   border-radius: 4px;
-  box-shadow: 1.5px 1.5px 0 #000;
+  box-shadow: 1.5px 1.5px 0 var(--crml-shadow-ink, #000);
 }
 
 .empty-deck-card {
   position: absolute;
   inset: 0;
-  border: 3px dashed #000;
+  border: 3px dashed var(--crml-border-ink, #000);
   border-radius: 12px;
-  background: #fff;
+  background: var(--crml-bg-surface);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -323,17 +323,17 @@ function handleSuperlike() {
 
 .crml-btn-reset {
   background: #ffe600;
-  border: 2px solid #000;
+  border: 2px solid var(--crml-border-ink, #000);
   font-weight: 900;
   padding: 6px 12px;
   border-radius: 6px;
-  box-shadow: 2px 2px 0 #000;
+  box-shadow: 2px 2px 0 var(--crml-shadow-ink, #000);
   cursor: pointer;
 }
 
 .crml-btn-reset:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0 #000;
+  box-shadow: 3px 3px 0 var(--crml-shadow-ink, #000);
 }
 
 .action-bar {
@@ -346,11 +346,11 @@ function handleSuperlike() {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 3px solid #000;
+  border: 3px solid var(--crml-border-ink, #000);
   font-size: 20px;
   font-weight: 900;
   cursor: pointer;
-  box-shadow: 3px 3px 0 #000;
+  box-shadow: 3px 3px 0 var(--crml-shadow-ink, #000);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -359,12 +359,12 @@ function handleSuperlike() {
 
 .action-btn:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 5px 5px 0 #000;
+  box-shadow: 5px 5px 0 var(--crml-shadow-ink, #000);
 }
 
 .action-btn:active {
   transform: translate(1px, 1px);
-  box-shadow: 1px 1px 0 #000;
+  box-shadow: 1px 1px 0 var(--crml-shadow-ink, #000);
 }
 
 .pass-btn {
@@ -389,12 +389,12 @@ function handleSuperlike() {
   position: absolute;
   top: 20px;
   right: 20px;
-  border: 3px solid #000;
+  border: 3px solid var(--crml-border-ink, #000);
   padding: 4px 10px;
   font-weight: 900;
   font-size: 16px;
   border-radius: 6px;
-  box-shadow: 3px 3px 0 #000;
+  box-shadow: 3px 3px 0 var(--crml-shadow-ink, #000);
   transform: rotate(12deg);
 }
 

@@ -213,7 +213,7 @@ const gridStyle = computed(() => ({
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #666;
+  background-color: var(--crml-text-muted);
 }
 
 .status-dot.is-playing {
@@ -236,13 +236,13 @@ const gridStyle = computed(() => ({
 .bpm-label {
   font-size: 0.75rem;
   font-weight: 800;
-  color: #888;
+  color: var(--crml-text-muted);
 }
 
 .bpm-input {
   width: 54px;
-  background-color: #1a1a1a;
-  border: 1.5px solid #444;
+  background-color: var(--crml-bg-input, #1a1a1a);
+  border: 1.5px solid var(--crml-border-subtle, #444);
   color: var(--crt-electric-lime, #ccff00);
   border-radius: 4px;
   padding: 4px 6px;

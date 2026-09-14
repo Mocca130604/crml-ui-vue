@@ -342,7 +342,7 @@ function emitTime() {
 }
 
 .spin-btn {
-  background: #ffffff;
+  background: var(--crml-bg-surface);
   border: 1.5px solid var(--crt-obsidian, #0d0d0d);
   border-radius: 4px;
   font-size: 9px;
@@ -435,7 +435,7 @@ function emitTime() {
 
 .preset-btn {
   flex: 1;
-  background: #ffffff;
+  background: var(--crml-bg-surface);
   border: 1.5px solid var(--crt-obsidian, #0d0d0d);
   border-radius: 4px;
   padding: 4px 0;

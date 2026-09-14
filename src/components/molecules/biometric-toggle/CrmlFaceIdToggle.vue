@@ -87,11 +87,11 @@ function toggleSwitch() {
 
 <style scoped>
 .crml-faceid-toggle {
-  background: #fff;
-  border: 3px solid #000;
+  background: var(--crml-bg-surface);
+  border: 3px solid var(--crml-border-ink, #000);
   border-radius: 12px;
   padding: 12px 16px;
-  box-shadow: 4px 4px 0 #000;
+  box-shadow: 4px 4px 0 var(--crml-shadow-ink, #000);
   display: flex;
   align-items: center;
   gap: 14px;
@@ -104,12 +104,12 @@ function toggleSwitch() {
 
 .crml-faceid-toggle:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 5px 5px 0 #000;
+  box-shadow: 5px 5px 0 var(--crml-shadow-ink, #000);
 }
 
 .crml-faceid-toggle.is-active {
-  background: #f0fdf4;
-  border-color: #000;
+  background: var(--crml-status-success-bg, #f0fdf4);
+  border-color: var(--crml-border-ink, #000);
 }
 
 .faceid-icon-box {
@@ -118,9 +118,9 @@ function toggleSwitch() {
   height: 44px;
   background: #111;
   color: #00f0ff;
-  border: 2.5px solid #000;
+  border: 2.5px solid var(--crml-border-ink, #000);
   border-radius: 8px;
-  box-shadow: 2px 2px 0 #000;
+  box-shadow: 2px 2px 0 var(--crml-shadow-ink, #000);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -170,7 +170,7 @@ function toggleSwitch() {
   font-family: monospace;
   font-weight: 900;
   font-size: 13px;
-  color: #000;
+  color: var(--crml-text-main);
 }
 
 .status-pill {
@@ -179,7 +179,7 @@ function toggleSwitch() {
   font-size: 9px;
   padding: 1px 5px;
   border-radius: 3px;
-  border: 1.5px solid #000;
+  border: 1.5px solid var(--crml-border-ink, #000);
 }
 
 .status-pill.active {
@@ -188,21 +188,21 @@ function toggleSwitch() {
 }
 
 .status-pill.inactive {
-  background: #e0e0e0;
-  color: #666;
+  background: var(--crml-bg-elevated);
+  color: var(--crml-text-muted);
 }
 
 .toggle-subtitle {
   font-size: 10px;
   font-weight: 700;
-  color: #666;
+  color: var(--crml-text-muted);
 }
 
 .mecha-switch-track {
   width: 48px;
   height: 26px;
-  background: #e0e0e0;
-  border: 2.5px solid #000;
+  background: var(--crml-bg-elevated, #e0e0e0);
+  border: 2.5px solid var(--crml-border-ink, #000);
   border-radius: 14px;
   position: relative;
   transition: background-color 0.2s ease;
@@ -218,10 +218,10 @@ function toggleSwitch() {
   left: 1px;
   width: 19px;
   height: 19px;
-  background: #ffe600;
-  border: 2px solid #000;
+  background: var(--crt-sunburst-yellow, #ffe600);
+  border: 2px solid var(--crml-border-ink, #000);
   border-radius: 50%;
-  box-shadow: 1px 1px 0 #000;
+  box-shadow: 1px 1px 0 var(--crml-shadow-ink, #000);
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   display: flex;
   align-items: center;
@@ -236,7 +236,7 @@ function toggleSwitch() {
 .thumb-knurling {
   width: 6px;
   height: 2px;
-  background: #000;
+  background: var(--crml-border-ink, #000);
   border-radius: 1px;
 }
 </style>

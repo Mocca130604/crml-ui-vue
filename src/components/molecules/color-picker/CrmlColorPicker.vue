@@ -199,7 +199,7 @@ function handleInput(e: Event) {
 }
 
 .hex-input-field:focus {
-  background: #ffffff;
+  background: var(--crml-bg-surface);
   border-color: var(--crt-cyber-cyan, #00f0ff);
 }
 </style>

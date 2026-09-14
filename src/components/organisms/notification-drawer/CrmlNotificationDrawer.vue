@@ -135,11 +135,11 @@ function removeNotification(id: string | number) {
 }
 
 .notif-bell-btn {
-  background: #ffe600;
-  border: 3px solid #000;
+  background: var(--crt-sunburst-yellow, #ffe600);
+  border: 3px solid var(--crml-border-ink, #000);
   border-radius: 8px;
   padding: 8px 14px;
-  box-shadow: 4px 4px 0 #000;
+  box-shadow: 4px 4px 0 var(--crml-shadow-ink, #000);
   display: flex;
   align-items: center;
   gap: 8px;
@@ -152,12 +152,12 @@ function removeNotification(id: string | number) {
 
 .notif-bell-btn:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 5px 5px 0 #000;
+  box-shadow: 5px 5px 0 var(--crml-shadow-ink, #000);
 }
 
 .notif-bell-btn:active {
   transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 #000;
+  box-shadow: 2px 2px 0 var(--crml-shadow-ink, #000);
 }
 
 .bell-icon {
@@ -165,9 +165,9 @@ function removeNotification(id: string | number) {
 }
 
 .notif-badge-pill {
-  background: #ff0055;
+  background: var(--crt-hot-pink, #ff0055);
   color: #fff;
-  border: 2px solid #000;
+  border: 2px solid var(--crml-border-ink, #000);
   border-radius: 10px;
   padding: 0 6px;
   font-size: 11px;
@@ -179,10 +179,10 @@ function removeNotification(id: string | number) {
   top: calc(100% + 10px);
   right: 0;
   width: 320px;
-  background: #fff;
-  border: 3px solid #000;
+  background: var(--crml-bg-popover);
+  border: 3px solid var(--crml-border-ink, #000);
   border-radius: 12px;
-  box-shadow: 6px 6px 0 #000;
+  box-shadow: 6px 6px 0 var(--crml-shadow-ink, #000);
   z-index: 100;
   display: flex;
   flex-direction: column;
@@ -190,7 +190,7 @@ function removeNotification(id: string | number) {
 }
 
 .popover-header {
-  background: #000;
+  background: var(--crt-obsidian, #000);
   color: #fff;
   padding: 10px 12px;
   display: flex;
@@ -212,7 +212,7 @@ function removeNotification(id: string | number) {
 
 .unread-pill {
   background: #00f0ff;
-  color: #000;
+  color: var(--crml-text-on-accent, #000);
   font-size: 9px;
   font-weight: 900;
   padding: 1px 5px;
@@ -220,9 +220,9 @@ function removeNotification(id: string | number) {
 }
 
 .mark-btn {
-  background: #ffe600;
-  border: 2px solid #000;
-  color: #000;
+  background: var(--crt-sunburst-yellow, #ffe600);
+  border: 2px solid var(--crml-border-ink, #000);
+  color: var(--crml-text-on-accent, #000);
   font-size: 9px;
   font-weight: 900;
   padding: 2px 6px;
@@ -244,15 +244,15 @@ function removeNotification(id: string | number) {
   gap: 10px;
   align-items: flex-start;
   padding: 10px;
-  border: 2px solid #000;
+  border: 2px solid var(--crml-border-ink, #000);
   border-radius: 8px;
-  box-shadow: 3px 3px 0 #000;
-  background: #f9f9f9;
+  box-shadow: 3px 3px 0 var(--crml-shadow-ink, #000);
+  background: var(--crml-bg-card-alt);
   position: relative;
 }
 
 .notif-card.is-unread {
-  background: #fff;
+  background: var(--crml-bg-surface);
   border-width: 2.5px;
 }
 
@@ -282,21 +282,21 @@ function removeNotification(id: string | number) {
   margin: 0;
   font-size: 11px;
   font-weight: 900;
-  color: #000;
+  color: var(--crml-text-main);
   font-family: monospace;
 }
 
 .notif-time {
   font-size: 9px;
   font-family: monospace;
-  color: #666;
+  color: var(--crml-text-muted);
   font-weight: 700;
 }
 
 .notif-item-msg {
   margin: 0;
   font-size: 11px;
-  color: #333;
+  color: var(--crml-text-secondary);
   line-height: 1.3;
 }
 
@@ -306,18 +306,18 @@ function removeNotification(id: string | number) {
   font-size: 12px;
   font-weight: 900;
   cursor: pointer;
-  color: #999;
+  color: var(--crml-text-muted);
   padding: 0 4px;
 }
 
 .dismiss-btn:hover {
-  color: #000;
+  color: var(--crml-text-main);
 }
 
 .empty-notif {
   text-align: center;
   padding: 20px;
-  color: #666;
+  color: var(--crml-text-muted);
   font-family: monospace;
   font-weight: 800;
   font-size: 12px;

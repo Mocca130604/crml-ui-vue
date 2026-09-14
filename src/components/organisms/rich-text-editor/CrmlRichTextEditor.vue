@@ -207,9 +207,9 @@ function clearContent() {
 }
 
 .count-pill {
-  background: #222;
+  background: var(--crml-bg-elevated);
   color: #fff;
-  border: 1.5px solid #444;
+  border: 1.5px solid var(--crml-border-subtle);
   padding: 1px 6px;
   border-radius: 4px;
   font-size: 9.5px;
@@ -225,13 +225,13 @@ function clearContent() {
 .mode-toggle-btn {
   background: var(--crt-cyber-cyan, #00f0ff);
   color: var(--crt-obsidian, #0d0d0d);
-  border: 1.5px solid #000;
+  border: 1.5px solid var(--crml-border-ink, #000);
   padding: 2px 8px;
   border-radius: 4px;
   font-weight: 900;
   font-size: 10px;
   cursor: pointer;
-  box-shadow: 1.5px 1.5px 0px #000;
+  box-shadow: 1.5px 1.5px 0px var(--crml-shadow-ink, #000);
 }
 
 .editor-toolbar {
@@ -257,7 +257,7 @@ function clearContent() {
 }
 
 .tool-btn {
-  background: #ffffff;
+  background: var(--crml-bg-surface);
   border: 2px solid var(--crt-obsidian, #0d0d0d);
   border-radius: 4px;
   padding: 3px 8px;
@@ -292,12 +292,12 @@ function clearContent() {
   line-height: 1.5;
   color: var(--crml-text-main, #0d0d0d);
   outline: none;
-  background: #ffffff;
+  background: var(--crml-bg-surface);
 }
 
 .editor-content-area[data-placeholder]:empty::before {
   content: attr(data-placeholder);
-  color: #888;
+  color: var(--crml-text-muted);
   pointer-events: none;
 }
 
@@ -307,7 +307,7 @@ function clearContent() {
   font-size: 12px;
   line-height: 1.4;
   border: none;
-  background: #1e1e1e;
+  background: var(--crml-bg-input, #1e1e1e);
   color: #00f0ff;
   outline: none;
   resize: vertical;

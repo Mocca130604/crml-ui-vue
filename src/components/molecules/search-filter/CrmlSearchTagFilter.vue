@@ -337,7 +337,7 @@ const formatTagCount = (count: number, tag: FilterTag) => {
 .crml-search-tag-filter[data-size="lg"] .filter-tag-pill {
   padding: 0.45rem 0.95rem;
   font-size: 0.875rem;
-  box-shadow: 3px 3px 0px #0d0d0d;
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0d0d0d);
 }
 
 /* ================= Component Layout ================= */
@@ -347,7 +347,7 @@ const formatTagCount = (count: number, tag: FilterTag) => {
   gap: 0.65rem;
   background-color: var(--crml-bg-surface, #ffffff);
   border-style: solid;
-  border-color: #0d0d0d;
+  border-color: var(--crml-border-ink, #0d0d0d);
   transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
   width: 100%;
   box-sizing: border-box;
@@ -390,13 +390,13 @@ const formatTagCount = (count: number, tag: FilterTag) => {
 
 .clear-btn {
   background: none;
-  border: 1.5px solid #0d0d0d;
+  border: 1.5px solid var(--crml-border-ink, #0d0d0d);
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.75rem;
   font-weight: 900;
   padding: 0.1rem 0.35rem;
-  color: #0d0d0d;
+  color: var(--crml-text-main, #0d0d0d);
   transition: all 0.1s ease;
 }
 
@@ -407,14 +407,14 @@ const formatTagCount = (count: number, tag: FilterTag) => {
 
 .shortcut-chip {
   background-color: var(--crml-bg-elevated, #e0e0e0);
-  border: 1.5px solid #0d0d0d;
+  border: 1.5px solid var(--crml-border-ink, #0d0d0d);
   border-radius: 4px;
   padding: 0.15rem 0.45rem;
   font-family: var(--crml-font-mono, monospace);
   font-size: 0.725rem;
   font-weight: 800;
-  color: #0d0d0d;
-  box-shadow: 1.5px 1.5px 0px #0d0d0d;
+  color: var(--crml-text-main, #0d0d0d);
+  box-shadow: 1.5px 1.5px 0px var(--crml-shadow-ink, #0d0d0d);
   white-space: nowrap;
 }
 
@@ -438,42 +438,42 @@ const formatTagCount = (count: number, tag: FilterTag) => {
   gap: 0.35rem;
   font-family: var(--crml-font-mono, monospace);
   font-weight: 800;
-  border: 2px solid #0d0d0d;
+  border: 2px solid var(--crml-border-ink, #0d0d0d);
   border-radius: 6px;
   background-color: var(--crml-bg-surface, #ffffff);
-  color: #0d0d0d;
+  color: var(--crml-text-main, #0d0d0d);
   cursor: pointer;
   transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .filter-tag-pill:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0px #0d0d0d;
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0d0d0d);
 }
 
 /* Active Tag Theme Styles */
 .crml-search-tag-filter[data-variant="lime"] .filter-tag-pill.is-active {
-  background-color: #ccff00;
-  color: #0d0d0d;
-  box-shadow: 3px 3px 0px #0d0d0d;
+  background-color: var(--crt-electric-lime, #ccff00);
+  color: var(--crml-text-on-accent, #0d0d0d);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0d0d0d);
 }
 
 .crml-search-tag-filter[data-variant="pink"] .filter-tag-pill.is-active {
-  background-color: #ff007f;
+  background-color: var(--crt-hot-pink, #ff007f);
   color: #ffffff;
-  box-shadow: 3px 3px 0px #0d0d0d;
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0d0d0d);
 }
 
 .crml-search-tag-filter[data-variant="cyan"] .filter-tag-pill.is-active {
-  background-color: #00f0ff;
-  color: #0d0d0d;
-  box-shadow: 3px 3px 0px #0d0d0d;
+  background-color: var(--crt-cyber-cyan, #00f0ff);
+  color: var(--crml-text-on-accent, #0d0d0d);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0d0d0d);
 }
 
 .crml-search-tag-filter[data-variant="yellow"] .filter-tag-pill.is-active {
-  background-color: #ffd600;
-  color: #0d0d0d;
-  box-shadow: 3px 3px 0px #0d0d0d;
+  background-color: var(--crt-sunburst-yellow, #ffd600);
+  color: var(--crml-text-on-accent, #0d0d0d);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0d0d0d);
 }
 
 /* Individual Tag Color Override */
@@ -534,7 +534,7 @@ const formatTagCount = (count: number, tag: FilterTag) => {
 }
 
 .clear-tags-btn {
-  background-color: #f0f0f0 !important;
+  background-color: var(--crml-bg-card-alt) !important;
   border-style: dashed !important;
   color: var(--crml-text-muted, #757575) !important;
 }

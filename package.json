@@ -1,6 +1,6 @@
 {
   "name": "crml-ui",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "type": "module",
   "main": "./dist/crml-ui.umd.cjs",
   "module": "./dist/crml-ui.js",
@@ -14,7 +14,8 @@
     "./style.css": "./dist/style.css"
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "dev": "vite",

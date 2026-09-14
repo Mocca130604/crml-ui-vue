@@ -1,0 +1,562 @@
+[
+  {
+    "id": "CrmlBlobAvatar",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlBadge",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlStickerBadge",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlBouncyButton",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlButton",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlCheckbox",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlDivider",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlInput",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlKbd",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlMarquee",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlNumberInput",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlPixelIconWrapper",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlProgress",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlSkeleton",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlSpeechBubble",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlStampBadge",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlNeonSwitch",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlTextarea",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlTooltip",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlWavyDivider",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlAlert",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlFaceIdToggle",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlBreadcrumb",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlCodeBlock",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlColorPicker",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlDatePicker",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlDoodleContainer",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlDropdown",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlDualRangeSlider",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlFloatingEmojiBar",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlEmojiRatingSlider",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlOtpInput",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlPagination",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlRadioGroup",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlSearchTagFilter",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlSegmentedControl",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlStatusMatrix",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlStepper",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlPillTabs",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlTagInput",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlTimePicker",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlVaporwaveVisualizer",
+    "category": "molecules",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlFunkyAccordion",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlAiPromptInput",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlCard",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlNeubrutalCard",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlCommandPalette",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlRetroDialog",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlFileUpload",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlFilterDrawer",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlFormGroup",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlGlassCard",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlHypebeastDropBanner",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlKanbanCard",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlNavbar",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlNotificationDrawer",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlPriceTagWidget",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlPricingCard",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlRadarTelemetry",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlReviewQuoteCard",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlRichTextEditor",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlSidebar",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlSoundboard",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlSpeedometerDial",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlStickyNote",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlSwipeCard",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlTable",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlTimeline",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlToast",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
+    "id": "CrmlVideoPlayer",
+    "category": "organisms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  }
+]

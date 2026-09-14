@@ -1,28 +1,40 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+
 export interface CrmlFilterDrawerProps {
   open?: boolean
+  modelValue?: boolean
   title?: string
 }
 
-withDefaults(defineProps<CrmlFilterDrawerProps>(), {
+const props = withDefaults(defineProps<CrmlFilterDrawerProps>(), {
   open: false,
+  modelValue: false,
   title: 'FILTER PARAMETERS'
 })
 
 const emit = defineEmits<{
   (e: 'update:open', val: boolean): void
+  (e: 'update:modelValue', val: boolean): void
   (e: 'apply'): void
   (e: 'reset'): void
 }>()
+
+const isOpen = computed(() => props.open || props.modelValue)
+
+const closeDrawer = () => {
+  emit('update:open', false)
+  emit('update:modelValue', false)
+}
 </script>
 
 <template>
   <Teleport to="body">
-    <div v-if="open" class="crml-drawer-backdrop" @click.self="emit('update:open', false)">
+    <div v-if="isOpen" class="crml-drawer-backdrop" @click.self="closeDrawer">
       <div class="crml-drawer-panel">
         <div class="drawer-header-bar font-heading">
           <h3>{{ title }}</h3>
-          <button type="button" class="drawer-close-btn font-mono" @click="emit('update:open', false)">✕</button>
+          <button type="button" class="drawer-close-btn font-mono" @click="closeDrawer">✕</button>
         </div>
 
         <div class="drawer-body">

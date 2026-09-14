@@ -54,21 +54,21 @@
   --crml-shadow-theme: var(--crml-shadow-brutal);
 }
 
-[data-theme="dark"] {
+:root[data-theme="dark"], [data-theme="dark"], .dark-mode, .dark, html.dark-mode {
   /* --- Backgrounds --- */
   --crml-bg-base: var(--crt-obsidian);
-  --crml-bg-surface: var(--crt-smoke);
-  --crml-bg-elevated: var(--crt-pink-900);
+  --crml-bg-surface: #181818;
+  --crml-bg-elevated: #242424;
 
   /* Backward compatibility aliases */
   --crml-bg-app: var(--crml-bg-base);
-  --crml-bg-subtle: var(--crt-neutral-dark-700);
+  --crml-bg-subtle: #1E1E1E;
 
-  /* --- Text & Content --- */
-  --crml-text-main: var(--crt-cloud);
-  --crml-text-primary: var(--crt-cloud);
-  --crml-text-muted: var(--crt-neutral-dark-100);
-  --crml-text-secondary: var(--crt-neutral-light-700);
+  /* --- Text & Content (High-Contrast Dark Mode) --- */
+  --crml-text-main: #FAF9F6;
+  --crml-text-primary: #FAF9F6;
+  --crml-text-muted: #A1A1AA;
+  --crml-text-secondary: #D4D4D8;
   --crml-text-inverse: var(--crt-obsidian);
   --crml-text-on-primary: var(--crt-obsidian);
 
@@ -99,8 +99,8 @@
 
   /* --- Borders & Lines --- */
   --crml-border-main: var(--crt-cloud);
-  --crml-border-subtle: rgba(255, 255, 255, 0.15);
+  --crml-border-subtle: rgba(255, 255, 255, 0.2);
   --crml-border-medium: var(--crt-cloud);
   --crml-border-focus: var(--crt-cyber-cyan);
-  --crml-shadow-theme: 4px 4px 0px var(--crt-cloud);
+  --crml-shadow-theme: 4px 4px 0px rgba(0, 0, 0, 0.8);
 }

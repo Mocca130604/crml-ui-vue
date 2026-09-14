@@ -12,11 +12,13 @@ export interface CommandItem {
 const props = withDefaults(
   defineProps<{
     open?: boolean
+    modelValue?: boolean
     placeholder?: string
     commands?: CommandItem[]
   }>(),
   {
     open: false,
+    modelValue: false,
     placeholder: 'Type a command or search documentation...',
     commands: () => [
       { id: '1', label: 'Go to Atoms Suite', category: 'Navigation', icon: '⚛️', shortcut: '↵ SUB' },
@@ -29,8 +31,16 @@ const props = withDefaults(
 
 const emit = defineEmits<{
   (e: 'update:open', val: boolean): void
+  (e: 'update:modelValue', val: boolean): void
   (e: 'select', command: CommandItem): void
 }>()
+
+const isOpen = computed(() => props.open || props.modelValue)
+
+const closeCmd = () => {
+  emit('update:open', false)
+  emit('update:modelValue', false)
+}
 
 const query = ref('')
 
@@ -42,13 +52,13 @@ const filteredCommands = computed(() => {
 
 const selectCmd = (cmd: CommandItem) => {
   emit('select', cmd)
-  emit('update:open', false)
+  closeCmd()
 }
 </script>
 
 <template>
   <Teleport to="body">
-    <div v-if="open" class="crml-cmd-backdrop" @click.self="emit('update:open', false)">
+    <div v-if="isOpen" class="crml-cmd-backdrop" @click.self="closeCmd">
       <div class="crml-cmd-palette-box">
         <div class="cmd-input-bar">
           <span class="cmd-icon">⌘</span>

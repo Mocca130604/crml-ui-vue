@@ -1,6 +1,6 @@
 <template>
   <Teleport to="body">
-    <div v-if="open" class="crml-retro-dialog-backdrop" @click.self="handleBackdropClick">
+    <div v-if="isOpen" class="crml-retro-dialog-backdrop" @click.self="handleBackdropClick">
       <div
         :class="[
           'crml-retro-dialog',
@@ -40,8 +40,11 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue';
+
 export interface CrmlRetroDialogProps {
   open?: boolean;
+  modelValue?: boolean;
   /** Dialog title */
   title?: string;
   /** Header color theme */
@@ -68,6 +71,7 @@ export interface CrmlRetroDialogProps {
 
 const props = withDefaults(defineProps<CrmlRetroDialogProps>(), {
   open: false,
+  modelValue: false,
   title: 'CRML_SYSTEM_ALERT.EXE',
   headerTheme: 'pink',
   closeOnBackdrop: true,
@@ -83,13 +87,17 @@ const props = withDefaults(defineProps<CrmlRetroDialogProps>(), {
 
 const emit = defineEmits<{
   (e: 'update:open', value: boolean): void;
+  (e: 'update:modelValue', value: boolean): void;
   (e: 'close'): void;
   (e: 'minimize'): void;
   (e: 'maximize'): void;
 }>();
 
+const isOpen = computed(() => props.open || props.modelValue);
+
 const closeDialog = () => {
   emit('update:open', false);
+  emit('update:modelValue', false);
   emit('close');
 };
 

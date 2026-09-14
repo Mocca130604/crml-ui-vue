@@ -20,6 +20,7 @@ import CrmlCheckbox, { type CrmlCheckboxProps } from './checkbox/CrmlCheckbox.vu
 import CrmlSkeleton, { type CrmlSkeletonProps } from './skeleton/CrmlSkeleton.vue';
 import CrmlKbd, { type CrmlKbdProps } from './kbd/CrmlKbd.vue';
 import CrmlNumberInput, { type CrmlNumberInputProps } from './number-input/CrmlNumberInput.vue';
+import CrmlIcon, { type CrmlIconProps } from './icon/CrmlIcon.vue';
 
 export {
   CrmlButton,
@@ -43,6 +44,7 @@ export {
   CrmlSkeleton,
   CrmlKbd,
   CrmlNumberInput,
+  CrmlIcon,
 };
 
 export type {
@@ -67,5 +69,6 @@ export type {
   CrmlSkeletonProps,
   CrmlKbdProps,
   CrmlNumberInputProps,
+  CrmlIconProps,
 };
 

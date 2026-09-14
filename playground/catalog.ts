@@ -1925,6 +1925,56 @@ export const CATALOG_DATA: CatalogCategory[] = [
         "eventsData": []
       },
       {
+        "id": "CrmlIcon",
+        "name": "CrmlIcon",
+        "category": "Atoms",
+        "type": "Bespoke Icon Suite",
+        "desc": "Universal bespoke vector icon component with 112+ native geometric Neubrutalism & Y2K Cyber Mecha icons. 100% zero external dependencies.",
+        "icon": "⚡",
+        "badge": "112 BESPOKE ICONS ✦",
+        "designNotes": "Solid 2.5px/3px ink stroke, miter geometric corners, zero blur, and tactile color token integration across Vue, React, Svelte, and HTML5.",
+        "apiData": [
+          {
+            "prop": "name",
+            "type": "CrmlIconName",
+            "default": "'bolt'",
+            "desc": "Icon identifier from 112 bespoke icons (e.g. 'bolt', 'coffee', 'terminal', 'radar', 'disk', 'star', 'moon', etc.)"
+          },
+          {
+            "prop": "size",
+            "type": "'xs' | 'sm' | 'md' | 'lg' | 'xl' | number",
+            "default": "'md'",
+            "desc": "Dimensions: 'xs'=16px, 'sm'=20px, 'md'=24px, 'lg'=32px, 'xl'=40px, or custom number in px"
+          },
+          {
+            "prop": "variant",
+            "type": "'current' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian' | 'white' | 'ghost'",
+            "default": "'current'",
+            "desc": "Tactile theme color variant"
+          },
+          {
+            "prop": "strokeWidth",
+            "type": "number | string",
+            "default": "2.5",
+            "desc": "Stroke thickness width"
+          },
+          {
+            "prop": "spin",
+            "type": "boolean",
+            "default": "false",
+            "desc": "Continuous spin animation toggle"
+          },
+          {
+            "prop": "title",
+            "type": "string",
+            "default": "undefined",
+            "desc": "Accessible title tag"
+          }
+        ],
+        "slotsData": [],
+        "eventsData": []
+      },
+      {
         "id": "CrmlDivider",
         "name": "CrmlDivider",
         "category": "Layout & Divider",

@@ -56,6 +56,14 @@
     "html": true
   },
   {
+    "id": "CrmlIcon",
+    "category": "atoms",
+    "vue": true,
+    "react": true,
+    "svelte": true,
+    "html": true
+  },
+  {
     "id": "CrmlInput",
     "category": "atoms",
     "vue": true,

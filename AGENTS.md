@@ -150,12 +150,18 @@ Whenever modifications, bug fixes, component additions, or documentation updates
   ```
   This guarantees that `README.md` is always bundled into the published npm tarball and renders immediately on the npmjs.com overview page.
 
-### 🚀 Automated Verification & Publishing Workflow:
-1. Increment the version in `package.json` following the classification scheme above across synchronized packages.
-2. Run `npm run build` to verify strict type-checking and bundling.
-3. Publish to NPM registry:
+### 🚨 MANDATORY AUTOMATED COMMIT, VERSION BUMP, NPM PUBLISH & GIT PUSH PROTOCOL:
+Whenever an update, bug fix, component addition, or styling task is completed and there are no further pending additions from the user, the agent MUST automatically perform the full release sequence:
+1. **Bump Version in `package.json`** according to the classification scheme above (e.g. bump to next semver).
+2. **Build Verification**: Run `npm run build` to verify type-checking and generate clean bundles in `dist/`.
+3. **Publish to NPM**:
    ```bash
    npm publish --access public
    ```
-4. Commit with structured semver message: `chore(release): bump to vX.Y.Z - <description>`.
-5. Push to `origin main`.
+4. **Git Commit & Push**:
+   ```bash
+   git add -A
+   git commit -m "chore(release): bump to vX.Y.Z - <description>"
+   git push origin main
+   ```
+This guarantees that all sibling repositories, external users, and the live dashboard are always in sync with the latest released packages without requiring manual intervention.

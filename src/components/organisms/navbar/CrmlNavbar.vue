@@ -146,26 +146,30 @@ const isMobileOpen = ref(false)
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 16px;
-  gap: 16px;
+  padding: 8px 14px;
+  gap: 12px;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .brand-group {
   display: flex;
   align-items: center;
   gap: 8px;
+  flex-shrink: 0;
 }
 
 .brand-logo {
   font-weight: 900;
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: -0.5px;
   background: var(--crt-obsidian, #0d0d0d);
   color: var(--crt-electric-lime, #ccff00);
   border: 2px solid var(--crt-obsidian, #0d0d0d);
-  padding: 3px 10px;
+  padding: 3px 8px;
   border-radius: 6px;
   box-shadow: 2px 2px 0px var(--crt-electric-lime, #ccff00);
+  white-space: nowrap;
 }
 
 .brand-badge {
@@ -174,14 +178,24 @@ const isMobileOpen = ref(false)
   border: 1.5px solid var(--crt-obsidian, #0d0d0d);
   padding: 1px 6px;
   border-radius: 4px;
-  font-size: 10px;
+  font-size: 9.5px;
   font-weight: 900;
+  white-space: nowrap;
 }
 
 .desktop-nav-links {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  flex-wrap: nowrap;
+}
+
+.desktop-nav-links::-webkit-scrollbar {
+  display: none;
 }
 
 .nav-item-link {
@@ -189,12 +203,14 @@ const isMobileOpen = ref(false)
   align-items: center;
   gap: 6px;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 900;
   color: var(--crml-text-main, #0d0d0d);
-  padding: 6px 12px;
+  padding: 5px 10px;
   border: 2px solid transparent;
   border-radius: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: all 0.1s ease;
 }
 
@@ -209,14 +225,14 @@ const isMobileOpen = ref(false)
   background: var(--crt-electric-lime, #ccff00);
   color: var(--crt-obsidian, #0d0d0d);
   border-color: var(--crt-obsidian, #0d0d0d);
-  box-shadow: 2.5px 2.5px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
 }
 
 .item-badge {
   background: var(--crt-cyber-cyan, #00f0ff);
   color: var(--crt-obsidian, #0d0d0d);
   border: 1px solid var(--crt-obsidian, #0d0d0d);
-  font-size: 8.5px;
+  font-size: 8px;
   font-weight: 900;
   padding: 0 4px;
   border-radius: 3px;
@@ -225,7 +241,8 @@ const isMobileOpen = ref(false)
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  flex-shrink: 0;
 }
 
 .action-btn {
@@ -233,14 +250,15 @@ const isMobileOpen = ref(false)
   align-items: center;
   gap: 6px;
   background: var(--crml-bg-elevated, #f4f4f5);
-  border: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crt-obsidian, #0d0d0d);
   border-radius: 6px;
-  padding: 6px 12px;
+  padding: 5px 10px;
   font-weight: 900;
-  font-size: 12px;
+  font-size: 11.5px;
   cursor: pointer;
   box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
   transition: transform 0.1s ease;
+  white-space: nowrap;
 }
 
 .action-btn:hover {
@@ -253,7 +271,7 @@ const isMobileOpen = ref(false)
   color: #ffffff;
   padding: 1px 4px;
   border-radius: 3px;
-  font-size: 10px;
+  font-size: 9px;
 }
 
 .cta-btn {
@@ -272,9 +290,10 @@ const isMobileOpen = ref(false)
   font-weight: 900;
   cursor: pointer;
   box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  flex-shrink: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .desktop-nav-links {
     display: none;
   }

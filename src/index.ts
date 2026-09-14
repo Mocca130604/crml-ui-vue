@@ -7,6 +7,9 @@ import './tokens/index.css';
 // Re-export Atomic Design Components & Types
 export * from './components';
 
+// Re-export Bespoke Icons & Types
+export * from './icons';
+
 // Vue Plugin installer for app.use(CrmlUI)
 export const CrmlUI: Plugin = {
   install(app: App) {

@@ -1,6 +1,6 @@
 {
   "name": "crml-ui",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "type": "module",
   "main": "./dist/crml-ui.umd.cjs",
   "module": "./dist/crml-ui.js",
@@ -26,6 +26,7 @@
     "type-check": "vue-tsc --noEmit",
     "sync:all": "node scripts/sync-frameworks.mjs --all",
     "sync:tokens": "node scripts/sync-frameworks.mjs --tokens",
+    "sync:icons": "node scripts/sync-icons.mjs",
     "sync:check": "node scripts/sync-frameworks.mjs --check"
   },
   "peerDependencies": {

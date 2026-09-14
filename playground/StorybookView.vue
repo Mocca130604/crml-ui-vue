@@ -143,6 +143,18 @@
                 <CrmlPixelIconWrapper icon="⚡" :variant="activeVariant" :size="activeSize" />
               </template>
 
+              <template v-else-if="selectedCompId === 'CrmlIcon'">
+                <div style="display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap;">
+                  <CrmlIcon :name="(customLabel as any) || 'bolt'" :variant="activeVariant" :size="activeSize" :spin="activeDisabled" />
+                  <CrmlIcon name="coffee" :variant="activeVariant" :size="activeSize" />
+                  <CrmlIcon name="terminal" :variant="activeVariant" :size="activeSize" />
+                  <CrmlIcon name="radar" :variant="activeVariant" :size="activeSize" />
+                  <CrmlIcon name="disk" :variant="activeVariant" :size="activeSize" />
+                  <CrmlIcon name="heart" :variant="activeVariant" :size="activeSize" />
+                  <CrmlIcon name="star" :variant="activeVariant" :size="activeSize" />
+                </div>
+              </template>
+
               <template v-else-if="selectedCompId === 'CrmlProgress'">
                 <div style="width: 100%; max-width: 380px;">
                   <CrmlProgress :value="progressVal" :variant="activeVariant" />
@@ -747,6 +759,7 @@ import {
   CrmlProgress,
   CrmlDivider,
   CrmlWavyDivider,
+  CrmlIcon,
 
   // Molecules
   CrmlDatePicker,
@@ -829,6 +842,7 @@ const componentMap: Record<string, any> = {
   CrmlProgress,
   CrmlDivider,
   CrmlWavyDivider,
+  CrmlIcon,
 
   CrmlDatePicker,
   CrmlTimePicker,

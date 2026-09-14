@@ -150,6 +150,7 @@ export const BouncyButton: React.FC<BouncyButtonProps> = ({
 ## 📦 Component Catalog Inventory (53 Primitives)
 
 ### Volume 1: Core Playful Neubrutalism (01—10)
+- `CrmlIcon`: Universal Neubrutalism bespoke icon component with 112 geometric vector icons (Zero external dependencies).
 - `CrmlBouncyButton`: Arcade spring button with 4px press physics.
 - `CrmlNeubrutalCard`: Ink-bordered container with solid 4px shadow & badge.
 - `CrmlStickerBadge`: Rotated vinyl sticker tag (-4° to +6°) with peel-off hover.

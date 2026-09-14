@@ -307,6 +307,8 @@ function ensureDir(dir) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true })
 }
 
+import { execSync } from 'node:child_process'
+
 // 5. MAIN CLI HANDLER
 const arg = process.argv[2] || '--all'
 
@@ -319,6 +321,11 @@ if (arg === '--tokens') {
   checkParity()
 } else {
   syncTokens()
+  try {
+    execSync(`node "${path.resolve(__dirname, 'sync-icons.mjs')}"`, { stdio: 'inherit' })
+  } catch (err) {
+    console.error('Failed to sync icons:', err)
+  }
   scaffoldMissingComponents()
   checkParity()
 }

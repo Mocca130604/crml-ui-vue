@@ -267,7 +267,7 @@
                     <span class="comp-name font-heading">{{ comp.name }}</span>
                     <span class="comp-category-tag">{{ comp.category }} • {{ comp.type }}</span>
                   </div>
-                  <span v-if="comp.badge" class="comp-badge-pill">{{ comp.badge.replace('✦', '') }}</span>
+                  <span class="comp-badge-pill">{{ (comp.badge ? comp.badge.replace('✦', '').trim() : comp.type).toUpperCase() }}</span>
                 </div>
               </div>
             </aside>
@@ -277,16 +277,11 @@
               <!-- Component Header Info Card -->
               <div class="comp-info-card">
                 <div class="info-top-row">
-                  <div>
-                    <div class="info-badges-row">
-                      <CrmlStickerBadge variant="pink" tilt="none">{{ activeComp.category.toUpperCase() }}</CrmlStickerBadge>
-                      <CrmlBadge variant="primary">{{ activeComp.type.toUpperCase() }}</CrmlBadge>
-                      <CrmlBadge variant="warning">0% AMBIENT BLUR</CrmlBadge>
-                      <CrmlBadge variant="success">SPRING REBOUND</CrmlBadge>
-                    </div>
-                    <h2 class="active-comp-title font-heading">
-                      <span class="active-comp-icon">{{ activeComp.icon }}</span> {{ activeComp.name }}
-                    </h2>
+                  <div class="info-badges-row">
+                    <CrmlStickerBadge variant="pink" tilt="none">{{ activeComp.category.toUpperCase() }}</CrmlStickerBadge>
+                    <CrmlBadge variant="primary">{{ activeComp.type.toUpperCase() }}</CrmlBadge>
+                    <CrmlBadge variant="warning">0% AMBIENT BLUR</CrmlBadge>
+                    <CrmlBadge variant="success">SPRING REBOUND</CrmlBadge>
                   </div>
 
                   <!-- Code Target Switcher -->
@@ -305,6 +300,11 @@
                     </div>
                   </div>
                 </div>
+
+                <!-- Component Title on its own line -->
+                <h2 class="active-comp-title font-heading">
+                  <span class="active-comp-icon">{{ activeComp.icon }}</span> {{ activeComp.name }}
+                </h2>
 
                 <!-- Description -->
                 <div class="info-desc-box font-mono">
@@ -1668,9 +1668,33 @@ body {
 }
 
 .comp-icon-box { font-size: 1.3rem; flex-shrink: 0; }
-.comp-info-col { flex: 1; min-width: 0; }
-.comp-name { font-size: 0.95rem; color: var(--crt-obsidian); }
-.comp-category-tag { font-size: 0.7rem; color: var(--crml-text-muted); }
+.comp-info-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  min-width: 0;
+  gap: 3px;
+}
+.comp-name {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--crt-obsidian);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.25;
+}
+.comp-category-tag {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--crml-text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+}
 .comp-badge-pill {
   background: var(--crt-obsidian);
   color: var(--crt-electric-lime);
@@ -1705,9 +1729,9 @@ body {
 .info-top-row {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
-  flex-wrap: wrap;
+  width: 100%;
 }
 
 .info-badges-row {
@@ -1715,7 +1739,7 @@ body {
   gap: 0.4rem;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 
 .active-comp-title {
@@ -1723,6 +1747,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin: 0.25rem 0 0 0;
 }
 
 .active-comp-icon { font-size: 2.25rem; }

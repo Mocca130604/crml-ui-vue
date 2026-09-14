@@ -231,13 +231,13 @@ onUnmounted(() => { document.removeEventListener('click', handleClickOutside); }
 
 .crml-dropdown-search {
   padding: 0.5rem;
-  border-bottom: 2px solid var(--crt-obsidian);
+  border-bottom: 2px solid var(--crml-border-ink, #0D0D0D);
 }
 
 .crml-dropdown-search-input {
   width: 100%;
   padding: 0.4rem 0.65rem;
-  border: 1.5px solid var(--crt-obsidian);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-sm);
   font-family: var(--crml-font-body);
   font-size: 0.8rem;

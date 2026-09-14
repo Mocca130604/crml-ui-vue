@@ -167,7 +167,7 @@ const goToPage = (page: number) => {
   font-weight: 800;
   border: var(--crml-border-brutal);
   border-radius: var(--crml-radius-md);
-  box-shadow: 2px 2px 0px var(--crt-obsidian);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   background-color: var(--crml-bg-surface);
   color: var(--crml-text-main);
   cursor: pointer;
@@ -184,7 +184,7 @@ const goToPage = (page: number) => {
 
 .page-btn:hover:not(:disabled), .page-tile:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0px var(--crt-obsidian);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .page-btn:disabled {
@@ -199,7 +199,7 @@ const goToPage = (page: number) => {
 .page-tile--active.page-tile--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .page-tile--active.page-tile--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }
 
-.page-tile--active { box-shadow: 3px 3px 0px var(--crt-obsidian); }
+.page-tile--active { box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D); }
 
 .page-ellipsis {
   font-weight: 800;

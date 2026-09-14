@@ -101,20 +101,21 @@ const triggerReaction = (index: number, event: MouseEvent) => {
   gap: 0.35rem;
   padding: 0.35rem 0.65rem;
   background: var(--crml-bg-elevated);
-  border: 2px solid var(--crt-obsidian);
+  border: 2px solid var(--crml-border-ink, var(--crt-obsidian));
   border-radius: var(--crml-radius-full);
   cursor: pointer;
   font-family: var(--crml-font-heading);
   font-weight: 700;
   font-size: 0.875rem;
-  color: var(--crt-obsidian);
-  transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.2s ease;
+  color: var(--crml-text-main);
+  transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.2s ease, color 0.2s ease;
   outline: none;
 }
 
 .crml-emoji-btn:hover {
   transform: scale(1.15) translateY(-2px);
   background-color: var(--crt-electric-lime);
+  color: var(--crt-obsidian);
 }
 .crml-emoji-btn:active { transform: scale(0.95); }
 

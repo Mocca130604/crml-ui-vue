@@ -210,10 +210,10 @@ function formattedValue(val: number): string {
 <style scoped>
 .crml-speedometer {
   background: var(--crml-bg-surface, #ffffff);
-  border: 3px solid var(--crt-obsidian, #0d0d0d);
+  border: 3px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-lg, 14px);
   padding: 16px;
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   width: 100%;
   max-width: 320px;
   display: flex;
@@ -243,12 +243,12 @@ function formattedValue(val: number): string {
 .speedo-unit-pill {
   background: var(--crt-electric-lime, #ccff00);
   color: var(--crt-obsidian, #0d0d0d);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   padding: 2px 6px;
   border-radius: 4px;
   font-weight: 900;
   font-size: 10px;
-  box-shadow: 1.5px 1.5px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 1.5px 1.5px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .dial-container {
@@ -286,7 +286,7 @@ function formattedValue(val: number): string {
   width: 100%;
   height: 60px;
   background: var(--crt-hot-pink, #ff007f);
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 2px;
 }
 
@@ -299,7 +299,7 @@ function formattedValue(val: number): string {
   height: 76px;
   background: var(--crt-obsidian, #0d0d0d);
   color: var(--crt-cyber-cyan, #00f0ff);
-  border: 3px solid var(--crt-obsidian, #0d0d0d);
+  border: 3px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 50%;
   box-shadow: 3px 3px 0px var(--crt-electric-lime, #ccff00);
   display: flex;
@@ -330,13 +330,13 @@ function formattedValue(val: number): string {
 .mode-btn {
   flex: 1;
   background: var(--crml-bg-elevated, #f4f4f5);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 6px;
   padding: 6px 0;
   font-weight: 900;
   font-size: 10px;
   cursor: pointer;
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   transition: transform 0.1s ease, background-color 0.1s ease;
 }
 
@@ -344,11 +344,11 @@ function formattedValue(val: number): string {
   background: var(--crt-cyber-cyan, #00f0ff);
   color: var(--crt-obsidian, #0d0d0d);
   transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .mode-btn:active {
   transform: translate(1px, 1px);
-  box-shadow: 1px 1px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 1px 1px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 </style>

@@ -167,7 +167,7 @@ const handlePaste = (e: ClipboardEvent) => {
 .otp-separator {
   font-size: 1.5rem;
   font-weight: 900;
-  color: var(--crt-obsidian, #0d0d0d);
+  color: var(--crml-text-main, #0d0d0d);
   user-select: none;
 }
 
@@ -175,10 +175,10 @@ const handlePaste = (e: ClipboardEvent) => {
   text-align: center;
   font-family: var(--crml-font-heading);
   font-weight: 900;
-  background-color: var(--crml-bg-surface, #ffffff);
-  border: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  background-color: var(--crml-bg-input, var(--crml-bg-surface, #ffffff));
+  border: 2.5px solid var(--crml-border-ink, #0d0d0d);
   border-radius: var(--crml-radius-md, 8px);
-  box-shadow: 3px 3px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0d0d0d);
   color: var(--crml-text-main, #0d0d0d);
   outline: none;
   transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -204,17 +204,17 @@ const handlePaste = (e: ClipboardEvent) => {
 }
 
 .otp-box:focus {
-  border-color: var(--crt-obsidian, #0d0d0d);
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  border-color: var(--crml-border-focus, var(--crt-cyber-cyan));
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0d0d0d);
   transform: translate(-1px, -1px);
 }
 
 /* Variants */
-.crml-otp-group--lime .otp-box.is-filled { background-color: var(--crt-electric-lime, #ccff00); }
-.crml-otp-group--pink .otp-box.is-filled { background-color: var(--crt-hot-pink, #ff007f); color: #fff; }
-.crml-otp-group--cyan .otp-box.is-filled { background-color: var(--crt-cyber-cyan, #00f0ff); }
-.crml-otp-group--yellow .otp-box.is-filled { background-color: var(--crt-sunburst-yellow, #ffd600); }
-.crml-otp-group--obsidian .otp-box.is-filled { background-color: var(--crt-obsidian, #0d0d0d); color: var(--crt-electric-lime, #ccff00); }
+.crml-otp-group--lime .otp-box.is-filled { background-color: var(--crt-electric-lime, #ccff00); color: var(--crt-obsidian, #0d0d0d) !important; }
+.crml-otp-group--pink .otp-box.is-filled { background-color: var(--crt-hot-pink, #ff007f); color: #fff !important; }
+.crml-otp-group--cyan .otp-box.is-filled { background-color: var(--crt-cyber-cyan, #00f0ff); color: var(--crt-obsidian, #0d0d0d) !important; }
+.crml-otp-group--yellow .otp-box.is-filled { background-color: var(--crt-sunburst-yellow, #ffd600); color: var(--crt-obsidian, #0d0d0d) !important; }
+.crml-otp-group--obsidian .otp-box.is-filled { background-color: var(--crt-obsidian, #0d0d0d); color: var(--crt-electric-lime, #ccff00) !important; }
 
 .has-error .otp-box {
   border-color: var(--crt-hot-pink, #ff007f);

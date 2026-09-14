@@ -201,13 +201,13 @@ const formatBytes = (bytes: number) => {
   padding: 1.5rem 1.25rem;
   cursor: pointer;
   text-align: center;
-  box-shadow: 2px 2px 0px var(--crt-obsidian);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .crml-file-upload-dropzone:hover,
 .crml-file-upload--dragging {
-  box-shadow: 4px 4px 0px var(--crt-obsidian);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   transform: translate(-1px, -1px);
 }
 
@@ -229,9 +229,9 @@ const formatBytes = (bytes: number) => {
 .floppy-icon-box {
   width: 3rem;
   height: 3rem;
-  border: 2px solid var(--crt-obsidian);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-md);
-  box-shadow: 2px 2px 0px var(--crt-obsidian);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -286,7 +286,7 @@ const formatBytes = (bytes: number) => {
 .progress-track-brutal {
   height: 10px;
   background-color: var(--crml-bg-elevated, #e0e0e0);
-  border: 1.5px solid var(--crt-obsidian);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 999px;
   overflow: hidden;
   padding: 1px;
@@ -295,7 +295,7 @@ const formatBytes = (bytes: number) => {
 .progress-fill {
   height: 100%;
   border-radius: 999px;
-  border: 1px solid var(--crt-obsidian);
+  border: 1px solid var(--crml-border-ink, #0D0D0D);
   transition: width 0.3s ease;
 }
 
@@ -322,7 +322,7 @@ const formatBytes = (bytes: number) => {
   align-items: center;
   gap: 0.65rem;
   padding: 0.5rem 0.75rem;
-  border: 2px solid var(--crt-obsidian);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-sm);
 }
 
@@ -330,7 +330,7 @@ const formatBytes = (bytes: number) => {
   font-size: 0.85rem;
   font-weight: 900;
   color: var(--crt-obsidian);
-  border: 1px solid var(--crt-obsidian);
+  border: 1px solid var(--crml-border-ink, #0D0D0D);
   width: 1.2rem;
   height: 1.2rem;
   border-radius: 50%;

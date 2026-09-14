@@ -194,7 +194,7 @@ const getThemeColor = (index: number) => {
   font-weight: 800;
   font-size: 0.65rem;
   padding: 0.1rem 0.35rem;
-  border: 1.5px solid var(--crt-obsidian);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 4px;
   background-color: var(--crt-pure-white);
 }

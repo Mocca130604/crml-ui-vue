@@ -56,10 +56,10 @@ const togglePlay = () => {
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: 3px solid var(--crt-obsidian, #0d0d0d);
+  border: 3px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-lg, 12px);
   background-color: var(--crt-obsidian, #0d0d0d);
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   overflow: hidden;
 }
 

@@ -135,9 +135,9 @@ const isMobileOpen = ref(false)
 .crml-navbar {
   width: 100%;
   background: var(--crml-bg-surface, #ffffff);
-  border: 3px solid var(--crt-obsidian, #0d0d0d);
+  border: 3px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-lg, 12px);
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   position: relative;
   box-sizing: border-box;
 }
@@ -165,7 +165,7 @@ const isMobileOpen = ref(false)
   letter-spacing: -0.5px;
   background: var(--crt-obsidian, #0d0d0d);
   color: var(--crt-electric-lime, #ccff00);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   padding: 3px 8px;
   border-radius: 6px;
   box-shadow: 2px 2px 0px var(--crt-electric-lime, #ccff00);
@@ -175,7 +175,7 @@ const isMobileOpen = ref(false)
 .brand-badge {
   background: var(--crt-hot-pink, #ff007f);
   color: #ffffff;
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   padding: 1px 6px;
   border-radius: 4px;
   font-size: 9.5px;
@@ -216,22 +216,22 @@ const isMobileOpen = ref(false)
 
 .nav-item-link:hover {
   background: var(--crml-bg-elevated, #f4f4f5);
-  border-color: var(--crt-obsidian, #0d0d0d);
+  border-color: var(--crml-border-ink, #0D0D0D);
   transform: translate(-1px, -1px);
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .nav-item-link.active {
   background: var(--crt-electric-lime, #ccff00);
   color: var(--crt-obsidian, #0d0d0d);
-  border-color: var(--crt-obsidian, #0d0d0d);
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  border-color: var(--crml-border-ink, #0D0D0D);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .item-badge {
   background: var(--crt-cyber-cyan, #00f0ff);
   color: var(--crt-obsidian, #0d0d0d);
-  border: 1px solid var(--crt-obsidian, #0d0d0d);
+  border: 1px solid var(--crml-border-ink, #0D0D0D);
   font-size: 8px;
   font-weight: 900;
   padding: 0 4px;
@@ -250,20 +250,20 @@ const isMobileOpen = ref(false)
   align-items: center;
   gap: 6px;
   background: var(--crml-bg-elevated, #f4f4f5);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 6px;
   padding: 5px 10px;
   font-weight: 900;
   font-size: 11.5px;
   cursor: pointer;
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   transition: transform 0.1s ease;
   white-space: nowrap;
 }
 
 .action-btn:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .cmd-kbd {
@@ -282,14 +282,14 @@ const isMobileOpen = ref(false)
 .mobile-toggle-btn {
   display: none;
   background: var(--crt-sunburst-yellow, #ffd600);
-  border: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 2.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 6px;
   width: 36px;
   height: 36px;
   font-size: 16px;
   font-weight: 900;
   cursor: pointer;
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   flex-shrink: 0;
 }
 
@@ -312,7 +312,7 @@ const isMobileOpen = ref(false)
   flex-direction: column;
   gap: 6px;
   padding: 12px;
-  border-top: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border-top: 2.5px solid var(--crml-border-ink, #0D0D0D);
   background: var(--crml-bg-elevated, #f4f4f5);
 }
 
@@ -322,13 +322,13 @@ const isMobileOpen = ref(false)
   align-items: center;
   padding: 10px;
   background: var(--crml-bg-surface);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 6px;
   text-decoration: none;
   font-size: 12px;
   font-weight: 900;
   color: var(--crml-text-main, #0d0d0d);
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .mobile-nav-link.active {

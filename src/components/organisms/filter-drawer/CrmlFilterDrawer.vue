@@ -74,7 +74,7 @@ const closeDrawer = () => {
   max-width: 380px;
   height: 100%;
   background-color: var(--crml-bg-surface, #ffffff);
-  border-left: 3px solid var(--crt-obsidian, #0d0d0d);
+  border-left: 3px solid var(--crml-border-ink, #0D0D0D);
   box-shadow: -6px 0px 0px var(--crt-obsidian, #0d0d0d);
   display: flex;
   flex-direction: column;
@@ -86,7 +86,7 @@ const closeDrawer = () => {
   justify-content: space-between;
   padding: 1.15rem 1.25rem;
   background-color: var(--crt-electric-lime, #ccff00);
-  border-bottom: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border-bottom: 2.5px solid var(--crml-border-ink, #0D0D0D);
 }
 
 .drawer-header-bar h3 {
@@ -97,13 +97,13 @@ const closeDrawer = () => {
 
 .drawer-close-btn {
   background: var(--crml-bg-surface, #ffffff);
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 4px;
   font-size: 0.85rem;
   font-weight: 900;
   padding: 0.2rem 0.5rem;
   cursor: pointer;
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .drawer-body {
@@ -136,12 +136,12 @@ const closeDrawer = () => {
 
 .tag-chip {
   padding: 0.35rem 0.65rem;
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 800;
   background-color: var(--crml-bg-surface, #ffffff);
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   cursor: pointer;
 }
 
@@ -152,7 +152,7 @@ const closeDrawer = () => {
 
 .drawer-footer-actions {
   padding: 1rem 1.25rem;
-  border-top: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border-top: 2.5px solid var(--crml-border-ink, #0D0D0D);
   background-color: var(--crml-bg-elevated, #f0f0f0);
   display: flex;
   gap: 0.75rem;
@@ -163,10 +163,10 @@ const closeDrawer = () => {
   font-weight: 900;
   font-size: 0.85rem;
   padding: 0.6rem 1rem;
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-md, 8px);
   cursor: pointer;
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .apply-btn {

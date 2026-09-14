@@ -75,6 +75,33 @@ withDefaults(defineProps<CrmlNeubrutalCardProps>(), {
 .crml-neubrutal-card--header-cyan .crml-neubrutal-card__header { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .crml-neubrutal-card--header-yellow .crml-neubrutal-card__header { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }
 
+.crml-neubrutal-card--header-white .crml-neubrutal-card__title,
+.crml-neubrutal-card--header-lavender .crml-neubrutal-card__title,
+.crml-neubrutal-card--header-peach .crml-neubrutal-card__title,
+.crml-neubrutal-card--header-mint .crml-neubrutal-card__title,
+.crml-neubrutal-card--header-lime .crml-neubrutal-card__title,
+.crml-neubrutal-card--header-cyan .crml-neubrutal-card__title,
+.crml-neubrutal-card--header-yellow .crml-neubrutal-card__title {
+  color: var(--crt-obsidian) !important;
+}
+
+.crml-neubrutal-card--header-white .crml-neubrutal-card__subtitle,
+.crml-neubrutal-card--header-lavender .crml-neubrutal-card__subtitle,
+.crml-neubrutal-card--header-peach .crml-neubrutal-card__subtitle,
+.crml-neubrutal-card--header-mint .crml-neubrutal-card__subtitle,
+.crml-neubrutal-card--header-lime .crml-neubrutal-card__subtitle,
+.crml-neubrutal-card--header-cyan .crml-neubrutal-card__subtitle,
+.crml-neubrutal-card--header-yellow .crml-neubrutal-card__subtitle {
+  color: rgba(13, 13, 13, 0.75) !important;
+}
+
+.crml-neubrutal-card--header-pink .crml-neubrutal-card__title {
+  color: #fff !important;
+}
+.crml-neubrutal-card--header-pink .crml-neubrutal-card__subtitle {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
 .crml-neubrutal-card__title {
   font-family: var(--crml-font-heading);
   font-size: 1.125rem;

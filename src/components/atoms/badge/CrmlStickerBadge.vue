@@ -38,7 +38,7 @@ withDefaults(defineProps<CrmlStickerBadgeProps>(), {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border: var(--crml-border-brutal);
-  box-shadow: 2px 2px 0px var(--crt-obsidian);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   padding: 0.25rem 0.65rem;
   border-radius: var(--crml-radius-sm);
   white-space: nowrap;

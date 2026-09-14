@@ -311,10 +311,10 @@ function isDayInRange(day: number): boolean {
 <style scoped>
 .crml-date-picker {
   background: var(--crml-bg-surface, #ffffff);
-  border: 3px solid var(--crt-obsidian, #0d0d0d);
+  border: 3px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-lg, 12px);
   padding: 12px;
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -341,12 +341,12 @@ function isDayInRange(day: number): boolean {
 .selected-pill {
   background: var(--crt-cyber-cyan, #00f0ff);
   color: var(--crt-obsidian, #0d0d0d);
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   padding: 1px 6px;
   border-radius: 4px;
   font-weight: 900;
   font-size: 10px;
-  box-shadow: 1.5px 1.5px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 1.5px 1.5px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .month-nav-bar {
@@ -354,7 +354,7 @@ function isDayInRange(day: number): boolean {
   justify-content: space-between;
   align-items: center;
   background: var(--crml-bg-elevated, #f4f4f5);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 6px;
   padding: 4px 6px;
 }
@@ -384,13 +384,13 @@ function isDayInRange(day: number): boolean {
 
 .nav-btn {
   background: var(--crml-bg-surface, #ffffff);
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 4px;
   font-size: 10px;
   font-weight: 900;
   padding: 2px 8px;
   cursor: pointer;
-  box-shadow: 1.5px 1.5px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 1.5px 1.5px 0px var(--crml-shadow-ink, #0D0D0D);
   transition: transform 0.05s ease, background-color 0.1s ease;
 }
 
@@ -401,7 +401,7 @@ function isDayInRange(day: number): boolean {
 
 .nav-btn:active {
   transform: translate(1px, 1px);
-  box-shadow: 0.5px 0.5px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 0.5px 0.5px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .calendar-grid {
@@ -433,12 +433,12 @@ function isDayInRange(day: number): boolean {
 .grid-selector-btn {
   height: 36px;
   background: var(--crml-bg-surface, #ffffff);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 6px;
   font-size: 11px;
   font-weight: 900;
   cursor: pointer;
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -452,7 +452,7 @@ function isDayInRange(day: number): boolean {
 
 .grid-selector-btn.active {
   background: var(--crt-electric-lime, #ccff00);
-  box-shadow: 3px 3px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .decade-presets-row {
@@ -464,14 +464,14 @@ function isDayInRange(day: number): boolean {
 
 .decade-pill-btn {
   background: var(--crml-bg-surface, #ffffff);
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 4px;
   font-size: 9px;
   font-weight: 900;
   padding: 3px 6px;
   cursor: pointer;
   white-space: nowrap;
-  box-shadow: 1px 1px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 1px 1px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .decade-pill-btn:hover {
@@ -490,7 +490,7 @@ function isDayInRange(day: number): boolean {
 
 .direct-year-input {
   flex: 1;
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 4px;
   padding: 4px 8px;
   font-size: 10px;
@@ -501,13 +501,13 @@ function isDayInRange(day: number): boolean {
 
 .direct-year-btn {
   background: var(--crt-electric-lime, #ccff00);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 4px;
   padding: 0 10px;
   font-size: 10px;
   font-weight: 900;
   cursor: pointer;
-  box-shadow: 1.5px 1.5px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 1.5px 1.5px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .day-head {
@@ -524,12 +524,12 @@ function isDayInRange(day: number): boolean {
 .day-cell {
   height: 28px;
   background: var(--crml-bg-surface, #ffffff);
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 4px;
   font-size: 10px;
   font-weight: 800;
   cursor: pointer;
-  box-shadow: 1.5px 1.5px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 1.5px 1.5px 0px var(--crml-shadow-ink, #0D0D0D);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -550,7 +550,7 @@ function isDayInRange(day: number): boolean {
   background: var(--crt-electric-lime, #ccff00);
   color: var(--crt-obsidian, #0d0d0d);
   font-weight: 900;
-  box-shadow: 2.5px 2.5px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2.5px 2.5px 0px var(--crml-shadow-ink, #0D0D0D);
   transform: translate(-1px, -1px);
 }
 

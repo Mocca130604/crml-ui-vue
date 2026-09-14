@@ -27,9 +27,9 @@ withDefaults(defineProps<CrmlSkeletonProps>(), {
   );
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite linear;
-  border: 2px solid var(--crt-obsidian);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-md);
-  box-shadow: 2px 2px 0px var(--crt-obsidian);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .crml-skeleton--text {

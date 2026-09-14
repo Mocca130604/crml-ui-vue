@@ -96,17 +96,17 @@ const emit = defineEmits<{
   gap: 0.65rem;
   width: 100%;
   background-color: var(--crml-bg-surface, #ffffff);
-  border: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 2.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-md, 8px);
   padding: 0.85rem;
-  box-shadow: 3px 3px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
   cursor: grab;
   transition: all 0.15s ease;
 }
 
 .crml-kanban-card:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 /* Card accent variants */
@@ -139,7 +139,7 @@ const emit = defineEmits<{
   font-size: 0.65rem;
   font-weight: 900;
   padding: 0.1rem 0.4rem;
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -188,7 +188,7 @@ const emit = defineEmits<{
   width: 1.35rem;
   height: 1.35rem;
   border-radius: 50%;
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   background-color: var(--crt-electric-lime, #ccff00);
   display: flex;
   align-items: center;
@@ -202,7 +202,7 @@ const emit = defineEmits<{
   font-size: 0.6rem;
   font-weight: 800;
   padding: 0.1rem 0.35rem;
-  border: 1px solid var(--crt-obsidian);
+  border: 1px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 4px;
   color: var(--crml-text-muted);
 }
@@ -210,7 +210,7 @@ const emit = defineEmits<{
 .card-action-chip {
   font-size: 0.65rem;
   font-weight: 800;
-  border: 1px solid var(--crt-obsidian, #0d0d0d);
+  border: 1px solid var(--crml-border-ink, #0D0D0D);
   padding: 0.1rem 0.35rem;
   border-radius: 4px;
   cursor: pointer;

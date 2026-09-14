@@ -74,13 +74,17 @@
   --crml-bg-subtle: #1E1E1E;
 
   /* --- Text & Content (High-Contrast Dark Mode) --- */
-  --crml-text-main: #F0F0F0;
-  --crml-text-primary: #F0F0F0;
-  --crml-text-muted: #A1A1AA;
+  --crml-text-main: #F4F4F5;
+  --crml-text-primary: #F4F4F5;
+  --crml-text-muted: #B3B3B3;
   --crml-text-secondary: #D4D4D8;
   --crml-text-inverse: var(--crt-obsidian);
   --crml-text-on-primary: var(--crt-obsidian);
   --crml-text-on-accent: var(--crt-obsidian);
+  --crml-text-on-lime: #0D0D0D;
+  --crml-text-on-cyan: #0D0D0D;
+  --crml-text-on-yellow: #0D0D0D;
+  --crml-text-on-pink: #FFFFFF;
 
   /* --- Interactive & Action --- */
   --crml-action-primary: var(--crt-electric-lime);
@@ -109,16 +113,16 @@
 
   /* --- Borders & Lines --- */
   --crml-border-main: rgba(255, 255, 255, 0.3);
-  --crml-border-subtle: rgba(255, 255, 255, 0.12);
+  --crml-border-subtle: rgba(255, 255, 255, 0.15);
   --crml-border-medium: rgba(255, 255, 255, 0.3);
   --crml-border-focus: var(--crt-cyber-cyan);
-  --crml-border-ink: rgba(255, 255, 255, 0.25);
-  --crml-shadow-ink: rgba(0, 0, 0, 0.6);
-  --crml-shadow-theme: 4px 4px 0px rgba(0, 0, 0, 0.5);
+  --crml-border-ink: rgba(255, 255, 255, 0.28);
+  --crml-shadow-ink: #000000;
+  --crml-shadow-theme: 4px 4px 0px #000000;
 
   /* --- Neubrutalism Overrides for Dark --- */
-  --crml-border-brutal: 3px solid rgba(255, 255, 255, 0.25);
-  --crml-shadow-brutal: 4px 4px 0px rgba(0, 0, 0, 0.5);
-  --crml-shadow-brutal-sm: 2px 2px 0px rgba(0, 0, 0, 0.5);
-  --crml-shadow-brutal-lg: 6px 6px 0px rgba(0, 0, 0, 0.5);
+  --crml-border-brutal: 3px solid rgba(255, 255, 255, 0.28);
+  --crml-shadow-brutal: 4px 4px 0px #000000;
+  --crml-shadow-brutal-sm: 2px 2px 0px #000000;
+  --crml-shadow-brutal-lg: 6px 6px 0px #000000;
 }

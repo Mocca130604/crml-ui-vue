@@ -142,7 +142,7 @@ const displayPrice = computed(() => {
   font-weight: 800;
   font-size: 0.7rem;
   padding: 0.15rem 0.45rem;
-  border: 1.5px solid var(--crt-obsidian);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-sm);
 }
 
@@ -203,14 +203,14 @@ const displayPrice = computed(() => {
 .stock-track {
   height: 10px;
   background-color: var(--crml-bg-elevated, #e0e0e0);
-  border: 2px solid var(--crt-obsidian);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-sm);
   overflow: hidden;
 }
 
 .stock-fill {
   height: 100%;
-  border-right: 1px solid var(--crt-obsidian);
+  border-right: 1px solid var(--crml-border-ink, #0D0D0D);
 }
 
 .stock-fill--lime { background-color: var(--crt-electric-lime); }
@@ -227,7 +227,7 @@ const displayPrice = computed(() => {
   border-radius: var(--crml-radius-md);
   padding: 0.65rem 1rem;
   cursor: pointer;
-  box-shadow: 3px 3px 0px var(--crt-obsidian);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
   transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
   margin-top: 0.25rem;
 }
@@ -237,7 +237,7 @@ const displayPrice = computed(() => {
 .buy-now-btn--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .buy-now-btn--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }
 
-.buy-now-btn:hover { transform: translate(-2px, -2px); box-shadow: 5px 5px 0px var(--crt-obsidian); }
-.buy-now-btn:active { transform: translate(1px, 1px); box-shadow: 1px 1px 0px var(--crt-obsidian); }
+.buy-now-btn:hover { transform: translate(-2px, -2px); box-shadow: 5px 5px 0px var(--crml-shadow-ink, #0D0D0D); }
+.buy-now-btn:active { transform: translate(1px, 1px); box-shadow: 1px 1px 0px var(--crml-shadow-ink, #0D0D0D); }
 .buy-now-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
 </style>

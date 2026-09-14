@@ -113,7 +113,7 @@ const handleChange = (e: Event) => {
   background-color: var(--crml-bg-surface);
   border: var(--crml-border-brutal);
   border-radius: var(--crml-radius-full);
-  box-shadow: 2px 2px 0px var(--crt-obsidian);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
   display: flex;
   align-items: center;

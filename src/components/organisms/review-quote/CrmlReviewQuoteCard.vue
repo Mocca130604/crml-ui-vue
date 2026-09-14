@@ -120,7 +120,7 @@ const emit = defineEmits<{
 <style scoped>
 .crml-review-quote-card {
   position: relative;
-  border: 3.5px solid var(--crt-obsidian);
+  border: 3.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 14px;
   padding: 24px;
   box-shadow: 6px 6px 0 var(--crt-obsidian);
@@ -159,7 +159,7 @@ const emit = defineEmits<{
 .verified-chip {
   background: var(--crt-cyber-cyan, #00f0ff);
   color: var(--crt-obsidian);
-  border: 2px solid var(--crt-obsidian);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   padding: 2px 8px;
   border-radius: 12px;
   font-family: var(--crml-font-mono, monospace);
@@ -225,7 +225,7 @@ const emit = defineEmits<{
   display: flex;
   align-items: center;
   gap: 12px;
-  border-top: 2.5px solid var(--crt-obsidian);
+  border-top: 2.5px solid var(--crml-border-ink, #0D0D0D);
   padding-top: 14px;
   z-index: 2;
 }
@@ -234,7 +234,7 @@ const emit = defineEmits<{
   width: 44px;
   height: 44px;
   background: var(--crt-pure-white);
-  border: 2.5px solid var(--crt-obsidian);
+  border: 2.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 50%;
   box-shadow: 2.5px 2.5px 0 var(--crt-obsidian);
   display: flex;

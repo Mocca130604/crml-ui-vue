@@ -150,9 +150,9 @@ const handleStepClick = (stepIdx: number, step: StepItem) => {
   align-items: center;
   gap: 0.5rem;
   background-color: var(--crml-bg-surface, #ffffff);
-  border: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 2.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-md, 8px);
-  box-shadow: 3px 3px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
   user-select: none;
   transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
   font-weight: 800;
@@ -180,7 +180,7 @@ const handleStepClick = (stepIdx: number, step: StepItem) => {
 
 .step-node-item.is-clickable:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .step-node-item.is-disabled {
@@ -220,35 +220,35 @@ const handleStepClick = (stepIdx: number, step: StepItem) => {
 .crml-stepper--pink .step-node-item.is-active {
   background-color: var(--crt-hot-pink, #ff007f);
   color: #ffffff;
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   transform: translate(-1px, -1px);
 }
 
 .crml-stepper--lime .step-node-item.is-active {
   background-color: var(--crt-electric-lime, #ccff00);
   color: var(--crt-obsidian, #0d0d0d);
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   transform: translate(-1px, -1px);
 }
 
 .crml-stepper--cyan .step-node-item.is-active {
   background-color: var(--crt-cyber-cyan, #00f0ff);
   color: var(--crt-obsidian, #0d0d0d);
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   transform: translate(-1px, -1px);
 }
 
 .crml-stepper--yellow .step-node-item.is-active {
   background-color: var(--crt-sunburst-yellow, #ffd600);
   color: var(--crt-obsidian, #0d0d0d);
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   transform: translate(-1px, -1px);
 }
 
 .crml-stepper--obsidian .step-node-item.is-active {
   background-color: var(--crt-obsidian, #0d0d0d);
   color: var(--crt-electric-lime, #ccff00);
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   transform: translate(-1px, -1px);
 }
 

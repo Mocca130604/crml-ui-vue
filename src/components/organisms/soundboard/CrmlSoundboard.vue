@@ -167,10 +167,10 @@ const gridStyle = computed(() => ({
 <style scoped>
 .crml-soundboard {
   background-color: var(--crml-bg-surface, #ffffff);
-  border: 3px solid var(--crt-obsidian, #0d0d0d);
+  border: 3px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-lg, 14px);
   padding: 16px;
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   width: 100%;
   box-sizing: border-box;
 }
@@ -178,7 +178,7 @@ const gridStyle = computed(() => ({
 .soundboard-lcd {
   background-color: var(--crt-obsidian, #0d0d0d);
   color: var(--crt-electric-lime, #ccff00);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 8px;
   padding: 12px 16px;
   display: flex;
@@ -254,7 +254,7 @@ const gridStyle = computed(() => ({
 .play-btn {
   background-color: var(--crt-electric-lime, #ccff00);
   color: var(--crt-obsidian, #0d0d0d);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 6px;
   font-weight: 900;
   font-size: 0.8rem;
@@ -282,9 +282,9 @@ const gridStyle = computed(() => ({
 .sound-pad {
   aspect-ratio: 1;
   background-color: var(--crml-bg-surface, #ffffff);
-  border: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 2.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 10px;
-  box-shadow: 3.5px 3.5px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 3.5px 3.5px 0px var(--crml-shadow-ink, #0D0D0D);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -308,13 +308,13 @@ const gridStyle = computed(() => ({
 
 .sound-pad:hover {
   transform: translate(-1.5px, -1.5px);
-  box-shadow: 5px 5px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 5px 5px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .sound-pad:active,
 .sound-pad.active {
   transform: translate(2px, 2px);
-  box-shadow: 1px 1px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 1px 1px 0px var(--crml-shadow-ink, #0D0D0D);
   background-color: var(--pad-accent, var(--crt-electric-lime, #ccff00));
   color: var(--crt-obsidian, #0d0d0d);
 }

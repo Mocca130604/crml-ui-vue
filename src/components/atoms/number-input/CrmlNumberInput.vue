@@ -133,7 +133,7 @@ function onInput(e: Event) {
 .input-unit-chip {
   background: var(--crt-obsidian, #0d0d0d);
   color: var(--crt-electric-lime, #ccff00);
-  border: 1px solid var(--crt-obsidian, #0d0d0d);
+  border: 1px solid var(--crml-border-ink, #0D0D0D);
   padding: 1px 6px;
   border-radius: 4px;
   font-size: 10px;
@@ -144,9 +144,9 @@ function onInput(e: Event) {
   display: flex;
   align-items: center;
   background: var(--crml-bg-surface, #ffffff);
-  border: 3px solid var(--crt-obsidian, #0d0d0d);
+  border: 3px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-md, 8px);
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   overflow: hidden;
   box-sizing: border-box;
   height: 42px;
@@ -154,7 +154,7 @@ function onInput(e: Event) {
 }
 
 .number-input-box:focus-within {
-  box-shadow: 5px 5px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 5px 5px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .step-btn {
@@ -174,11 +174,11 @@ function onInput(e: Event) {
 }
 
 .dec-btn {
-  border-right: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border-right: 2.5px solid var(--crml-border-ink, #0D0D0D);
 }
 
 .inc-btn {
-  border-left: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border-left: 2.5px solid var(--crml-border-ink, #0D0D0D);
 }
 
 .variant-pink .step-btn {

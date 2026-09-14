@@ -119,12 +119,12 @@ const handleClick = (e: MouseEvent) => {
 .crml-bouncy-button--grad-acid { background: var(--grad-lime-acid); color: var(--crt-obsidian); }
 
 /* Micro-interaction Hover & Active */
-.crml-bouncy-button:hover:not(:disabled) { transform: translate(-2px, -2px); box-shadow: 6px 6px 0px var(--crt-obsidian); }
+.crml-bouncy-button:hover:not(:disabled) { transform: translate(-2px, -2px); box-shadow: 6px 6px 0px var(--crml-shadow-ink, #0D0D0D); }
 .crml-bouncy-button--obsidian:hover:not(:disabled) { box-shadow: 6px 6px 0px var(--crt-electric-lime); }
-.crml-bouncy-button:active:not(:disabled) { transform: translate(2px, 2px); box-shadow: 2px 2px 0px var(--crt-obsidian); }
+.crml-bouncy-button:active:not(:disabled) { transform: translate(2px, 2px); box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D); }
 .crml-bouncy-button--obsidian:active:not(:disabled) { box-shadow: 2px 2px 0px var(--crt-electric-lime); }
 
-.crml-bouncy-button--disabled { opacity: 0.6; cursor: not-allowed; transform: none !important; box-shadow: 2px 2px 0px var(--crt-obsidian) !important; }
+.crml-bouncy-button--disabled { opacity: 0.6; cursor: not-allowed; transform: none !important; box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D) !important; }
 
 .crml-bouncy-button__spinner {
   width: 1rem;

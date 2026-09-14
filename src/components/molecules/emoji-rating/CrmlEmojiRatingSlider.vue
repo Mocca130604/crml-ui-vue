@@ -91,7 +91,7 @@ const handleInput = (e: Event) => {
   background: var(--crt-obsidian);
   border-radius: var(--crml-radius-full);
   outline: none;
-  border: 2px solid var(--crt-obsidian);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   cursor: pointer;
 }
 
@@ -101,8 +101,8 @@ const handleInput = (e: Event) => {
   height: 24px;
   border-radius: 50%;
   background: var(--crt-electric-lime);
-  border: 3px solid var(--crt-obsidian);
-  box-shadow: 2px 2px 0px var(--crt-obsidian);
+  border: 3px solid var(--crml-border-ink, #0D0D0D);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   cursor: pointer;
   transition: transform 0.15s ease;
 }

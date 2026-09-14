@@ -104,7 +104,7 @@ const formatDisplay = (val: number) => {
   background-color: var(--crml-bg-surface);
   border: var(--crml-border-brutal);
   border-radius: var(--crml-radius-full);
-  box-shadow: 2px 2px 0px var(--crt-obsidian);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   overflow: hidden;
   padding: 2px;
 }
@@ -117,7 +117,7 @@ const formatDisplay = (val: number) => {
   height: 100%;
   border-radius: var(--crml-radius-full);
   transition: width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  border: 1px solid var(--crt-obsidian);
+  border: 1px solid var(--crml-border-ink, #0D0D0D);
 }
 
 .crml-progress-fill--lime { background-color: var(--crt-electric-lime); }

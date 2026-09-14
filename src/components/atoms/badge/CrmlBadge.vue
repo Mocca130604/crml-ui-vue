@@ -74,8 +74,8 @@ defineEmits<{
   border-radius: var(--crml-radius-full);
   line-height: 1;
   white-space: nowrap;
-  border: 2px solid var(--crt-obsidian);
-  box-shadow: 2px 2px 0px var(--crt-obsidian);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
   user-select: none;
 }
@@ -83,7 +83,7 @@ defineEmits<{
 .crml-badge--clickable { cursor: pointer; }
 .crml-badge--clickable:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0px var(--crt-obsidian);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 /* Sizes */

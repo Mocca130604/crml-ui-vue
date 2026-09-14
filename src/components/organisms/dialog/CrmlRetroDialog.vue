@@ -126,7 +126,7 @@ const handleBackdropClick = () => {
   background-color: var(--crml-bg-surface);
   border: var(--crml-border-brutal);
   border-radius: var(--crml-radius-md);
-  box-shadow: 8px 8px 0px var(--crt-obsidian);
+  box-shadow: 8px 8px 0px var(--crml-shadow-ink, #0D0D0D);
   overflow: hidden;
   animation: dialogPopIn 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   color: var(--crml-text-main);
@@ -176,7 +176,7 @@ const handleBackdropClick = () => {
   height: 1.6rem;
   background-color: var(--crt-pure-white);
   color: var(--crt-obsidian);
-  border: 2px solid var(--crt-obsidian);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-sm);
   font-family: var(--crml-font-mono);
   font-weight: 800;
@@ -185,7 +185,7 @@ const handleBackdropClick = () => {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 1px 1px 0px var(--crt-obsidian);
+  box-shadow: 1px 1px 0px var(--crml-shadow-ink, #0D0D0D);
   outline: none;
   transition: transform 0.1s ease;
 }

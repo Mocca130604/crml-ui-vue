@@ -102,7 +102,7 @@ const selectSegment = (id: string, opt: SegmentOption) => {
   border-radius: var(--crml-radius-md);
   padding: 0.25rem;
   gap: 0.25rem;
-  box-shadow: 3px 3px 0px var(--crt-obsidian);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .segment-btn {
@@ -145,33 +145,33 @@ const selectSegment = (id: string, opt: SegmentOption) => {
 }
 
 .segment-btn.is-selected {
-  border-color: var(--crt-obsidian);
-  box-shadow: 2px 2px 0px var(--crt-obsidian);
+  border-color: var(--crml-border-ink, #0D0D0D);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .segment-btn.is-selected.variant-lime {
   background-color: var(--crt-electric-lime);
-  color: var(--crt-obsidian);
+  color: var(--crt-obsidian) !important;
 }
 
 .segment-btn.is-selected.variant-pink {
   background-color: var(--crt-hot-pink);
-  color: var(--crt-pure-white);
+  color: var(--crt-pure-white) !important;
 }
 
 .segment-btn.is-selected.variant-cyan {
   background-color: var(--crt-cyber-cyan);
-  color: var(--crt-obsidian);
+  color: var(--crt-obsidian) !important;
 }
 
 .segment-btn.is-selected.variant-yellow {
   background-color: var(--crt-sunburst-yellow);
-  color: var(--crt-obsidian);
+  color: var(--crt-obsidian) !important;
 }
 
 .segment-btn.is-selected.variant-obsidian {
   background-color: var(--crt-obsidian);
-  color: var(--crt-electric-lime);
+  color: var(--crt-electric-lime) !important;
 }
 
 .segment-badge {

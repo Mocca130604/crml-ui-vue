@@ -160,9 +160,9 @@ function clearContent() {
 <style scoped>
 .crml-rich-text-editor {
   background: var(--crml-bg-surface, #ffffff);
-  border: 3px solid var(--crt-obsidian, #0d0d0d);
+  border: 3px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-lg, 12px);
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -218,7 +218,7 @@ function clearContent() {
 
 .count-pill.highlight {
   background: var(--crt-hot-pink, #ff007f);
-  border-color: var(--crt-obsidian, #0d0d0d);
+  border-color: var(--crml-border-ink, #0D0D0D);
   color: #fff;
 }
 
@@ -236,7 +236,7 @@ function clearContent() {
 
 .editor-toolbar {
   background: var(--crml-bg-elevated, #f4f4f5);
-  border-bottom: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border-bottom: 2.5px solid var(--crml-border-ink, #0D0D0D);
   padding: 6px 10px;
   display: flex;
   flex-wrap: wrap;
@@ -258,14 +258,14 @@ function clearContent() {
 
 .tool-btn {
   background: var(--crml-bg-surface);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 4px;
   padding: 3px 8px;
   font-size: 11px;
   font-weight: 900;
   font-family: monospace;
   cursor: pointer;
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   transition: transform 0.05s ease, background-color 0.1s ease;
 }
 
@@ -276,7 +276,7 @@ function clearContent() {
 
 .tool-btn:active {
   transform: translate(1px, 1px);
-  box-shadow: 0.5px 0.5px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 0.5px 0.5px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .tool-btn.danger:hover {
@@ -315,7 +315,7 @@ function clearContent() {
 
 .editor-footer {
   background: var(--crml-bg-elevated, #f4f4f5);
-  border-top: 2px solid var(--crt-obsidian, #0d0d0d);
+  border-top: 2px solid var(--crml-border-ink, #0D0D0D);
   padding: 6px 12px;
   display: flex;
   justify-content: space-between;

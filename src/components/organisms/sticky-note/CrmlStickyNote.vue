@@ -51,7 +51,7 @@ withDefaults(defineProps<CrmlStickyNoteProps>(), {
   position: relative;
   border: var(--crml-border-brutal);
   border-radius: var(--crml-radius-sm);
-  box-shadow: 4px 4px 0px var(--crt-obsidian);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   font-family: var(--crml-font-body);
   color: var(--crt-obsidian);
   transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -64,7 +64,7 @@ withDefaults(defineProps<CrmlStickyNoteProps>(), {
 
 .crml-sticky-note:hover {
   transform: scale(1.05) rotate(0deg) !important;
-  box-shadow: 6px 6px 0px var(--crt-obsidian);
+  box-shadow: 6px 6px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .crml-sticky-note--tilt-left { transform: rotate(-3deg); }

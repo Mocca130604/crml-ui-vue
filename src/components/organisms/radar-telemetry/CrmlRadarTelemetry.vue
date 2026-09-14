@@ -168,10 +168,10 @@ onUnmounted(() => {
 <style scoped>
 .crml-radar-hud {
   background: var(--crml-bg-surface, #ffffff);
-  border: 3px solid var(--crt-obsidian, #0d0d0d);
+  border: 3px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-lg, 12px);
   padding: 14px;
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   color: var(--crml-text-main, #0d0d0d);
   width: 100%;
   max-width: 360px;
@@ -186,7 +186,7 @@ onUnmounted(() => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid var(--crt-obsidian, #0d0d0d);
+  border-bottom: 2px solid var(--crml-border-ink, #0D0D0D);
   padding-bottom: 8px;
 }
 
@@ -200,7 +200,7 @@ onUnmounted(() => {
   width: 10px;
   height: 10px;
   background: var(--crt-hot-pink, #ff007f);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 50%;
   animation: pulse-dot 1s infinite alternate;
 }
@@ -221,7 +221,7 @@ onUnmounted(() => {
   font-size: 11px;
   color: var(--crt-obsidian, #0d0d0d);
   background: var(--crt-electric-lime, #ccff00);
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   padding: 1px 6px;
   border-radius: 4px;
   font-weight: 900;
@@ -238,7 +238,7 @@ onUnmounted(() => {
   position: relative;
   width: 220px;
   height: 220px;
-  border: 3px solid var(--crt-obsidian, #0d0d0d);
+  border: 3px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 50%;
   background: radial-gradient(circle, #eef9ff 0%, #ffffff 80%);
   overflow: hidden;
@@ -306,8 +306,8 @@ onUnmounted(() => {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
-  box-shadow: 1.5px 1.5px 0px var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
+  box-shadow: 1.5px 1.5px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .radar-blip.hostile .blip-ping {
@@ -337,7 +337,7 @@ onUnmounted(() => {
   white-space: nowrap;
   background: var(--crt-obsidian, #0d0d0d);
   color: #ffffff;
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   padding: 1px 5px;
   border-radius: 4px;
   pointer-events: none;
@@ -348,11 +348,11 @@ onUnmounted(() => {
   justify-content: space-between;
   align-items: center;
   background: var(--crml-bg-elevated, #f4f4f5);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   padding: 8px 10px;
   border-radius: 8px;
   font-size: 11px;
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .telemetry-item {
@@ -375,7 +375,7 @@ onUnmounted(() => {
   padding: 1px 6px;
   border-radius: 4px;
   font-weight: 900;
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   font-size: 9.5px;
 }
 

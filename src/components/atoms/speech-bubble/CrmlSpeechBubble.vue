@@ -57,13 +57,13 @@ withDefaults(defineProps<CrmlSpeechBubbleProps>(), {
   bottom: -12px;
   left: 1rem;
   border-width: 12px 10px 0 0;
-  border-color: var(--crt-obsidian) transparent transparent transparent;
+  border-color: var(--crml-border-ink, #0D0D0D) transparent transparent transparent;
 }
 
 .crml-speech-bubble--tail-bottom-right .crml-speech-bubble__tail {
   bottom: -12px;
   right: 1rem;
   border-width: 12px 0 0 10px;
-  border-color: var(--crt-obsidian) transparent transparent transparent;
+  border-color: var(--crml-border-ink, #0D0D0D) transparent transparent transparent;
 }
 </style>

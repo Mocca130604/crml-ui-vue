@@ -137,9 +137,9 @@ const emit = defineEmits<{
 <style scoped>
 .crml-table-wrapper {
   width: 100%;
-  border: 3px solid var(--crt-obsidian);
+  border: 3px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-md);
-  box-shadow: 5px 5px 0px var(--crt-obsidian);
+  box-shadow: 5px 5px 0px var(--crml-shadow-ink, #0D0D0D);
   background-color: var(--crml-bg-surface);
   overflow: hidden;
 }
@@ -152,7 +152,7 @@ const emit = defineEmits<{
   font-size: 0.8rem;
   text-transform: uppercase;
   padding: 0.65rem 1rem;
-  border-bottom: 2px solid var(--crt-obsidian);
+  border-bottom: 2px solid var(--crml-border-ink, #0D0D0D);
   color: var(--crml-text-muted);
   margin: 0;
 }
@@ -181,7 +181,7 @@ const emit = defineEmits<{
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  border-bottom: 3px solid var(--crt-obsidian);
+  border-bottom: 3px solid var(--crml-border-ink, #0D0D0D);
   user-select: none;
 }
 
@@ -191,7 +191,7 @@ const emit = defineEmits<{
 .accent-violet .crml-table th { background-color: var(--crml-color-violet, #9B59B6); color: #ffffff; }
 
 .crml-table td {
-  border-bottom: 2px solid var(--crt-obsidian);
+  border-bottom: 2px solid var(--crml-border-ink, #0D0D0D);
   font-weight: 600;
   color: var(--crml-text-main);
 }
@@ -244,7 +244,7 @@ const emit = defineEmits<{
 
 .crml-table-footer {
   padding: 0.65rem 1rem;
-  border-top: 2px solid var(--crt-obsidian);
+  border-top: 2px solid var(--crml-border-ink, #0D0D0D);
   background-color: var(--crml-bg-elevated);
 }
 </style>

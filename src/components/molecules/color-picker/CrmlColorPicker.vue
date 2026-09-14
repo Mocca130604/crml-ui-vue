@@ -91,10 +91,10 @@ function handleInput(e: Event) {
 <style scoped>
 .crml-color-picker {
   background: var(--crml-bg-surface, #ffffff);
-  border: 3px solid var(--crt-obsidian, #0d0d0d);
+  border: 3px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-lg, 12px);
   padding: 12px;
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -118,13 +118,13 @@ function handleInput(e: Event) {
 }
 
 .color-hex-tag {
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   padding: 1px 6px;
   border-radius: 4px;
   font-weight: 900;
   font-size: 10px;
   color: #000;
-  box-shadow: 1.5px 1.5px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 1.5px 1.5px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .picker-body {
@@ -141,16 +141,16 @@ function handleInput(e: Event) {
 
 .swatch-btn {
   height: 32px;
-  border: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 2.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 6px;
   cursor: pointer;
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   transition: transform 0.05s ease;
 }
 
 .swatch-btn:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .swatch-btn.selected {
@@ -169,9 +169,9 @@ function handleInput(e: Event) {
   position: relative;
   width: 36px;
   height: 36px;
-  border: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 2.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 6px;
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   overflow: hidden;
 }
 
@@ -188,14 +188,14 @@ function handleInput(e: Event) {
   flex: 1;
   height: 36px;
   background: var(--crml-bg-elevated, #f4f4f5);
-  border: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 2.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 6px;
   padding: 0 10px;
   font-weight: 900;
   font-size: 12px;
   color: var(--crml-text-main, #0d0d0d);
   outline: none;
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .hex-input-field:focus {

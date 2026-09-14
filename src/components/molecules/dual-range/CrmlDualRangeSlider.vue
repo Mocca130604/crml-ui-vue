@@ -284,11 +284,11 @@ const maxPercent = computed(() => {
 .range-value-pill {
   background-color: var(--crt-electric-lime, #ccff00);
   color: var(--crt-obsidian, #0d0d0d);
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-sm, 4px);
   padding: 0.15rem 0.5rem;
   font-weight: 900;
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .variant-pink .range-value-pill {
@@ -320,7 +320,7 @@ const maxPercent = computed(() => {
   width: 100%;
   height: 10px;
   background-color: var(--crml-bg-elevated, #e0e0e0);
-  border: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 2.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 999px;
   overflow: hidden;
   box-sizing: border-box;
@@ -352,7 +352,7 @@ const maxPercent = computed(() => {
 
 .limit-chip {
   background: var(--crml-bg-elevated, #f4f4f5);
-  border: 1px solid var(--crt-obsidian, #0d0d0d);
+  border: 1px solid var(--crml-border-ink, #0D0D0D);
   padding: 1px 5px;
   border-radius: 3px;
   font-size: 9px;
@@ -391,8 +391,8 @@ const maxPercent = computed(() => {
   height: 18px;
   border-radius: 4px;
   background-color: var(--crt-electric-lime, #ccff00);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
@@ -417,8 +417,8 @@ const maxPercent = computed(() => {
   height: 18px;
   border-radius: 4px;
   background-color: var(--crt-electric-lime, #ccff00);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   cursor: pointer;
   box-sizing: border-box;
 }

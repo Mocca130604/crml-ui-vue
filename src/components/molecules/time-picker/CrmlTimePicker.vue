@@ -219,10 +219,10 @@ function emitTime() {
 <style scoped>
 .crml-time-picker {
   background: var(--crml-bg-surface, #ffffff);
-  border: 3px solid var(--crt-obsidian, #0d0d0d);
+  border: 3px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-lg, 12px);
   padding: 12px;
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -255,7 +255,7 @@ function emitTime() {
 .format-switcher {
   display: flex;
   background: var(--crml-bg-elevated, #f4f4f5);
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 4px;
   padding: 1px;
   gap: 1px;
@@ -293,12 +293,12 @@ function emitTime() {
 .time-readout-pill {
   background: var(--crt-electric-lime, #ccff00);
   color: var(--crt-obsidian, #0d0d0d);
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   padding: 1px 6px;
   border-radius: 4px;
   font-weight: 900;
   font-size: 11px;
-  box-shadow: 1.5px 1.5px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 1.5px 1.5px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .variant-pink .time-readout-pill {
@@ -322,7 +322,7 @@ function emitTime() {
   justify-content: center;
   gap: 12px;
   background: var(--crml-bg-elevated, #f4f4f5);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 8px;
   padding: 10px;
 }
@@ -343,14 +343,14 @@ function emitTime() {
 
 .spin-btn {
   background: var(--crml-bg-surface);
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 4px;
   font-size: 9px;
   font-weight: 900;
   width: 32px;
   height: 20px;
   cursor: pointer;
-  box-shadow: 1.5px 1.5px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 1.5px 1.5px 0px var(--crml-shadow-ink, #0D0D0D);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -367,7 +367,7 @@ function emitTime() {
   height: 38px;
   background: var(--crt-obsidian, #0d0d0d);
   color: var(--crt-electric-lime, #ccff00);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 6px;
   font-size: 20px;
   font-weight: 900;
@@ -397,12 +397,12 @@ function emitTime() {
   height: 38px;
   background: var(--crt-hot-pink, #ff007f);
   color: #ffffff;
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 6px;
   font-size: 14px;
   font-weight: 900;
   cursor: pointer;
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -411,7 +411,7 @@ function emitTime() {
 
 .period-toggle-btn:hover:not(:disabled) {
   transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .period-toggle-btn.is-24h {
@@ -436,13 +436,13 @@ function emitTime() {
 .preset-btn {
   flex: 1;
   background: var(--crml-bg-surface);
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 4px;
   padding: 4px 0;
   font-size: 9px;
   font-weight: 900;
   cursor: pointer;
-  box-shadow: 1.5px 1.5px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 1.5px 1.5px 0px var(--crml-shadow-ink, #0D0D0D);
   transition: transform 0.05s ease, background-color 0.1s ease;
 }
 

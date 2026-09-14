@@ -109,12 +109,12 @@ const handleBackspace = () => {
   padding: 0.25rem 0.6rem;
   background-color: var(--crt-electric-lime);
   color: var(--crt-obsidian);
-  border: 2px solid var(--crt-obsidian);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-sm);
   font-family: var(--crml-font-heading);
   font-weight: 800;
   font-size: 0.8125rem;
-  box-shadow: 1px 1px 0px var(--crt-obsidian);
+  box-shadow: 1px 1px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .tag-remove {

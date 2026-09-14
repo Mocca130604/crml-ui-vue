@@ -102,9 +102,9 @@ const defaultStatusIcon = (status: StatusType) => {
   align-items: center;
   gap: 0.4rem;
   background-color: var(--crml-bg-surface, #ffffff);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-sm, 6px);
-  box-shadow: 2.5px 2.5px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2.5px 2.5px 0px var(--crml-shadow-ink, #0D0D0D);
   font-weight: 800;
   transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -130,7 +130,7 @@ const defaultStatusIcon = (status: StatusType) => {
 
 .status-chip-tile.is-clickable:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 3.5px 3.5px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 3.5px 3.5px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .status-chip-text {

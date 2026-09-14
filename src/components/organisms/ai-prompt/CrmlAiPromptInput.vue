@@ -73,10 +73,10 @@ const handleGenerate = () => {
   gap: 0.65rem;
   width: 100%;
   background-color: var(--crml-bg-surface, #ffffff);
-  border: 3px solid var(--crt-obsidian, #0d0d0d);
+  border: 3px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-xl, 16px);
   padding: 1rem;
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   font-family: var(--crml-font-body);
 }
 
@@ -98,12 +98,12 @@ const handleGenerate = () => {
   font-weight: 800;
   font-size: 0.725rem;
   padding: 0.2rem 0.55rem;
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 4px;
   background-color: var(--crml-bg-surface, #ffffff);
   color: var(--crml-text-main, #0d0d0d);
   cursor: pointer;
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .model-pill.is-active {
@@ -125,7 +125,7 @@ const handleGenerate = () => {
 
 .prompt-textarea {
   flex: 1;
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-md, 8px);
   padding: 0.65rem;
   font-size: 0.85rem;
@@ -137,7 +137,7 @@ const handleGenerate = () => {
 
 .prompt-textarea:focus {
   background-color: var(--crml-bg-surface);
-  border-color: var(--crt-obsidian, #0d0d0d);
+  border-color: var(--crml-border-ink, #0D0D0D);
   box-shadow: 3px 3px 0px var(--crt-hot-pink, #ff007f);
 }
 
@@ -146,17 +146,17 @@ const handleGenerate = () => {
   font-weight: 900;
   background-color: var(--crt-electric-lime, #ccff00);
   color: var(--crt-obsidian, #0d0d0d);
-  border: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 2.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-md, 8px);
   padding: 0.65rem 1rem;
   cursor: pointer;
-  box-shadow: 3px 3px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
   transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
   white-space: nowrap;
 }
 
 .generate-action-btn:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 </style>

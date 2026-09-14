@@ -143,19 +143,19 @@ onUnmounted(() => {
 }
 .crml-hypebeast-banner--lime {
   background: var(--crt-electric-lime); color: var(--crt-obsidian);
-  box-shadow: 6px 6px 0px var(--crt-obsidian);
+  box-shadow: 6px 6px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 .crml-hypebeast-banner--pink {
   background: var(--crt-hot-pink); color: var(--crt-pure-white);
-  box-shadow: 6px 6px 0px var(--crt-obsidian);
+  box-shadow: 6px 6px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 .crml-hypebeast-banner--cyan {
   background: var(--crt-cyber-cyan); color: var(--crt-obsidian);
-  box-shadow: 6px 6px 0px var(--crt-obsidian);
+  box-shadow: 6px 6px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 .crml-hypebeast-banner--yellow {
   background: var(--crt-sunburst-yellow); color: var(--crt-obsidian);
-  box-shadow: 6px 6px 0px var(--crt-obsidian);
+  box-shadow: 6px 6px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .banner-left {
@@ -201,11 +201,11 @@ onUnmounted(() => {
   justify-content: center;
   background-color: var(--crt-electric-lime);
   color: var(--crt-obsidian);
-  border: 2px solid var(--crt-obsidian);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-md);
   padding: 0.35rem 0.65rem;
   min-width: 3.25rem;
-  box-shadow: 2px 2px 0px var(--crt-obsidian);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .timer-num {

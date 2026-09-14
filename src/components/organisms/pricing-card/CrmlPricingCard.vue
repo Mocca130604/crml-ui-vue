@@ -131,17 +131,17 @@ const displayPrice = computed(() => {
   gap: 1rem;
   width: 100%;
   background-color: var(--crml-bg-surface, #ffffff);
-  border: 3px solid var(--crt-obsidian, #0d0d0d);
+  border: 3px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-xl, 16px);
   padding: 1.5rem;
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   position: relative;
   font-family: var(--crml-font-body);
 }
 
 .crml-pricing-card.is-popular {
-  border-color: var(--crt-obsidian, #0d0d0d);
-  box-shadow: 6px 6px 0px var(--crt-obsidian, #0d0d0d);
+  border-color: var(--crml-border-ink, #0D0D0D);
+  box-shadow: 6px 6px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .popular-badge {
@@ -150,12 +150,12 @@ const displayPrice = computed(() => {
   right: 1.25rem;
   background-color: var(--crt-electric-lime, #ccff00);
   color: var(--crt-obsidian, #0d0d0d);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-sm, 4px);
   padding: 0.15rem 0.6rem;
   font-size: 0.7rem;
   font-weight: 900;
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .pricing-header {
@@ -202,13 +202,14 @@ const displayPrice = computed(() => {
   gap: 0.6rem;
   font-size: 0.825rem;
   font-weight: 700;
+  color: var(--crml-text-main, #0d0d0d);
 }
 
 .check-bullet {
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 4px;
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -219,7 +220,7 @@ const displayPrice = computed(() => {
 
 .check-bullet.is-checked {
   background-color: var(--crt-electric-lime, #ccff00);
-  color: var(--crt-obsidian, #0d0d0d);
+  color: var(--crt-obsidian, #0d0d0d) !important;
 }
 
 .plan-cta-btn {
@@ -228,11 +229,11 @@ const displayPrice = computed(() => {
   text-transform: uppercase;
   background-color: var(--crt-electric-lime, #ccff00);
   color: var(--crt-obsidian, #0d0d0d);
-  border: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 2.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-md, 8px);
   padding: 0.65rem 1rem;
   cursor: pointer;
-  box-shadow: 3px 3px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
   transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
   margin-top: 0.5rem;
 }
@@ -251,30 +252,31 @@ const displayPrice = computed(() => {
   font-weight: 800;
   padding: 0.1rem 0.35rem;
   border-radius: 3px;
-  background-color: var(--crt-obsidian, #0d0d0d);
+  background-color: var(--crml-bg-elevated, #0d0d0d);
   color: var(--crt-electric-lime, #ccff00);
+  border: 1px solid var(--crml-border-ink, #0d0d0d);
 }
 
 .plan-cta-btn:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 5px 5px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 5px 5px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .plan-cta-btn:active {
   transform: translate(1px, 1px);
-  box-shadow: 1px 1px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 1px 1px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .plan-cta-btn:disabled {
   opacity: 0.55;
   cursor: not-allowed;
   transform: none;
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
-.plan-cta-btn--lime { background-color: var(--crt-electric-lime, #ccff00); color: var(--crt-obsidian, #0d0d0d); }
-.plan-cta-btn--pink { background-color: var(--crt-hot-pink, #ff007f); color: #fff; }
-.plan-cta-btn--cyan { background-color: var(--crt-cyber-cyan, #00f0ff); color: var(--crt-obsidian, #0d0d0d); }
-.plan-cta-btn--yellow { background-color: var(--crt-sunburst-yellow, #ffd600); color: var(--crt-obsidian, #0d0d0d); }
-.plan-cta-btn--obsidian { background-color: var(--crt-obsidian, #0d0d0d); color: var(--crt-electric-lime, #ccff00); }
+.plan-cta-btn--lime { background-color: var(--crt-electric-lime, #ccff00); color: var(--crt-obsidian, #0d0d0d) !important; }
+.plan-cta-btn--pink { background-color: var(--crt-hot-pink, #ff007f); color: #fff !important; }
+.plan-cta-btn--cyan { background-color: var(--crt-cyber-cyan, #00f0ff); color: var(--crt-obsidian, #0d0d0d) !important; }
+.plan-cta-btn--yellow { background-color: var(--crt-sunburst-yellow, #ffd600); color: var(--crt-obsidian, #0d0d0d) !important; }
+.plan-cta-btn--obsidian { background-color: var(--crt-obsidian, #0d0d0d); color: var(--crt-electric-lime, #ccff00) !important; }
 </style>

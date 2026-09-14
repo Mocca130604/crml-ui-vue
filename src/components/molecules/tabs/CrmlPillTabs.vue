@@ -108,16 +108,16 @@ const selectTab = (id: string) => {
 }
 
 .crml-pill-tab-item--active {
-  border-color: var(--crt-obsidian);
-  box-shadow: 2px 2px 0px var(--crt-obsidian);
+  border-color: var(--crml-border-ink, #0D0D0D);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   transform: translateY(-1px);
 }
 
-.crml-pill-tabs--lime .crml-pill-tab-item--active { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
-.crml-pill-tabs--pink .crml-pill-tab-item--active { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
-.crml-pill-tabs--cyan .crml-pill-tab-item--active { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
-.crml-pill-tabs--yellow .crml-pill-tab-item--active { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }
-.crml-pill-tabs--obsidian .crml-pill-tab-item--active { background-color: var(--crt-obsidian); color: var(--crt-electric-lime); border-color: var(--crt-electric-lime); box-shadow: 2px 2px 0px var(--crt-electric-lime); }
+.crml-pill-tabs--lime .crml-pill-tab-item--active { background-color: var(--crt-electric-lime); color: var(--crt-obsidian) !important; }
+.crml-pill-tabs--pink .crml-pill-tab-item--active { background-color: var(--crt-hot-pink); color: var(--crt-pure-white) !important; }
+.crml-pill-tabs--cyan .crml-pill-tab-item--active { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian) !important; }
+.crml-pill-tabs--yellow .crml-pill-tab-item--active { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian) !important; }
+.crml-pill-tabs--obsidian .crml-pill-tab-item--active { background-color: var(--crt-obsidian); color: var(--crt-electric-lime) !important; border-color: var(--crt-electric-lime); box-shadow: 2px 2px 0px var(--crt-electric-lime); }
 
 .tab-badge {
   font-size: 0.75rem;

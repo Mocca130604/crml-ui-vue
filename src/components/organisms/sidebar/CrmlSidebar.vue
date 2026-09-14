@@ -106,9 +106,9 @@ function selectItem(item: SidebarItem) {
 .crml-sidebar {
   width: 260px;
   background: var(--crml-bg-surface, #ffffff);
-  border: 3px solid var(--crt-obsidian, #0d0d0d);
+  border: 3px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-lg, 14px);
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -126,7 +126,7 @@ function selectItem(item: SidebarItem) {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border-bottom: 2.5px solid var(--crml-border-ink, #0D0D0D);
   padding-bottom: 10px;
 }
 
@@ -151,14 +151,14 @@ function selectItem(item: SidebarItem) {
 
 .collapse-toggle-btn {
   background: var(--crt-cyber-cyan, #00f0ff);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 6px;
   width: 30px;
   height: 30px;
   font-size: 11px;
   font-weight: 900;
   cursor: pointer;
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,15 +203,15 @@ function selectItem(item: SidebarItem) {
 
 .sidebar-item-btn:hover {
   background: var(--crml-bg-elevated, #f4f4f5);
-  border-color: var(--crt-obsidian, #0d0d0d);
+  border-color: var(--crml-border-ink, #0D0D0D);
   transform: translate(-1px, -1px);
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .sidebar-item-btn.active {
   background: var(--crt-electric-lime, #ccff00);
-  border-color: var(--crt-obsidian, #0d0d0d);
-  box-shadow: 3px 3px 0px var(--crt-obsidian, #0d0d0d);
+  border-color: var(--crml-border-ink, #0D0D0D);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .item-icon {
@@ -228,7 +228,7 @@ function selectItem(item: SidebarItem) {
 .item-badge-chip {
   background: var(--crt-hot-pink, #ff007f);
   color: #ffffff;
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   font-size: 9px;
   font-weight: 900;
   padding: 1px 5px;
@@ -236,7 +236,7 @@ function selectItem(item: SidebarItem) {
 }
 
 .sidebar-footer {
-  border-top: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border-top: 2.5px solid var(--crml-border-ink, #0D0D0D);
   padding-top: 10px;
   margin-top: 12px;
 }
@@ -246,10 +246,10 @@ function selectItem(item: SidebarItem) {
   align-items: center;
   gap: 8px;
   background: var(--crml-bg-elevated, #f4f4f5);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   padding: 6px 10px;
   border-radius: 8px;
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .user-status-dot {

@@ -105,6 +105,16 @@ defineEmits<{
   border: var(--crml-border-brutal);
   box-shadow: var(--crml-shadow-brutal);
   background-color: var(--crt-electric-lime);
+  color: var(--crt-obsidian);
+}
+.crml-card--lime .crml-card__title,
+.crml-card--lime .crml-card__body,
+.crml-card--lime .crml-card__body p,
+.crml-card--lime .crml-card__body span {
+  color: var(--crt-obsidian) !important;
+}
+.crml-card--lime .crml-card__subtitle {
+  color: rgba(13, 13, 13, 0.75) !important;
 }
 
 .crml-card--pink {
@@ -114,21 +124,45 @@ defineEmits<{
   color: #fff;
 }
 .crml-card--pink .crml-card__title,
-.crml-card--pink .crml-card__subtitle,
-.crml-card--pink .crml-card__body {
-  color: #fff;
+.crml-card--pink .crml-card__body,
+.crml-card--pink .crml-card__body p,
+.crml-card--pink .crml-card__body span {
+  color: #fff !important;
+}
+.crml-card--pink .crml-card__subtitle {
+  color: rgba(255, 255, 255, 0.85) !important;
 }
 
 .crml-card--cyan {
   border: var(--crml-border-brutal);
   box-shadow: var(--crml-shadow-brutal);
   background-color: var(--crt-cyber-cyan);
+  color: var(--crt-obsidian);
+}
+.crml-card--cyan .crml-card__title,
+.crml-card--cyan .crml-card__body,
+.crml-card--cyan .crml-card__body p,
+.crml-card--cyan .crml-card__body span {
+  color: var(--crt-obsidian) !important;
+}
+.crml-card--cyan .crml-card__subtitle {
+  color: rgba(13, 13, 13, 0.75) !important;
 }
 
 .crml-card--yellow {
   border: var(--crml-border-brutal);
   box-shadow: var(--crml-shadow-brutal);
   background-color: var(--crt-sunburst-yellow);
+  color: var(--crt-obsidian);
+}
+.crml-card--yellow .crml-card__title,
+.crml-card--yellow .crml-card__body,
+.crml-card--yellow .crml-card__body p,
+.crml-card--yellow .crml-card__body span {
+  color: var(--crt-obsidian) !important;
+}
+.crml-card--yellow .crml-card__subtitle {
+  color: rgba(13, 13, 13, 0.75) !important;
 }
 
 .crml-card--obsidian {
@@ -138,9 +172,13 @@ defineEmits<{
   color: #fff;
 }
 .crml-card--obsidian .crml-card__title,
-.crml-card--obsidian .crml-card__subtitle,
-.crml-card--obsidian .crml-card__body {
-  color: #fff;
+.crml-card--obsidian .crml-card__body,
+.crml-card--obsidian .crml-card__body p,
+.crml-card--obsidian .crml-card__body span {
+  color: #fff !important;
+}
+.crml-card--obsidian .crml-card__subtitle {
+  color: #A1A1AA !important;
 }
 
 .crml-card--bordered {

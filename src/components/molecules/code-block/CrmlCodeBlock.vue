@@ -47,9 +47,9 @@ const copyCode = () => {
 <style scoped>
 .crml-code-block-wrapper {
   width: 100%;
-  border: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 2.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-md, 8px);
-  box-shadow: 4px 4px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   background-color: var(--crt-obsidian, #0d0d0d);
   color: var(--crt-electric-lime, #ccff00);
   overflow: hidden;

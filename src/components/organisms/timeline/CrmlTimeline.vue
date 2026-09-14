@@ -106,9 +106,9 @@ const props = withDefaults(
   width: 2.25rem;
   height: 2.25rem;
   background-color: var(--crt-electric-lime, #ccff00);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-md, 8px);
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,10 +145,10 @@ const props = withDefaults(
 .step-right-content {
   flex: 1;
   background-color: var(--crml-bg-surface, #ffffff);
-  border: 2px solid var(--crt-obsidian, #0d0d0d);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-md, 8px);
   padding: 0.85rem 1rem;
-  box-shadow: 3px 3px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
@@ -174,7 +174,7 @@ const props = withDefaults(
   font-size: 0.7rem;
   font-weight: 800;
   background-color: var(--crml-bg-elevated, #e0e0e0);
-  border: 1px solid var(--crt-obsidian, #0d0d0d);
+  border: 1px solid var(--crml-border-ink, #0D0D0D);
   padding: 0.1rem 0.4rem;
   border-radius: 4px;
 }
@@ -184,7 +184,7 @@ const props = withDefaults(
   font-size: 0.65rem;
   font-weight: 800;
   padding: 0.1rem 0.4rem;
-  border: 1px solid var(--crt-obsidian, #0d0d0d);
+  border: 1px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 4px;
   margin-left: auto;
 }

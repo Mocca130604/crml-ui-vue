@@ -114,9 +114,9 @@ const selectCmd = (cmd: CommandItem) => {
   width: 100%;
   max-width: 580px;
   background-color: var(--crml-bg-surface, #ffffff);
-  border: 3px solid var(--crt-obsidian, #0d0d0d);
+  border: 3px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-xl, 16px);
-  box-shadow: 6px 6px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 6px 6px 0px var(--crml-shadow-ink, #0D0D0D);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -127,7 +127,7 @@ const selectCmd = (cmd: CommandItem) => {
   align-items: center;
   gap: 0.75rem;
   padding: 0.85rem 1.15rem;
-  border-bottom: 2.5px solid var(--crt-obsidian, #0d0d0d);
+  border-bottom: 2.5px solid var(--crml-border-ink, #0D0D0D);
   background-color: var(--crt-electric-lime, #ccff00);
 }
 
@@ -149,13 +149,13 @@ const selectCmd = (cmd: CommandItem) => {
 
 .cmd-close-btn {
   background-color: var(--crml-bg-surface, #ffffff);
-  border: 1.5px solid var(--crt-obsidian, #0d0d0d);
+  border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 4px;
   padding: 0.2rem 0.5rem;
   font-size: 0.7rem;
   font-weight: 800;
   cursor: pointer;
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .cmd-list-container {
@@ -179,8 +179,8 @@ const selectCmd = (cmd: CommandItem) => {
 
 .cmd-item-row:hover {
   background-color: var(--crt-lime-100, rgba(204, 255, 0, 0.15));
-  border-color: var(--crt-obsidian, #0d0d0d);
-  box-shadow: 2px 2px 0px var(--crt-obsidian, #0d0d0d);
+  border-color: var(--crml-border-ink, #0D0D0D);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .cmd-item-icon {
@@ -206,7 +206,7 @@ const selectCmd = (cmd: CommandItem) => {
 
 .cmd-shortcut-badge {
   background-color: var(--crml-bg-elevated, #e0e0e0);
-  border: 1px solid var(--crt-obsidian, #0d0d0d);
+  border: 1px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 4px;
   padding: 0.15rem 0.4rem;
   font-size: 0.7rem;

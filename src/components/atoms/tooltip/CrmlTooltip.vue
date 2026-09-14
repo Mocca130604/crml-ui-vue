@@ -43,8 +43,8 @@ const show = ref(false);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   white-space: nowrap;
-  border: 2px solid var(--crt-obsidian);
-  box-shadow: 2px 2px 0px var(--crt-obsidian);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   border-radius: var(--crml-radius-sm);
   pointer-events: none;
 }

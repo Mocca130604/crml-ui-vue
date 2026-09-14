@@ -109,7 +109,7 @@ const handleChange = (e: Event) => {
   background-color: var(--crml-bg-surface);
   border: var(--crml-border-brutal);
   border-radius: var(--crml-radius-sm);
-  box-shadow: 2px 2px 0px var(--crt-obsidian);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,7 +132,7 @@ const handleChange = (e: Event) => {
 
 .crml-checkbox:hover:not(.crml-checkbox--disabled) .crml-checkbox__box {
   transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0px var(--crt-obsidian);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .checkmark {

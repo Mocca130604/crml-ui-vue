@@ -91,8 +91,8 @@ const handleClick = (e: MouseEvent) => {
   font-family: var(--crml-font-body);
   font-weight: 700;
   border-radius: var(--crml-radius-md);
-  border: 2.5px solid var(--crt-obsidian);
-  box-shadow: 3px 3px 0px var(--crt-obsidian);
+  border: 2.5px solid var(--crml-border-ink, #0D0D0D);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
   cursor: pointer;
   transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
   user-select: none;
@@ -102,12 +102,12 @@ const handleClick = (e: MouseEvent) => {
 
 .crml-button:hover:not(:disabled) {
   transform: translate(-1px, -1px);
-  box-shadow: 4px 4px 0px var(--crt-obsidian);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .crml-button:active:not(:disabled) {
   transform: translate(2px, 2px);
-  box-shadow: 1px 1px 0px var(--crt-obsidian);
+  box-shadow: 1px 1px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .crml-button:focus-visible {
@@ -144,7 +144,7 @@ const handleClick = (e: MouseEvent) => {
 .crml-button--ghost:hover:not(:disabled) { background-color: var(--crml-bg-elevated); transform: none; box-shadow: none; }
 .crml-button--danger { background-color: var(--crt-hot-pink); color: #FFFFFF; }
 
-.crml-button--disabled { opacity: 0.55; cursor: not-allowed; transform: none !important; box-shadow: 2px 2px 0px var(--crt-obsidian) !important; }
+.crml-button--disabled { opacity: 0.55; cursor: not-allowed; transform: none !important; box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D) !important; }
 
 .crml-button__spinner {
   width: 1rem;

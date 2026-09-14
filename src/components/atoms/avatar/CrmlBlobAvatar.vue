@@ -79,7 +79,7 @@ defineEmits<{
 .crml-blob-avatar__wrapper {
   overflow: hidden;
   border: var(--crml-border-brutal);
-  box-shadow: 3px 3px 0px var(--crt-obsidian);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
   background: var(--grad-y2k-sunset);
   display: flex;
   align-items: center;
@@ -120,12 +120,12 @@ defineEmits<{
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 50%;
-  border: 2px solid var(--crt-obsidian);
+  border: 2px solid var(--crml-border-ink, #0D0D0D);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 0.7rem;
-  box-shadow: 1px 1px 0px var(--crt-obsidian);
+  box-shadow: 1px 1px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .crml-blob-avatar__status--online { background-color: var(--crt-electric-lime); }

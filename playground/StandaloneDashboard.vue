@@ -690,12 +690,24 @@
                   <td class="comp-col font-heading">
                     <span class="comp-ico">{{ item.icon }}</span> {{ item.name }}
                   </td>
-                  <td><span class="cat-pill-tag">{{ item.category }}</span></td>
-                  <td><span class="check-pill vue-tag">✅ VUE 3</span></td>
-                  <td><span class="check-pill react-tag">✅ TSX</span></td>
-                  <td><span class="check-pill svelte-tag">✅ SVELTE</span></td>
-                  <td><span class="check-pill html-tag">✅ HTML5</span></td>
-                  <td><span class="status-btn">100% DOKUMENTASI ↗</span></td>
+                  <td>
+                    <CrmlBadge variant="neutral" size="sm">{{ item.category }}</CrmlBadge>
+                  </td>
+                  <td>
+                    <CrmlBadge variant="lime" size="sm">✓ VUE 3</CrmlBadge>
+                  </td>
+                  <td>
+                    <CrmlBadge variant="cyan" size="sm">✓ TSX</CrmlBadge>
+                  </td>
+                  <td>
+                    <CrmlBadge variant="pink" size="sm">✓ SVELTE</CrmlBadge>
+                  </td>
+                  <td>
+                    <CrmlBadge variant="yellow" size="sm">✓ HTML5</CrmlBadge>
+                  </td>
+                  <td>
+                    <CrmlBadge variant="lime" size="sm" clickable>100% DOKUMENTASI ↗</CrmlBadge>
+                  </td>
                 </tr>
               </tbody>
             </table>

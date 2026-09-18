@@ -45,7 +45,7 @@
 
 <script setup lang="ts">
 export interface CrmlBouncyButtonProps {
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow' | 'white' | 'obsidian' | 'grad-y2k' | 'grad-acid';
+  variant?: 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'white' | 'obsidian' | 'grad-y2k' | 'grad-acid';
   shape?: 'brutal' | 'rounded';
   size?: 'sm' | 'md' | 'lg';
   disabled?: boolean;
@@ -109,7 +109,8 @@ const handleClick = (e: MouseEvent) => {
 .crml-bouncy-button--lg { padding: 0.85rem 1.85rem; font-size: 1.0625rem; }
 
 /* Variants */
-.crml-bouncy-button--lime { background-color: var(--crml-action-primary); color: var(--crt-obsidian); }
+.crml-bouncy-button--primary { background-color: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF); }
+.crml-bouncy-button--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
 .crml-bouncy-button--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .crml-bouncy-button--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .crml-bouncy-button--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }

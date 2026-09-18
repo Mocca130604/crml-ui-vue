@@ -2,6 +2,7 @@ export type CrmlIconSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | number;
 
 export type CrmlIconVariant =
   | 'current'
+  | 'primary'
   | 'lime'
   | 'pink'
   | 'cyan'

@@ -14,7 +14,7 @@
 
 <script setup lang="ts">
 export interface CrmlStickerBadgeProps {
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow' | 'lavender' | 'peach' | 'mint' | 'obsidian' | 'grad-y2k' | 'grad-acid';
+  variant?: 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'lavender' | 'peach' | 'mint' | 'obsidian' | 'grad-y2k' | 'grad-acid';
   tilt?: 'left' | 'right' | 'none';
   size?: 'sm' | 'md' | 'lg';
   star?: boolean;
@@ -61,7 +61,8 @@ withDefaults(defineProps<CrmlStickerBadgeProps>(), {
 .crml-sticker-badge--lg { font-size: 0.9375rem; padding: 0.35rem 0.85rem; }
 
 /* Variants */
-.crml-sticker-badge--lime { background-color: var(--crml-action-primary); color: var(--crt-obsidian); }
+.crml-sticker-badge--primary { background-color: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF); }
+.crml-sticker-badge--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
 .crml-sticker-badge--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .crml-sticker-badge--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .crml-sticker-badge--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }

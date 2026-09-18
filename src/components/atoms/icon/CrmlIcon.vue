@@ -38,6 +38,7 @@ const sizePixels = computed(() => {
 
 const iconColor = computed(() => {
   switch (props.variant) {
+    case 'primary': return 'var(--crml-action-primary, #1B6FFF)'
     case 'lime': return 'var(--crt-electric-lime, #CCFF00)'
     case 'pink': return 'var(--crt-hot-pink, #FF007F)'
     case 'cyan': return 'var(--crt-cyber-cyan, #00F0FF)'

@@ -93,21 +93,22 @@ defineEmits<{
 
 /* Filled Variants */
 .crml-badge--neutral { background-color: var(--crml-bg-elevated); color: var(--crml-text-main); }
-.crml-badge--lime { background-color: var(--crml-action-primary); color: var(--crt-obsidian); }
+.crml-badge--primary { background-color: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF); }
+.crml-badge--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
 .crml-badge--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .crml-badge--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .crml-badge--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }
 .crml-badge--obsidian { background-color: var(--crt-obsidian); color: var(--crml-action-primary); }
 
 /* Legacy backward-compatible variants */
-.crml-badge--primary { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
-.crml-badge--success { background-color: var(--crml-action-primary); color: var(--crt-obsidian); }
+.crml-badge--success { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
 .crml-badge--warning { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }
 .crml-badge--danger { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 
 /* Outlined Variants */
 .crml-badge--outlined { background-color: transparent; }
-.crml-badge--outlined.crml-badge--lime { color: var(--crml-action-primary); border-color: var(--crml-action-primary); box-shadow: 2px 2px 0px var(--crml-action-primary); }
+.crml-badge--outlined.crml-badge--primary { color: var(--crml-action-primary); border-color: var(--crml-action-primary); box-shadow: 2px 2px 0px var(--crml-action-primary); }
+.crml-badge--outlined.crml-badge--lime { color: var(--crt-electric-lime); border-color: var(--crt-electric-lime); box-shadow: 2px 2px 0px var(--crt-electric-lime); }
 .crml-badge--outlined.crml-badge--pink { color: var(--crt-hot-pink); border-color: var(--crt-hot-pink); box-shadow: 2px 2px 0px var(--crt-hot-pink); }
 .crml-badge--outlined.crml-badge--cyan { color: var(--crt-cyber-cyan); border-color: var(--crt-cyber-cyan); box-shadow: 2px 2px 0px var(--crt-cyber-cyan); }
 .crml-badge--outlined.crml-badge--yellow { color: var(--crt-sunburst-yellow); border-color: var(--crt-sunburst-yellow); box-shadow: 2px 2px 0px var(--crt-sunburst-yellow); }

@@ -164,7 +164,7 @@ const isMobileOpen = ref(false)
   font-size: 15px;
   letter-spacing: -0.5px;
   background: var(--crt-obsidian, #0d0d0d);
-  color: var(--crml-action-primary, #1B6FFF);
+  color: #FFFFFF;
   border: 2px solid var(--crml-border-ink, #0D0D0D);
   padding: 3px 8px;
   border-radius: 6px;

@@ -51,7 +51,7 @@ const props = withDefaults(
   defineProps<{
     modelValue?: string
     options?: SegmentOptionInput[]
-    variant?: 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian'
+    variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian'
     size?: 'sm' | 'md' | 'lg'
     disabled?: boolean
   }>(),

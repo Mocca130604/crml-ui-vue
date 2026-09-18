@@ -278,6 +278,38 @@ function emitTime() {
   color: var(--crml-action-primary, #1B6FFF);
 }
 
+
+.variant-lime .format-toggle-btn.active {
+  background: var(--crt-electric-lime, #CCFF00) !important;
+  color: var(--crt-obsidian, #0D0D0D) !important;
+}
+.variant-lime .time-readout-pill {
+  background: var(--crt-electric-lime, #CCFF00) !important;
+  color: var(--crt-obsidian, #0D0D0D) !important;
+}
+.variant-lime .digit-box {
+  color: var(--crt-electric-lime, #CCFF00) !important;
+  border-color: var(--crt-electric-lime, #CCFF00) !important;
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D) !important;
+}
+
+.variant-blue .format-toggle-btn.active,
+.variant-primary .format-toggle-btn.active {
+  background: var(--crt-ryo-blue-500, #1B6FFF) !important;
+  color: #FFFFFF !important;
+}
+.variant-blue .time-readout-pill,
+.variant-primary .time-readout-pill {
+  background: var(--crt-ryo-blue-500, #1B6FFF) !important;
+  color: #FFFFFF !important;
+}
+.variant-blue .digit-box,
+.variant-primary .digit-box {
+  color: var(--crt-ryo-blue-500, #1B6FFF) !important;
+  border-color: var(--crt-ryo-blue-500, #1B6FFF) !important;
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D) !important;
+}
+
 .variant-pink .format-toggle-btn.active {
   color: var(--crt-hot-pink, #ff007f);
 }

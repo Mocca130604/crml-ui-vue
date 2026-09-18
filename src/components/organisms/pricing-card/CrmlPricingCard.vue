@@ -274,7 +274,8 @@ const displayPrice = computed(() => {
   box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
-.plan-cta-btn--lime { background-color: var(--crml-action-primary, #1B6FFF); color: var(--crt-obsidian, #0d0d0d) !important; }
+.plan-cta-btn--lime { background-color: var(--crt-electric-lime, #CCFF00); color: var(--crt-obsidian, #0D0D0D) !important; }
+.plan-cta-btn--blue, .plan-cta-btn--primary { background-color: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF !important; }
 .plan-cta-btn--pink { background-color: var(--crt-hot-pink, #ff007f); color: #fff !important; }
 .plan-cta-btn--cyan { background-color: var(--crt-cyber-cyan, #00f0ff); color: var(--crt-obsidian, #0d0d0d) !important; }
 .plan-cta-btn--yellow { background-color: var(--crt-sunburst-yellow, #ffd600); color: var(--crt-obsidian, #0d0d0d) !important; }

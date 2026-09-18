@@ -133,7 +133,8 @@ const emit = defineEmits<{
 }
 
 .crml-review-quote-card--yellow { background-color: var(--crt-sunburst-yellow, #FFE600); }
-.crml-review-quote-card--lime { background-color: var(--crml-action-primary); }
+.crml-review-quote-card--lime { background-color: var(--crt-electric-lime, #CCFF00); color: var(--crt-obsidian, #0D0D0D); }
+.crml-review-quote-card--blue, .crml-review-quote-card--primary { background-color: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF; }
 .crml-review-quote-card--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .crml-review-quote-card--cyan { background-color: var(--crt-cyber-cyan); }
 .crml-review-quote-card--white { background-color: var(--crt-pure-white); }

@@ -94,11 +94,12 @@ const progressColor = computed(() => {
   if (props.activeColor) return props.activeColor
   const range = props.max - props.min
   const pct = range > 0 ? (internalValue.value - props.min) / range : 0
-  if (pct > 0.85) return '#FF007F'
   if (props.variant === 'pink') return '#FF007F'
   if (props.variant === 'cyan') return '#00F0FF'
   if (props.variant === 'yellow') return '#FFD600'
-  return 'var(--crml-action-primary)'
+  if (props.variant === 'lime') return 'var(--crt-electric-lime, #CCFF00)'
+  if (props.variant === 'blue' || props.variant === 'primary') return 'var(--crt-ryo-blue-500, #1B6FFF)'
+  return 'var(--crt-electric-lime, #CCFF00)'
 })
 
 function selectMode(m: SpeedometerMode) {
@@ -241,7 +242,7 @@ function formattedValue(val: number): string {
 }
 
 .speedo-unit-pill {
-  background: var(--crml-action-primary, #1B6FFF);
+  background: var(--crt-electric-lime, #CCFF00);
   color: var(--crt-obsidian, #0d0d0d);
   border: 2px solid var(--crml-border-ink, #0D0D0D);
   padding: 2px 6px;
@@ -249,6 +250,28 @@ function formattedValue(val: number): string {
   font-weight: 900;
   font-size: 10px;
   box-shadow: 1.5px 1.5px 0px var(--crml-shadow-ink, #0D0D0D);
+}
+
+.crml-speedometer--lime .speedo-unit-pill {
+  background: var(--crt-electric-lime, #CCFF00);
+  color: var(--crt-obsidian, #0D0D0D);
+}
+.crml-speedometer--blue .speedo-unit-pill,
+.crml-speedometer--primary .speedo-unit-pill {
+  background: var(--crt-ryo-blue-500, #1B6FFF);
+  color: #FFFFFF;
+}
+.crml-speedometer--pink .speedo-unit-pill {
+  background: var(--crt-hot-pink, #FF007F);
+  color: #FFFFFF;
+}
+.crml-speedometer--cyan .speedo-unit-pill {
+  background: var(--crt-cyber-cyan, #00F0FF);
+  color: var(--crt-obsidian, #0D0D0D);
+}
+.crml-speedometer--yellow .speedo-unit-pill {
+  background: var(--crt-sunburst-yellow, #FFD600);
+  color: var(--crt-obsidian, #0D0D0D);
 }
 
 .dial-container {

@@ -110,7 +110,8 @@ const emit = defineEmits<{
 }
 
 /* Card accent variants */
-.crml-kanban-card--lime { border-left: 5px solid var(--crml-action-primary); }
+.crml-kanban-card--lime { border-left: 5px solid var(--crt-electric-lime, #CCFF00); }
+.crml-kanban-card--blue, .crml-kanban-card--primary { border-left: 5px solid var(--crt-ryo-blue-500, #1B6FFF); }
 .crml-kanban-card--pink { border-left: 5px solid var(--crt-hot-pink); }
 .crml-kanban-card--cyan { border-left: 5px solid var(--crt-cyber-cyan); }
 .crml-kanban-card--yellow { border-left: 5px solid var(--crt-sunburst-yellow); }
@@ -146,7 +147,7 @@ const emit = defineEmits<{
 
 .priority-P0 { background-color: var(--crt-hot-pink, #ff007f); color: #ffffff; }
 .priority-P1 { background-color: var(--crt-sunburst-yellow, #ffd600); color: var(--crml-text-on-accent, #0d0d0d); }
-.priority-P2 { background-color: var(--crml-action-primary, #1B6FFF); color: var(--crml-text-on-accent, #0d0d0d); }
+.priority-P2 { background-color: var(--crt-electric-lime, #CCFF00); color: var(--crt-obsidian, #0D0D0D); }
 .priority-P3 { background-color: var(--crml-bg-elevated, #e0e0e0); color: var(--crml-text-main, #0d0d0d); }
 
 .task-title {
@@ -217,7 +218,8 @@ const emit = defineEmits<{
 }
 
 .status-progress { background-color: var(--crt-cyber-cyan, #00f0ff); color: var(--crt-obsidian); }
-.status-done { background-color: var(--crml-action-primary, #1B6FFF); color: #ffffff; }
+.status-done { background-color: var(--crt-electric-lime, #CCFF00); color: var(--crt-obsidian, #0D0D0D); }
+.status-blue, .status-primary { background-color: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF; }
 .status-review { background-color: var(--crt-sunburst-yellow, #ffd600); color: var(--crt-obsidian); }
 .status-blocked { background-color: var(--crt-hot-pink, #ff007f); color: white; }
 .status-todo { background-color: var(--crml-bg-elevated, #e0e0e0); color: var(--crml-text-main, #0d0d0d); }

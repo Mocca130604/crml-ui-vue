@@ -239,7 +239,8 @@ const formatBytes = (bytes: number) => {
   margin-bottom: 0.25rem;
 }
 
-.floppy-icon-box--lime { background-color: var(--crml-action-primary); }
+.floppy-icon-box--lime { background-color: var(--crt-electric-lime, #CCFF00); }
+.floppy-icon-box--blue, .floppy-icon-box--primary { background-color: var(--crt-ryo-blue-500, #1B6FFF); }
 .floppy-icon-box--pink { background-color: var(--crt-hot-pink); }
 .floppy-icon-box--cyan { background-color: var(--crt-cyber-cyan); }
 .floppy-icon-box--yellow { background-color: var(--crt-sunburst-yellow); }
@@ -299,7 +300,8 @@ const formatBytes = (bytes: number) => {
   transition: width 0.3s ease;
 }
 
-.progress-fill--lime { background-color: var(--crml-action-primary); }
+.progress-fill--lime { background-color: var(--crt-electric-lime, #CCFF00); }
+.progress-fill--blue, .progress-fill--primary { background-color: var(--crt-ryo-blue-500, #1B6FFF); }
 .progress-fill--pink { background-color: var(--crt-hot-pink); }
 .progress-fill--cyan { background-color: var(--crt-cyber-cyan); }
 .progress-fill--yellow { background-color: var(--crt-sunburst-yellow); }
@@ -339,7 +341,8 @@ const formatBytes = (bytes: number) => {
   justify-content: center;
 }
 
-.file-check-icon--lime { background-color: var(--crml-action-primary); }
+.file-check-icon--lime { background-color: var(--crt-electric-lime, #CCFF00); }
+.file-check-icon--blue, .file-check-icon--primary { background-color: var(--crt-ryo-blue-500, #1B6FFF); color: white; }
 .file-check-icon--pink { background-color: var(--crt-hot-pink); color: white; }
 .file-check-icon--cyan { background-color: var(--crt-cyber-cyan); }
 .file-check-icon--yellow { background-color: var(--crt-sunburst-yellow); }

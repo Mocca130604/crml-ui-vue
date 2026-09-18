@@ -30,7 +30,7 @@
 export interface CrmlNeubrutalCardProps {
   title?: string;
   subtitle?: string;
-  headerColor?: 'white' | 'lavender' | 'peach' | 'mint' | 'lime' | 'pink' | 'cyan' | 'yellow';
+  headerColor?: 'white' | 'lavender' | 'peach' | 'mint' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'blue' | 'primary';
   hoverable?: boolean;
 }
 

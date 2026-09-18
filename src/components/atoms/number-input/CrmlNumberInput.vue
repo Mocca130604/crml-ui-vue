@@ -181,6 +181,17 @@ function onInput(e: Event) {
   border-left: 2.5px solid var(--crml-border-ink, #0D0D0D);
 }
 
+
+.variant-lime .step-btn {
+  background: var(--crt-electric-lime, #CCFF00);
+  color: var(--crt-obsidian, #0D0D0D);
+}
+.variant-blue .step-btn,
+.variant-primary .step-btn {
+  background: var(--crt-ryo-blue-500, #1B6FFF);
+  color: #FFFFFF;
+}
+
 .variant-pink .step-btn {
   background: var(--crt-hot-pink, #ff007f);
   color: #ffffff;

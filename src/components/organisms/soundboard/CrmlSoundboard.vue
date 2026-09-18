@@ -18,7 +18,7 @@ const props = withDefaults(
     pads?: SoundPad[]
     modelValue?: boolean
     columns?: number
-    variant?: 'lime' | 'pink' | 'cyan' | 'yellow'
+    variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow'
     playLabel?: string
     pauseLabel?: string
   }>(),
@@ -317,6 +317,44 @@ const gridStyle = computed(() => ({
   box-shadow: 1px 1px 0px var(--crml-shadow-ink, #0D0D0D);
   background-color: var(--pad-accent, var(--crml-action-primary, #1B6FFF));
   color: var(--crt-obsidian, #0d0d0d);
+}
+
+.sound-pad--lime::after,
+.sound-pad--lime.active,
+.sound-pad--lime:active {
+  background-color: var(--crt-electric-lime, #CCFF00) !important;
+  color: var(--crt-obsidian, #0D0D0D) !important;
+}
+
+.sound-pad--blue::after,
+.sound-pad--blue.active,
+.sound-pad--blue:active,
+.sound-pad--primary::after,
+.sound-pad--primary.active,
+.sound-pad--primary:active {
+  background-color: var(--crt-ryo-blue-500, #1B6FFF) !important;
+  color: #FFFFFF !important;
+}
+
+.sound-pad--pink::after,
+.sound-pad--pink.active,
+.sound-pad--pink:active {
+  background-color: var(--crt-hot-pink, #FF007F) !important;
+  color: #FFFFFF !important;
+}
+
+.sound-pad--cyan::after,
+.sound-pad--cyan.active,
+.sound-pad--cyan:active {
+  background-color: var(--crt-cyber-cyan, #00F0FF) !important;
+  color: var(--crt-obsidian, #0D0D0D) !important;
+}
+
+.sound-pad--yellow::after,
+.sound-pad--yellow.active,
+.sound-pad--yellow:active {
+  background-color: var(--crt-sunburst-yellow, #FFD600) !important;
+  color: var(--crt-obsidian, #0D0D0D) !important;
 }
 
 .pad-key {

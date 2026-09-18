@@ -210,7 +210,8 @@ const handlePaste = (e: ClipboardEvent) => {
 }
 
 /* Variants */
-.crml-otp-group--lime .otp-box.is-filled { background-color: var(--crml-action-primary, #1B6FFF); color: var(--crt-obsidian, #0d0d0d) !important; }
+.crml-otp-group--lime .otp-box.is-filled { background-color: var(--crt-electric-lime, #CCFF00); color: var(--crt-obsidian, #0d0d0d) !important; }
+.crml-otp-group--blue .otp-box.is-filled, .crml-otp-group--primary .otp-box.is-filled { background-color: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF !important; }
 .crml-otp-group--pink .otp-box.is-filled { background-color: var(--crt-hot-pink, #ff007f); color: #fff !important; }
 .crml-otp-group--cyan .otp-box.is-filled { background-color: var(--crt-cyber-cyan, #00f0ff); color: var(--crt-obsidian, #0d0d0d) !important; }
 .crml-otp-group--yellow .otp-box.is-filled { background-color: var(--crt-sunburst-yellow, #ffd600); color: var(--crt-obsidian, #0d0d0d) !important; }

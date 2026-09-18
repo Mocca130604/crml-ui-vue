@@ -480,6 +480,13 @@ const formatTagCount = (count: number, tag: FilterTag) => {
   box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0d0d0d);
 }
 
+.crml-search-tag-filter[data-variant="blue"] .filter-tag-pill.is-active,
+.crml-search-tag-filter[data-variant="primary"] .filter-tag-pill.is-active {
+  background-color: var(--crt-ryo-blue-500, #1B6FFF);
+  color: #ffffff !important;
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0d0d0d);
+}
+
 .crml-search-tag-filter[data-variant="pink"] .filter-tag-pill.is-active {
   background-color: var(--crt-hot-pink, #ff007f);
   color: #ffffff !important;
@@ -499,10 +506,8 @@ const formatTagCount = (count: number, tag: FilterTag) => {
 }
 
 /* Individual Tag Color Override */
-.filter-tag-pill.is-active[data-tag-color="lime"] {
-  background-color: var(--crml-action-primary) !important;
-  color: var(--crml-text-on-primary, #FFFFFF) !important;
-}
+.filter-tag-pill.is-active[data-tag-color="lime"] { background-color: var(--crt-electric-lime, #CCFF00) !important; color: var(--crt-obsidian, #0D0D0D) !important; }
+.filter-tag-pill.is-active[data-tag-color="blue"], .filter-tag-pill.is-active[data-tag-color="primary"] { background-color: var(--crt-ryo-blue-500, #1B6FFF) !important; color: #FFFFFF !important; }
 .filter-tag-pill.is-active[data-tag-color="pink"] {
   background-color: #ff007f !important;
   color: #ffffff !important;

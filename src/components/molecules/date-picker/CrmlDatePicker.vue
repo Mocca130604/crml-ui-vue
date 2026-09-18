@@ -554,7 +554,28 @@ function isDayInRange(day: number): boolean {
   transform: translate(-1px, -1px);
 }
 
+
 /* Color Variants Override */
+.crml-date-picker.variant-lime .selected-pill,
+.crml-date-picker.variant-lime .day-cell.active,
+.crml-date-picker.variant-lime .grid-selector-btn.active,
+.crml-date-picker.variant-lime .direct-year-btn {
+  background: var(--crt-electric-lime, #CCFF00) !important;
+  color: var(--crt-obsidian, #0D0D0D) !important;
+}
+
+.crml-date-picker.variant-blue .selected-pill,
+.crml-date-picker.variant-blue .day-cell.active,
+.crml-date-picker.variant-blue .grid-selector-btn.active,
+.crml-date-picker.variant-blue .direct-year-btn,
+.crml-date-picker.variant-primary .selected-pill,
+.crml-date-picker.variant-primary .day-cell.active,
+.crml-date-picker.variant-primary .grid-selector-btn.active,
+.crml-date-picker.variant-primary .direct-year-btn {
+  background: var(--crt-ryo-blue-500, #1B6FFF) !important;
+  color: #FFFFFF !important;
+}
+
 .crml-date-picker.variant-pink .selected-pill,
 .crml-date-picker.variant-pink .day-cell.active,
 .crml-date-picker.variant-pink .grid-selector-btn.active,

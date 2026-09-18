@@ -48,7 +48,7 @@ export interface CrmlRetroDialogProps {
   /** Dialog title */
   title?: string;
   /** Header color theme */
-  headerTheme?: 'pink' | 'lime' | 'cyan' | 'yellow' | 'obsidian';
+  headerTheme?: 'pink' | 'lime' | 'cyan' | 'yellow' | 'obsidian' | 'blue' | 'primary';
   /** Close when clicking backdrop */
   closeOnBackdrop?: boolean;
   /** Dialog size */

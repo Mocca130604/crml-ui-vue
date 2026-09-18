@@ -165,7 +165,8 @@ const displayPrice = computed(() => {
   font-weight: 900;
 }
 
-.crml-price-tag-widget--lime .price-currency { color: var(--crml-action-primary); }
+.crml-price-tag-widget--lime .price-currency { color: var(--crt-electric-lime, #CCFF00); }
+.crml-price-tag-widget--blue .price-currency, .crml-price-tag-widget--primary .price-currency { color: var(--crt-ryo-blue-500, #1B6FFF); }
 .crml-price-tag-widget--pink .price-currency { color: var(--crt-hot-pink); }
 .crml-price-tag-widget--cyan .price-currency { color: var(--crt-cyber-cyan); }
 .crml-price-tag-widget--yellow .price-currency { color: var(--crt-sunburst-yellow); }
@@ -214,7 +215,8 @@ const displayPrice = computed(() => {
   border-right: 1px solid var(--crml-border-ink, #0D0D0D);
 }
 
-.stock-fill--lime { background-color: var(--crml-action-primary); }
+.stock-fill--lime { background-color: var(--crt-electric-lime, #CCFF00); }
+.stock-fill--blue, .stock-fill--primary { background-color: var(--crt-ryo-blue-500, #1B6FFF); }
 .stock-fill--pink { background-color: var(--crt-hot-pink); }
 .stock-fill--cyan { background-color: var(--crt-cyber-cyan); }
 .stock-fill--yellow { background-color: var(--crt-sunburst-yellow); }

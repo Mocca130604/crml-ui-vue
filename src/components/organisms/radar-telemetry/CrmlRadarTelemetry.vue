@@ -277,6 +277,15 @@ onUnmounted(() => {
   width: 2px;
 }
 
+
+.crml-radar-telemetry--lime .radar-sweep {
+  background: conic-gradient(from 0deg at 50% 50%, rgba(204, 255, 0, 0) 0deg, rgba(204, 255, 0, 0.35) 360deg);
+}
+.crml-radar-telemetry--blue .radar-sweep,
+.crml-radar-telemetry--primary .radar-sweep {
+  background: conic-gradient(from 0deg at 50% 50%, rgba(27, 111, 255, 0) 0deg, rgba(27, 111, 255, 0.4) 360deg);
+}
+
 .radar-sweep {
   position: absolute;
   top: 0;

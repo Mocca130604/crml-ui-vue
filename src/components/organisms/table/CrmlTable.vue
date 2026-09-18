@@ -15,7 +15,7 @@ const props = withDefaults(
     data: Record<string, any>[]
     striped?: boolean
     hoverable?: boolean
-    accentColor?: 'yellow' | 'pink' | 'cyan' | 'lime' | 'violet'
+    accentColor?: 'yellow' | 'pink' | 'cyan' | 'lime' | 'violet' | 'blue' | 'primary'
     /** Size/density variant */
     size?: 'sm' | 'md' | 'lg'
     /** Show outer border */
@@ -187,7 +187,8 @@ const emit = defineEmits<{
 
 .accent-pink .crml-table th { background-color: var(--crt-hot-pink); color: #ffffff; }
 .accent-cyan .crml-table th { background-color: var(--crt-cyber-cyan); }
-.accent-lime .crml-table th { background-color: var(--crml-action-primary); }
+.accent-lime .crml-table th { background-color: var(--crt-electric-lime, #CCFF00); color: var(--crt-obsidian, #0D0D0D); }
+.accent-blue .crml-table th, .accent-primary .crml-table th { background-color: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF; }
 .accent-violet .crml-table th { background-color: var(--crml-color-violet, #9B59B6); color: #ffffff; }
 
 .crml-table td {

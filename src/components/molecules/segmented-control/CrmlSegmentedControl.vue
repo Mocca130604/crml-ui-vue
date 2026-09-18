@@ -42,7 +42,7 @@ export interface SegmentOption {
   icon?: string
   badge?: string | number
   disabled?: boolean
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian'
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian'
 }
 
 export type SegmentOptionInput = string | SegmentOption

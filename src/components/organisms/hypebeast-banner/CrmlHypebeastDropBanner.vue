@@ -46,7 +46,7 @@ export interface CrmlHypebeastDropBannerProps {
   /** Or specify a target date directly */
   targetDate?: Date | string;
   /** Color variant */
-  variant?: 'obsidian' | 'lime' | 'pink' | 'cyan' | 'yellow';
+  variant?: 'blue' | 'primary' | 'obsidian' | 'lime' | 'pink' | 'cyan' | 'yellow';
   /** Label for hours */
   hrsLabel?: string;
   /** Label for minutes */
@@ -141,10 +141,8 @@ onUnmounted(() => {
   background: var(--crt-obsidian); color: var(--crml-action-primary);
   box-shadow: 6px 6px 0px var(--crml-shadow-ink, #0D0D0D);
 }
-.crml-hypebeast-banner--lime {
-  background: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF);
-  box-shadow: 6px 6px 0px var(--crml-shadow-ink, #0D0D0D);
-}
+.crml-hypebeast-banner--lime { background: var(--crt-electric-lime); color: var(--crt-obsidian); box-shadow: 6px 6px 0px var(--crml-shadow-ink, #0D0D0D); }
+.crml-hypebeast-banner--blue, .crml-hypebeast-banner--primary { background: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF; box-shadow: 6px 6px 0px var(--crml-shadow-ink, #0D0D0D); }
 .crml-hypebeast-banner--pink {
   background: var(--crt-hot-pink); color: var(--crt-pure-white);
   box-shadow: 6px 6px 0px var(--crml-shadow-ink, #0D0D0D);

@@ -149,8 +149,9 @@ const handleBackdropClick = () => {
   user-select: none;
 }
 
+.crml-retro-dialog--header-blue .crml-retro-dialog__titlebar, .crml-retro-dialog--header-primary .crml-retro-dialog__titlebar { background-color: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF; }
 .crml-retro-dialog--header-pink .crml-retro-dialog__titlebar { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
-.crml-retro-dialog--header-lime .crml-retro-dialog__titlebar { background-color: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF); }
+.crml-retro-dialog--header-lime .crml-retro-dialog__titlebar { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
 .crml-retro-dialog--header-cyan .crml-retro-dialog__titlebar { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .crml-retro-dialog--header-yellow .crml-retro-dialog__titlebar { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }
 .crml-retro-dialog--header-obsidian .crml-retro-dialog__titlebar { background-color: var(--crt-obsidian); color: var(--crml-action-primary); }

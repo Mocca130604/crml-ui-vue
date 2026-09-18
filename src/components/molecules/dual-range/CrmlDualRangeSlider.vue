@@ -21,7 +21,7 @@ export interface CrmlDualRangeSliderProps {
   prefix?: string
   suffix?: string
   label?: string
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow'
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow'
   compact?: boolean
   thousandSeparator?: boolean
   showLimits?: boolean

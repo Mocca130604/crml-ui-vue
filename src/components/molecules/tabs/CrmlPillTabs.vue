@@ -34,7 +34,7 @@ export interface CrmlPillTabsProps {
   items: TabItem[];
   modelValue: string;
   /** Color variant */
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian';
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian';
   /** Size variant */
   size?: 'sm' | 'md' | 'lg';
   /** Full width mode */
@@ -113,7 +113,8 @@ const selectTab = (id: string) => {
   transform: translateY(-1px);
 }
 
-.crml-pill-tabs--lime .crml-pill-tab-item--active { background-color: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF) !important; }
+.crml-pill-tabs--lime .crml-pill-tab-item--active { background-color: var(--crt-electric-lime); color: var(--crt-obsidian) !important; }
+.crml-pill-tabs--blue .crml-pill-tab-item--active, .crml-pill-tabs--primary .crml-pill-tab-item--active { background-color: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF !important; }
 .crml-pill-tabs--pink .crml-pill-tab-item--active { background-color: var(--crt-hot-pink); color: var(--crt-pure-white) !important; }
 .crml-pill-tabs--cyan .crml-pill-tab-item--active { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian) !important; }
 .crml-pill-tabs--yellow .crml-pill-tab-item--active { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian) !important; }

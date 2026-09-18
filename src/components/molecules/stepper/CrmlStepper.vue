@@ -79,7 +79,7 @@ export interface CrmlStepperProps {
   steps?: StepItem[]
   currentStep?: number
   modelValue?: number
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian'
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian'
   completedVariant?: 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian'
   size?: 'sm' | 'md' | 'lg'
   orientation?: 'horizontal' | 'vertical'

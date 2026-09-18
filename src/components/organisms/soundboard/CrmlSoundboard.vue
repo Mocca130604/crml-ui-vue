@@ -6,7 +6,7 @@ export interface SoundPad {
   label: string
   key?: string
   color?: string
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian'
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian'
   sound?: string
   icon?: string
 }

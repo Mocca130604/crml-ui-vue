@@ -23,7 +23,7 @@ export interface ReviewQuoteProps {
   /** Background color */
   bgColor?: string;
   /** Color variant (overrides bgColor with preset) */
-  variant?: 'yellow' | 'lime' | 'pink' | 'cyan' | 'white';
+  variant?: 'blue' | 'primary' | 'yellow' | 'lime' | 'pink' | 'cyan' | 'white';
   /** Star active icon */
   starActiveIcon?: string;
   /** Star inactive icon */

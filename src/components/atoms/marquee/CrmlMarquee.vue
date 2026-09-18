@@ -26,7 +26,7 @@ export interface CrmlMarqueeProps {
   pauseOnHover?: boolean;
   direction?: 'left' | 'right';
   repeat?: number;
-  variant?: 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian' | 'grad-y2k' | 'grad-acid';
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian' | 'grad-y2k' | 'grad-acid';
 }
 
 withDefaults(defineProps<CrmlMarqueeProps>(), {
@@ -70,7 +70,7 @@ withDefaults(defineProps<CrmlMarqueeProps>(), {
   white-space: nowrap;
 }
 
-.crml-marquee--primary { background-color: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF); }
+.crml-marquee--primary, .crml-marquee--blue { background-color: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF; }
 .crml-marquee--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
 .crml-marquee--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .crml-marquee--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }

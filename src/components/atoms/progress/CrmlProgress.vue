@@ -48,7 +48,7 @@ export interface CrmlProgressProps {
   /** Show min/max markers */
   showMinMax?: boolean;
   /** Color variant */
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow' | 'grad-y2k' | 'grad-acid';
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'grad-y2k' | 'grad-acid';
   /** Size variant */
   size?: 'sm' | 'md' | 'lg';
   /** Show stripe pattern */

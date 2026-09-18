@@ -20,7 +20,7 @@ const props = withDefaults(
     sweepSpeed?: number
     modelValue?: string
     selectedTarget?: RadarTarget
-    variant?: 'lime' | 'pink' | 'cyan' | 'yellow'
+    variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow'
   }>(),
   {
     title: 'TACTILE RADAR HUD v2.4',

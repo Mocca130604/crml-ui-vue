@@ -10,7 +10,7 @@
 <script setup lang="ts">
 export interface CrmlSpeechBubbleProps {
   text?: string;
-  variant?: 'lime' | 'pink' | 'yellow' | 'white' | 'obsidian';
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'yellow' | 'white' | 'obsidian';
   tail?: 'bottom-left' | 'bottom-right' | 'top-left' | 'top-right';
 }
 
@@ -40,7 +40,8 @@ withDefaults(defineProps<CrmlSpeechBubbleProps>(), {
 
 /* Variants */
 .crml-speech-bubble--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }
-.crml-speech-bubble--lime { background-color: var(--crml-action-primary); color: #ffffff; }
+.crml-speech-bubble--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
+.crml-speech-bubble--blue, .crml-speech-bubble--primary { background-color: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF; }
 .crml-speech-bubble--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .crml-speech-bubble--white { background-color: var(--crt-pure-white); color: var(--crt-obsidian); }
 .crml-speech-bubble--obsidian { background-color: var(--crt-obsidian); color: var(--crml-action-primary); border-color: var(--crml-action-primary); box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D); }

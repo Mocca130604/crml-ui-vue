@@ -47,7 +47,7 @@ export interface CrmlNeonSwitchProps {
   /** Label position relative to switch */
   labelPosition?: 'left' | 'right';
   /** Color variant */
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow';
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow';
   /** Size variant */
   size?: 'sm' | 'md' | 'lg';
   /** Disabled state */

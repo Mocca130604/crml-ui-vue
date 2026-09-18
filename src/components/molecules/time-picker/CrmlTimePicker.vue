@@ -4,7 +4,7 @@ import { ref, computed, watch } from 'vue'
 export interface CrmlTimePickerProps {
   modelValue?: string // "09:30 AM" or "14:30"
   label?: string
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow' | 'white'
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'white'
   format?: '12h' | '24h' | '12' | '24'
 }
 

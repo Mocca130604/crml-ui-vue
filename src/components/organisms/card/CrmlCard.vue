@@ -47,7 +47,7 @@ export interface CrmlCardProps {
   /** Card subtitle */
   subtitle?: string;
   /** Visual or color variant */
-  variant?: 'default' | 'elevated' | 'outlined' | 'brutal' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian';
+  variant?: 'blue' | 'default' | 'elevated' | 'outlined' | 'brutal' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian';
   /** Size (controls padding) */
   size?: 'sm' | 'md' | 'lg';
   /** Show border */
@@ -101,12 +101,7 @@ defineEmits<{
   box-shadow: var(--crml-shadow-brutal);
 }
 
-.crml-card--primary {
-  border: var(--crml-border-brutal);
-  box-shadow: var(--crml-shadow-brutal);
-  background-color: var(--crml-action-primary);
-  color: #FFFFFF;
-}
+.crml-card--primary, .crml-card--blue { background-color: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF; }
 .crml-card--primary .crml-card__title,
 .crml-card--primary .crml-card__body,
 .crml-card--primary .crml-card__body p,
@@ -117,12 +112,7 @@ defineEmits<{
   color: rgba(255, 255, 255, 0.85) !important;
 }
 
-.crml-card--lime {
-  border: var(--crml-border-brutal);
-  box-shadow: var(--crml-shadow-brutal);
-  background-color: var(--crt-electric-lime);
-  color: var(--crt-obsidian);
-}
+.crml-card--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
 .crml-card--lime .crml-card__title,
 .crml-card--lime .crml-card__body,
 .crml-card--lime .crml-card__body p,

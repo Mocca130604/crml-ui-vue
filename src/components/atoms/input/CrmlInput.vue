@@ -91,7 +91,7 @@ export interface CrmlInputProps {
   /** Size variant */
   size?: 'sm' | 'md' | 'lg';
   /** Theme color for focus ring */
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow';
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow';
   /** Show clear button when has value */
   clearable?: boolean;
   /** Prefix text (or use #prefix slot) */
@@ -207,7 +207,8 @@ const handleClear = () => {
 }
 
 /* Focus variants */
-.crml-input-wrapper--lime .crml-input:focus { border-color: var(--crml-action-primary); box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D); }
+.crml-input-wrapper--lime .crml-input:focus { border-color: var(--crt-electric-lime); box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D); }
+.crml-input-wrapper--blue .crml-input:focus, .crml-input-wrapper--primary .crml-input:focus { border-color: var(--crt-ryo-blue-500, #1B6FFF); box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D); }
 .crml-input-wrapper--pink .crml-input:focus { border-color: var(--crt-hot-pink); box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D); }
 .crml-input-wrapper--cyan .crml-input:focus { border-color: var(--crt-cyber-cyan); box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D); }
 .crml-input-wrapper--yellow .crml-input:focus { border-color: var(--crt-sunburst-yellow); box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D); }

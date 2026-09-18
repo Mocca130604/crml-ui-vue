@@ -21,7 +21,7 @@ export interface CrmlKanbanCardProps {
   /** Custom priority label (overrides priority code) */
   priorityLabel?: string;
   /** Color variant for card accent */
-  variant?: 'default' | 'lime' | 'pink' | 'cyan' | 'yellow';
+  variant?: 'blue' | 'primary' | 'default' | 'lime' | 'pink' | 'cyan' | 'yellow';
 }
 
 withDefaults(defineProps<CrmlKanbanCardProps>(), {

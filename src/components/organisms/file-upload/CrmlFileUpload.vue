@@ -84,7 +84,7 @@ export interface CrmlFileUploadProps {
   /** Progress percentage (0-100) */
   progressPercent?: number;
   /** Color variant */
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow';
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow';
   /** Dropzone icon (or use #icon slot) */
   icon?: string;
   /** Disabled state */

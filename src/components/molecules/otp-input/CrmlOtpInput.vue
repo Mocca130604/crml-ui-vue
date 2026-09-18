@@ -44,7 +44,7 @@ export interface CrmlOtpInputProps {
   length?: number
   modelValue?: string
   disabled?: boolean
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian'
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian'
   size?: 'sm' | 'md' | 'lg'
   label?: string
   placeholder?: string

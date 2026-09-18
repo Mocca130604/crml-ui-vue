@@ -9,7 +9,7 @@ export interface CrmlNumberInputProps {
   label?: string
   unit?: string
   disabled?: boolean
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow' | 'white'
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'white'
 }
 
 const props = withDefaults(defineProps<CrmlNumberInputProps>(), {

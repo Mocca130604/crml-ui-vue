@@ -61,7 +61,7 @@ export interface CrmlRadioGroupProps {
   modelValue?: string;
   label?: string;
   name?: string;
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian';
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian';
   size?: 'sm' | 'md' | 'lg';
   layout?: 'grid' | 'stack' | 'row';
   disabled?: boolean;

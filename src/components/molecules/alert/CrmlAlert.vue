@@ -25,7 +25,7 @@ export interface CrmlAlertProps {
   /** Alert message */
   message?: string;
   /** Color variant */
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow';
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow';
   /** Size variant */
   size?: 'sm' | 'md' | 'lg';
   /** Custom icon */
@@ -87,6 +87,7 @@ const dismiss = () => {
 .crml-alert--lg { padding: 1.1rem 1.5rem; }
 
 .crml-alert--lime { background-color: var(--crt-lime-100); color: var(--crt-obsidian); }
+.crml-alert--blue, .crml-alert--primary { background-color: var(--crt-ryo-blue-100, #D6E8FF); color: var(--crt-ryo-blue-900, #061E5E); }
 .crml-alert--pink { background-color: var(--crt-pink-100); color: var(--crt-pink-900); }
 .crml-alert--cyan { background-color: var(--crt-cyan-100); color: var(--crt-cyan-900); }
 .crml-alert--yellow { background-color: var(--crt-yellow-100); color: var(--crt-yellow-900); }

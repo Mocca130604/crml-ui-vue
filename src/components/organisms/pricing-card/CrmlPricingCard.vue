@@ -20,7 +20,7 @@ export interface CrmlPricingCardProps {
   badgeText?: string
   features?: (string | PricingFeature)[]
   buttonText?: string
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow'
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow'
   ctaVariant?: 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian'
   ctaDisabled?: boolean
   checkIcon?: string

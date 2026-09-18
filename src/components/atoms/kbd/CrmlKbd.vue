@@ -1,6 +1,6 @@
 <script setup lang="ts">
 export interface CrmlKbdProps {
-  variant?: 'default' | 'lime' | 'pink' | 'cyan' | 'yellow'
+  variant?: 'blue' | 'primary' | 'default' | 'lime' | 'pink' | 'cyan' | 'yellow'
   size?: 'sm' | 'md' | 'lg'
 }
 
@@ -61,10 +61,9 @@ withDefaults(defineProps<CrmlKbdProps>(), {
   color: var(--crml-text-main, #0d0d0d);
 }
 
-.crml-kbd--lime {
-  background-color: var(--crml-action-primary, #1B6FFF);
-  color: #ffffff !important;
-}
+.crml-kbd--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian) !important; }
+
+.crml-kbd--blue, .crml-kbd--primary { background-color: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF !important; }
 
 .crml-kbd--pink {
   background-color: var(--crt-hot-pink, #ff007f);

@@ -73,7 +73,7 @@ export interface CrmlPaginationProps {
   /** Max visible page tiles */
   maxVisible?: number;
   /** Color variant */
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow';
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow';
   /** Size variant */
   size?: 'sm' | 'md' | 'lg';
   /** Custom label for prev button */
@@ -194,7 +194,8 @@ const goToPage = (page: number) => {
 }
 
 /* Active variant colors */
-.page-tile--active.page-tile--lime { background-color: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF); }
+.page-tile--active.page-tile--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
+.page-tile--active.page-tile--blue, .page-tile--active.page-tile--primary { background-color: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF; }
 .page-tile--active.page-tile--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .page-tile--active.page-tile--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .page-tile--active.page-tile--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }

@@ -25,7 +25,7 @@ export interface CrmlPriceTagWidgetProps {
   /** CTA button text */
   buttonText?: string;
   /** Color variant */
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow';
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow';
   /** Show stock indicator */
   showStock?: boolean;
   /** Show badge */
@@ -146,7 +146,8 @@ const displayPrice = computed(() => {
   border-radius: var(--crml-radius-sm);
 }
 
-.widget-badge--lime { background-color: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF); }
+.widget-badge--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
+.widget-badge--blue, .widget-badge--primary { background-color: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF; }
 .widget-badge--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .widget-badge--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .widget-badge--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }
@@ -232,7 +233,8 @@ const displayPrice = computed(() => {
   margin-top: 0.25rem;
 }
 
-.buy-now-btn--lime { background-color: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF); }
+.buy-now-btn--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
+.buy-now-btn--blue, .buy-now-btn--primary { background-color: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF; }
 .buy-now-btn--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .buy-now-btn--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .buy-now-btn--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }

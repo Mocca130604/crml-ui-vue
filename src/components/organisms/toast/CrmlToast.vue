@@ -43,7 +43,7 @@ export interface CrmlToastProps {
   /** Toast message text (or use default slot) */
   message?: string;
   /** Color variant */
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian';
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian';
   /** Size variant */
   size?: 'sm' | 'md' | 'lg';
   /** Custom icon (or use #icon slot) */
@@ -122,7 +122,8 @@ onMounted(() => {
 .crml-toast--md { padding: 0.85rem 1.15rem; }
 .crml-toast--lg { padding: 1.1rem 1.5rem; }
 
-.crml-toast--lime { background-color: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF); }
+.crml-toast--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
+.crml-toast--blue, .crml-toast--primary { background-color: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF; }
 .crml-toast--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .crml-toast--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .crml-toast--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }

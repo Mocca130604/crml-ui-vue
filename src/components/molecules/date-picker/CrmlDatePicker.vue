@@ -7,7 +7,7 @@ export interface CrmlDatePickerProps {
   label?: string
   start?: string
   end?: string
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow'
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow'
 }
 
 const props = withDefaults(defineProps<CrmlDatePickerProps>(), {

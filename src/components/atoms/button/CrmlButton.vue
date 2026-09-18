@@ -48,7 +48,7 @@
 
 <script setup lang="ts">
 export interface CrmlButtonProps {
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian';
+  variant?: 'blue' | 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'obsidian';
   size?: 'sm' | 'md' | 'lg';
   disabled?: boolean;
   loading?: boolean;
@@ -120,10 +120,10 @@ const handleClick = (e: MouseEvent) => {
 .crml-button--lg { padding: 0.75rem 1.25rem; font-size: 1rem; height: 3rem; }
 
 /* Variants */
-.crml-button--primary { background-color: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF); }
+.crml-button--primary, .crml-button--blue { background-color: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF; }
 .crml-button--primary:hover:not(:disabled) { background-color: var(--crml-action-primary-bg-hover, #4D94FF); }
 
-.crml-button--lime { background-color: var(--crt-electric-lime, #CCFF00); color: var(--crt-obsidian, #0D0D0D); }
+.crml-button--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
 .crml-button--lime:hover:not(:disabled) { background-color: #bbf000; }
 
 .crml-button--secondary,

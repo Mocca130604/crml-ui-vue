@@ -16,7 +16,7 @@ import { ref } from 'vue';
 export interface CrmlTooltipProps {
   content: string;
   position?: 'top' | 'bottom' | 'left' | 'right';
-  variant?: 'obsidian' | 'lime' | 'pink' | 'cyan' | 'yellow';
+  variant?: 'blue' | 'primary' | 'obsidian' | 'lime' | 'pink' | 'cyan' | 'yellow';
 }
 
 withDefaults(defineProps<CrmlTooltipProps>(), {
@@ -80,7 +80,8 @@ const show = ref(false);
 
 /* Variants */
 .crml-tooltip--obsidian { background-color: var(--crt-obsidian); color: var(--crml-action-primary); border-color: var(--crml-action-primary); }
-.crml-tooltip--lime { background-color: var(--crml-action-primary); color: #ffffff; }
+.crml-tooltip--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
+.crml-tooltip--blue, .crml-tooltip--primary { background-color: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF; }
 .crml-tooltip--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .crml-tooltip--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .crml-tooltip--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }

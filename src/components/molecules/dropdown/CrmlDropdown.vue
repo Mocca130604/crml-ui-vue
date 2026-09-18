@@ -84,7 +84,7 @@ export interface CrmlDropdownProps {
   /** Error text */
   error?: string;
   /** Color variant */
-  variant?: 'lime' | 'pink' | 'cyan' | 'white';
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'white';
   /** Size variant */
   size?: 'sm' | 'md' | 'lg';
   /** Disabled state */
@@ -199,7 +199,8 @@ onUnmounted(() => { document.removeEventListener('click', handleClickOutside); }
 
 .crml-dropdown-trigger:hover { transform: translate(-1px, -1px); box-shadow: var(--crml-shadow-brutal); }
 
-.crml-dropdown-trigger--lime { background-color: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF); }
+.crml-dropdown-trigger--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
+.crml-dropdown-trigger--blue, .crml-dropdown-trigger--primary { background-color: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF; }
 .crml-dropdown-trigger--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .crml-dropdown-trigger--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .crml-dropdown-trigger--white { background-color: var(--crt-pure-white); color: var(--crt-obsidian); }

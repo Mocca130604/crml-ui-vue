@@ -37,7 +37,7 @@ export interface CrmlCheckboxProps {
   /** Description text below the label */
   description?: string;
   /** Color variant */
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow';
+  variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow';
   /** Size variant */
   size?: 'sm' | 'md' | 'lg';
   /** Disabled state */
@@ -142,7 +142,15 @@ const handleChange = (e: Event) => {
 
 .crml-checkbox--lime .crml-checkbox__input:checked + .crml-checkbox__box,
 .crml-checkbox--lime.crml-checkbox--indeterminate .crml-checkbox__box {
-  background-color: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF);
+  background-color: var(--crt-electric-lime); color: var(--crt-obsidian);
+}
+
+
+.crml-checkbox--blue .crml-checkbox__input:checked + .crml-checkbox__box,
+.crml-checkbox--blue.crml-checkbox--indeterminate .crml-checkbox__box,
+.crml-checkbox--primary .crml-checkbox__input:checked + .crml-checkbox__box,
+.crml-checkbox--primary.crml-checkbox--indeterminate .crml-checkbox__box {
+  background-color: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF;
 }
 
 .crml-checkbox--pink .crml-checkbox__input:checked + .crml-checkbox__box,

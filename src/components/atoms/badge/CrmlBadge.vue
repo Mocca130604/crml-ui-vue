@@ -34,7 +34,7 @@ export interface CrmlBadgeProps {
   /** Display text content */
   label?: string;
   /** Color variant */
-  variant?: 'lime' | 'pink' | 'cyan' | 'yellow' | 'neutral' | 'obsidian' | 'primary' | 'success' | 'warning' | 'danger';
+  variant?: 'blue' | 'lime' | 'pink' | 'cyan' | 'yellow' | 'neutral' | 'obsidian' | 'primary' | 'success' | 'warning' | 'danger';
   /** Size variant */
   size?: 'sm' | 'md' | 'lg';
   /** Icon string (emoji/text), or use #icon slot */
@@ -93,7 +93,7 @@ defineEmits<{
 
 /* Filled Variants */
 .crml-badge--neutral { background-color: var(--crml-bg-elevated); color: var(--crml-text-main); }
-.crml-badge--primary { background-color: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF); }
+.crml-badge--primary, .crml-badge--blue { background-color: var(--crt-ryo-blue-500, #1B6FFF); color: #FFFFFF; }
 .crml-badge--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
 .crml-badge--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .crml-badge--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
@@ -107,7 +107,7 @@ defineEmits<{
 
 /* Outlined Variants */
 .crml-badge--outlined { background-color: transparent; }
-.crml-badge--outlined.crml-badge--primary { color: var(--crml-action-primary); border-color: var(--crml-action-primary); box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D); }
+.crml-badge--outlined.crml-badge--primary, .crml-badge--outlined.crml-badge--blue { color: var(--crt-ryo-blue-500, #1B6FFF); border-color: var(--crt-ryo-blue-500, #1B6FFF); box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D); }
 .crml-badge--outlined.crml-badge--lime { color: var(--crt-electric-lime); border-color: var(--crt-electric-lime); box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D); }
 .crml-badge--outlined.crml-badge--pink { color: var(--crt-hot-pink); border-color: var(--crt-hot-pink); box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D); }
 .crml-badge--outlined.crml-badge--cyan { color: var(--crt-cyber-cyan); border-color: var(--crt-cyber-cyan); box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D); }

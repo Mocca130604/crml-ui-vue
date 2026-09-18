@@ -20,7 +20,7 @@ const props = withDefaults(
     sublabel?: string
     modes?: SpeedometerModeInput[]
     formatter?: (val: number) => string
-    variant?: 'lime' | 'pink' | 'cyan' | 'yellow'
+    variant?: 'blue' | 'primary' | 'lime' | 'pink' | 'cyan' | 'yellow'
     activeColor?: string
     showModes?: boolean
   }>(),

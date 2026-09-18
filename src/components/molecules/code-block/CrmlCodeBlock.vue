@@ -51,7 +51,7 @@ const copyCode = () => {
   border-radius: var(--crml-radius-md, 8px);
   box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   background-color: var(--crt-obsidian, #0d0d0d);
-  color: var(--crt-electric-lime, #ccff00);
+  color: var(--crt-electric-lime, var(--crml-action-primary));
   overflow: hidden;
 }
 
@@ -80,7 +80,7 @@ const copyCode = () => {
 
 .window-dot.red { background-color: var(--crt-hot-pink, #ff007f); }
 .window-dot.yellow { background-color: var(--crt-sunburst-yellow, #ffd600); }
-.window-dot.green { background-color: var(--crt-electric-lime, #ccff00); }
+.window-dot.green { background-color: var(--crt-electric-lime, var(--crml-action-primary)); }
 
 .code-title {
   color: var(--crt-cloud, #fcf9f8);
@@ -90,8 +90,8 @@ const copyCode = () => {
 
 .copy-btn {
   background: rgba(255, 255, 255, 0.1);
-  color: var(--crt-electric-lime, #ccff00);
-  border: 1px solid var(--crt-electric-lime, #ccff00);
+  color: var(--crt-electric-lime, var(--crml-action-primary));
+  border: 1px solid var(--crt-electric-lime, var(--crml-action-primary));
   border-radius: 4px;
   padding: 0.15rem 0.5rem;
   font-size: 0.7rem;
@@ -101,7 +101,7 @@ const copyCode = () => {
 }
 
 .copy-btn:hover {
-  background: var(--crt-electric-lime, #ccff00);
+  background: var(--crt-electric-lime, var(--crml-action-primary));
   color: var(--crt-obsidian, #0d0d0d);
 }
 

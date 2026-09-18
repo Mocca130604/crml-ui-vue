@@ -120,7 +120,7 @@ const formatDisplay = (val: number) => {
   border: 1px solid var(--crml-border-ink, #0D0D0D);
 }
 
-.crml-progress-fill--lime { background-color: var(--crt-electric-lime); }
+.crml-progress-fill--lime { background-color: var(--crml-action-primary); }
 .crml-progress-fill--pink { background-color: var(--crt-hot-pink); }
 .crml-progress-fill--cyan { background-color: var(--crt-cyber-cyan); }
 .crml-progress-fill--yellow { background-color: var(--crt-sunburst-yellow); }

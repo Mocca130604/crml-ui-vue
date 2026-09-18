@@ -138,11 +138,11 @@ onUnmounted(() => {
 
 /* Variants */
 .crml-hypebeast-banner--obsidian {
-  background: var(--crt-obsidian); color: var(--crt-electric-lime);
+  background: var(--crt-obsidian); color: var(--crml-action-primary);
   box-shadow: 6px 6px 0px var(--crt-hot-pink);
 }
 .crml-hypebeast-banner--lime {
-  background: var(--crt-electric-lime); color: var(--crt-obsidian);
+  background: var(--crml-action-primary); color: var(--crt-obsidian);
   box-shadow: 6px 6px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 .crml-hypebeast-banner--pink {
@@ -199,7 +199,7 @@ onUnmounted(() => {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--crt-electric-lime);
+  background-color: var(--crml-action-primary);
   color: var(--crt-obsidian);
   border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-md);

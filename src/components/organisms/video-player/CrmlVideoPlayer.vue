@@ -112,7 +112,7 @@ const togglePlay = () => {
   align-items: center;
   gap: 0.35rem;
   z-index: 2;
-  color: var(--crt-electric-lime, #ccff00);
+  color: var(--crt-electric-lime, var(--crml-action-primary));
 }
 
 .center-art-icon {
@@ -124,7 +124,7 @@ const togglePlay = () => {
   font-weight: 900;
   letter-spacing: 0.05em;
   margin: 0;
-  text-shadow: 0 0 8px var(--crt-electric-lime, #ccff00);
+  text-shadow: 0 0 8px var(--crt-electric-lime, var(--crml-action-primary));
 }
 
 .video-controls-bar {
@@ -138,7 +138,7 @@ const togglePlay = () => {
 }
 
 .ctrl-btn {
-  background-color: var(--crt-electric-lime, #ccff00);
+  background-color: var(--crt-electric-lime, var(--crml-action-primary));
   color: var(--crt-obsidian, #0d0d0d);
   border: 1.5px solid #000;
   border-radius: 4px;

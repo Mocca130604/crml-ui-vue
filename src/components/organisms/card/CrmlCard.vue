@@ -104,7 +104,7 @@ defineEmits<{
 .crml-card--lime {
   border: var(--crml-border-brutal);
   box-shadow: var(--crml-shadow-brutal);
-  background-color: var(--crt-electric-lime);
+  background-color: var(--crml-action-primary);
   color: var(--crt-obsidian);
 }
 .crml-card--lime .crml-card__title,

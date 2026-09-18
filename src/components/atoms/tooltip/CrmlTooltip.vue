@@ -79,8 +79,8 @@ const show = ref(false);
 }
 
 /* Variants */
-.crml-tooltip--obsidian { background-color: var(--crt-obsidian); color: var(--crt-electric-lime); border-color: var(--crt-electric-lime); }
-.crml-tooltip--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
+.crml-tooltip--obsidian { background-color: var(--crt-obsidian); color: var(--crml-action-primary); border-color: var(--crml-action-primary); }
+.crml-tooltip--lime { background-color: var(--crml-action-primary); color: var(--crt-obsidian); }
 .crml-tooltip--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .crml-tooltip--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .crml-tooltip--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }

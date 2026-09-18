@@ -54,8 +54,8 @@ withDefaults(defineProps<CrmlStampBadgeProps>(), {
 }
 
 .crml-stamp-badge--success {
-  color: var(--crt-electric-lime);
-  border-color: var(--crt-electric-lime);
+  color: var(--crml-action-primary);
+  border-color: var(--crml-action-primary);
   background-color: rgba(204, 255, 0, 0.08);
 }
 

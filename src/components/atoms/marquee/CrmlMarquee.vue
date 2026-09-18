@@ -70,11 +70,11 @@ withDefaults(defineProps<CrmlMarqueeProps>(), {
   white-space: nowrap;
 }
 
-.crml-marquee--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
+.crml-marquee--lime { background-color: var(--crml-action-primary); color: var(--crt-obsidian); }
 .crml-marquee--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .crml-marquee--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .crml-marquee--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }
-.crml-marquee--obsidian { background-color: var(--crt-obsidian); color: var(--crt-electric-lime); }
+.crml-marquee--obsidian { background-color: var(--crt-obsidian); color: var(--crml-action-primary); }
 .crml-marquee--grad-y2k { background: var(--grad-y2k-sunset); color: var(--crt-pure-white); }
 .crml-marquee--grad-acid { background: var(--grad-lime-acid); color: var(--crt-obsidian); }
 

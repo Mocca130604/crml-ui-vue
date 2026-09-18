@@ -148,7 +148,7 @@ const displayPrice = computed(() => {
   position: absolute;
   top: -0.75rem;
   right: 1.25rem;
-  background-color: var(--crt-electric-lime, #ccff00);
+  background-color: var(--crt-electric-lime, var(--crml-action-primary));
   color: var(--crt-obsidian, #0d0d0d);
   border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-sm, 4px);
@@ -219,7 +219,7 @@ const displayPrice = computed(() => {
 }
 
 .check-bullet.is-checked {
-  background-color: var(--crt-electric-lime, #ccff00);
+  background-color: var(--crt-electric-lime, var(--crml-action-primary));
   color: var(--crt-obsidian, #0d0d0d) !important;
 }
 
@@ -227,7 +227,7 @@ const displayPrice = computed(() => {
   font-size: 0.9rem;
   font-weight: 900;
   text-transform: uppercase;
-  background-color: var(--crt-electric-lime, #ccff00);
+  background-color: var(--crt-electric-lime, var(--crml-action-primary));
   color: var(--crt-obsidian, #0d0d0d);
   border: 2.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-md, 8px);
@@ -253,7 +253,7 @@ const displayPrice = computed(() => {
   padding: 0.1rem 0.35rem;
   border-radius: 3px;
   background-color: var(--crml-bg-elevated, #0d0d0d);
-  color: var(--crt-electric-lime, #ccff00);
+  color: var(--crt-electric-lime, var(--crml-action-primary));
   border: 1px solid var(--crml-border-ink, #0d0d0d);
 }
 
@@ -274,9 +274,9 @@ const displayPrice = computed(() => {
   box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
-.plan-cta-btn--lime { background-color: var(--crt-electric-lime, #ccff00); color: var(--crt-obsidian, #0d0d0d) !important; }
+.plan-cta-btn--lime { background-color: var(--crt-electric-lime, var(--crml-action-primary)); color: var(--crt-obsidian, #0d0d0d) !important; }
 .plan-cta-btn--pink { background-color: var(--crt-hot-pink, #ff007f); color: #fff !important; }
 .plan-cta-btn--cyan { background-color: var(--crt-cyber-cyan, #00f0ff); color: var(--crt-obsidian, #0d0d0d) !important; }
 .plan-cta-btn--yellow { background-color: var(--crt-sunburst-yellow, #ffd600); color: var(--crt-obsidian, #0d0d0d) !important; }
-.plan-cta-btn--obsidian { background-color: var(--crt-obsidian, #0d0d0d); color: var(--crt-electric-lime, #ccff00) !important; }
+.plan-cta-btn--obsidian { background-color: var(--crt-obsidian, #0d0d0d); color: var(--crt-electric-lime, var(--crml-action-primary)) !important; }
 </style>

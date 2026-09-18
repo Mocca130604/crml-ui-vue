@@ -105,7 +105,7 @@ const props = withDefaults(
 .node-bullet-box {
   width: 2.25rem;
   height: 2.25rem;
-  background-color: var(--crt-electric-lime, #ccff00);
+  background-color: var(--crt-electric-lime, var(--crml-action-primary));
   border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-md, 8px);
   box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
@@ -190,7 +190,7 @@ const props = withDefaults(
 }
 
 .badge-success,
-.badge-lime { background-color: var(--crt-electric-lime, #ccff00); color: var(--crml-text-on-accent, #0d0d0d); }
+.badge-lime { background-color: var(--crt-electric-lime, var(--crml-action-primary)); color: var(--crml-text-on-accent, #0d0d0d); }
 .badge-primary,
 .badge-cyan { background-color: var(--crt-cyber-cyan, #00f0ff); color: var(--crml-text-on-accent, #0d0d0d); }
 .badge-warning,
@@ -198,13 +198,13 @@ const props = withDefaults(
 .badge-danger,
 .badge-pink { background-color: var(--crt-hot-pink, #ff007f); color: #fff; }
 .badge-default { background-color: var(--crml-bg-elevated, #e0e0e0); }
-.badge-obsidian { background-color: var(--crt-obsidian, #0d0d0d); color: var(--crt-electric-lime, #ccff00); }
+.badge-obsidian { background-color: var(--crt-obsidian, #0d0d0d); color: var(--crt-electric-lime, var(--crml-action-primary)); }
 
-.node-lime { background-color: var(--crt-electric-lime, #ccff00) !important; color: var(--crml-text-on-accent, #0d0d0d) !important; }
+.node-lime { background-color: var(--crt-electric-lime, var(--crml-action-primary)) !important; color: var(--crml-text-on-accent, #0d0d0d) !important; }
 .node-pink { background-color: var(--crt-hot-pink, #ff007f) !important; color: #fff !important; }
 .node-cyan { background-color: var(--crt-cyber-cyan, #00f0ff) !important; color: var(--crml-text-on-accent, #0d0d0d) !important; }
 .node-yellow { background-color: var(--crt-sunburst-yellow, #ffd600) !important; color: var(--crml-text-on-accent, #0d0d0d) !important; }
-.node-obsidian { background-color: var(--crt-obsidian, #0d0d0d) !important; color: var(--crt-electric-lime, #ccff00) !important; }
+.node-obsidian { background-color: var(--crt-obsidian, #0d0d0d) !important; color: var(--crt-electric-lime, var(--crml-action-primary)) !important; }
 
 .connector-dashed .step-connector-line {
   background-color: transparent;

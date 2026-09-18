@@ -121,7 +121,7 @@ const handleClick = (e: MouseEvent) => {
 
 /* Variants */
 .crml-button--primary,
-.crml-button--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
+.crml-button--lime { background-color: var(--crml-action-primary); color: var(--crt-obsidian); }
 .crml-button--primary:hover:not(:disabled),
 .crml-button--lime:hover:not(:disabled) { background-color: #bbf000; }
 
@@ -136,7 +136,7 @@ const handleClick = (e: MouseEvent) => {
 .crml-button--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }
 .crml-button--yellow:hover:not(:disabled) { background-color: #e6c100; }
 
-.crml-button--obsidian { background-color: var(--crt-obsidian); color: var(--crt-electric-lime); }
+.crml-button--obsidian { background-color: var(--crt-obsidian); color: var(--crml-action-primary); }
 .crml-button--obsidian:hover:not(:disabled) { background-color: #1a1a1a; }
 
 .crml-button--outline { background-color: var(--crml-bg-surface); color: var(--crml-text-main); border: 2.5px solid var(--crml-border-ink, var(--crt-obsidian)); }

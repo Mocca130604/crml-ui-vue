@@ -451,7 +451,7 @@ function isDayInRange(day: number): boolean {
 }
 
 .grid-selector-btn.active {
-  background: var(--crt-electric-lime, #ccff00);
+  background: var(--crt-electric-lime, var(--crml-action-primary));
   box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
@@ -500,7 +500,7 @@ function isDayInRange(day: number): boolean {
 }
 
 .direct-year-btn {
-  background: var(--crt-electric-lime, #ccff00);
+  background: var(--crt-electric-lime, var(--crml-action-primary));
   border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 4px;
   padding: 0 10px;
@@ -547,7 +547,7 @@ function isDayInRange(day: number): boolean {
 }
 
 .day-cell.active {
-  background: var(--crt-electric-lime, #ccff00);
+  background: var(--crt-electric-lime, var(--crml-action-primary));
   color: var(--crt-obsidian, #0d0d0d);
   font-weight: 900;
   box-shadow: 2.5px 2.5px 0px var(--crml-shadow-ink, #0D0D0D);

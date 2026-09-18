@@ -144,7 +144,7 @@ const handleGenerate = () => {
 .generate-action-btn {
   font-size: 0.85rem;
   font-weight: 900;
-  background-color: var(--crt-electric-lime, #ccff00);
+  background-color: var(--crt-electric-lime, var(--crml-action-primary));
   color: var(--crt-obsidian, #0d0d0d);
   border: 2.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-md, 8px);

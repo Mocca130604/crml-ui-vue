@@ -45,7 +45,7 @@ const barHeights = ref(
 
 .visualizer-bar {
   width: 8px;
-  background: linear-gradient(180deg, var(--crt-cyber-cyan), var(--crt-hot-pink), var(--crt-electric-lime));
+  background: linear-gradient(180deg, var(--crt-cyber-cyan), var(--crt-hot-pink), var(--crml-action-primary));
   border-radius: 2px;
   animation: equalizerBounce 1.2s infinite ease-in-out alternate;
 }

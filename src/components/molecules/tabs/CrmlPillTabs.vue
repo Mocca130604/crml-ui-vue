@@ -113,11 +113,11 @@ const selectTab = (id: string) => {
   transform: translateY(-1px);
 }
 
-.crml-pill-tabs--lime .crml-pill-tab-item--active { background-color: var(--crt-electric-lime); color: var(--crt-obsidian) !important; }
+.crml-pill-tabs--lime .crml-pill-tab-item--active { background-color: var(--crml-action-primary); color: var(--crt-obsidian) !important; }
 .crml-pill-tabs--pink .crml-pill-tab-item--active { background-color: var(--crt-hot-pink); color: var(--crt-pure-white) !important; }
 .crml-pill-tabs--cyan .crml-pill-tab-item--active { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian) !important; }
 .crml-pill-tabs--yellow .crml-pill-tab-item--active { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian) !important; }
-.crml-pill-tabs--obsidian .crml-pill-tab-item--active { background-color: var(--crt-obsidian); color: var(--crt-electric-lime) !important; border-color: var(--crt-electric-lime); box-shadow: 2px 2px 0px var(--crt-electric-lime); }
+.crml-pill-tabs--obsidian .crml-pill-tab-item--active { background-color: var(--crt-obsidian); color: var(--crml-action-primary) !important; border-color: var(--crml-action-primary); box-shadow: 2px 2px 0px var(--crml-action-primary); }
 
 .tab-badge {
   font-size: 0.75rem;

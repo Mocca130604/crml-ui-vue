@@ -207,7 +207,7 @@ const handleClear = () => {
 }
 
 /* Focus variants */
-.crml-input-wrapper--lime .crml-input:focus { box-shadow: 3px 3px 0px var(--crt-electric-lime); }
+.crml-input-wrapper--lime .crml-input:focus { box-shadow: 3px 3px 0px var(--crml-action-primary); }
 .crml-input-wrapper--pink .crml-input:focus { box-shadow: 3px 3px 0px var(--crt-hot-pink); }
 .crml-input-wrapper--cyan .crml-input:focus { box-shadow: 3px 3px 0px var(--crt-cyber-cyan); }
 .crml-input-wrapper--yellow .crml-input:focus { box-shadow: 3px 3px 0px var(--crt-sunburst-yellow); }

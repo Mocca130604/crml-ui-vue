@@ -210,11 +210,11 @@ const handlePaste = (e: ClipboardEvent) => {
 }
 
 /* Variants */
-.crml-otp-group--lime .otp-box.is-filled { background-color: var(--crt-electric-lime, #ccff00); color: var(--crt-obsidian, #0d0d0d) !important; }
+.crml-otp-group--lime .otp-box.is-filled { background-color: var(--crt-electric-lime, var(--crml-action-primary)); color: var(--crt-obsidian, #0d0d0d) !important; }
 .crml-otp-group--pink .otp-box.is-filled { background-color: var(--crt-hot-pink, #ff007f); color: #fff !important; }
 .crml-otp-group--cyan .otp-box.is-filled { background-color: var(--crt-cyber-cyan, #00f0ff); color: var(--crt-obsidian, #0d0d0d) !important; }
 .crml-otp-group--yellow .otp-box.is-filled { background-color: var(--crt-sunburst-yellow, #ffd600); color: var(--crt-obsidian, #0d0d0d) !important; }
-.crml-otp-group--obsidian .otp-box.is-filled { background-color: var(--crt-obsidian, #0d0d0d); color: var(--crt-electric-lime, #ccff00) !important; }
+.crml-otp-group--obsidian .otp-box.is-filled { background-color: var(--crt-obsidian, #0d0d0d); color: var(--crt-electric-lime, var(--crml-action-primary)) !important; }
 
 .has-error .otp-box {
   border-color: var(--crt-hot-pink, #ff007f);

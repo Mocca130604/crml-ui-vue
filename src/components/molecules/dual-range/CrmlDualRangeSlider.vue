@@ -282,7 +282,7 @@ const maxPercent = computed(() => {
 }
 
 .range-value-pill {
-  background-color: var(--crt-electric-lime, #ccff00);
+  background-color: var(--crt-electric-lime, var(--crml-action-primary));
   color: var(--crt-obsidian, #0d0d0d);
   border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-sm, 4px);
@@ -334,7 +334,7 @@ const maxPercent = computed(() => {
 }
 
 .variant-cyan .range-track-highlight {
-  background-color: var(--crt-electric-lime, #ccff00);
+  background-color: var(--crt-electric-lime, var(--crml-action-primary));
 }
 
 .variant-lime .range-track-highlight {

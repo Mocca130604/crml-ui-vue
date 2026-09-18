@@ -107,7 +107,7 @@ const handleBackspace = () => {
   align-items: center;
   gap: 0.35rem;
   padding: 0.25rem 0.6rem;
-  background-color: var(--crt-electric-lime);
+  background-color: var(--crml-action-primary);
   color: var(--crt-obsidian);
   border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-sm);

@@ -220,7 +220,7 @@ onUnmounted(() => {
 .hud-coords {
   font-size: 11px;
   color: var(--crt-obsidian, #0d0d0d);
-  background: var(--crt-electric-lime, #ccff00);
+  background: var(--crt-electric-lime, var(--crml-action-primary));
   border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   padding: 1px 6px;
   border-radius: 4px;
@@ -315,7 +315,7 @@ onUnmounted(() => {
 }
 
 .radar-blip.friendly .blip-ping {
-  background: var(--crt-electric-lime, #ccff00);
+  background: var(--crt-electric-lime, var(--crml-action-primary));
 }
 
 .radar-blip.neutral .blip-ping {
@@ -385,7 +385,7 @@ onUnmounted(() => {
 }
 
 .telemetry-badge.friendly {
-  background: var(--crt-electric-lime, #ccff00);
+  background: var(--crt-electric-lime, var(--crml-action-primary));
   color: var(--crt-obsidian, #0d0d0d);
 }
 

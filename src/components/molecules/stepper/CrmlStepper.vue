@@ -213,7 +213,7 @@ const handleStepClick = (stepIdx: number, step: StepItem) => {
 
 /* Completed and active variants */
 .crml-stepper-wrapper .step-node-item.is-completed {
-  background-color: var(--crt-electric-lime, #ccff00);
+  background-color: var(--crt-electric-lime, var(--crml-action-primary));
   color: var(--crt-obsidian, #0d0d0d);
 }
 
@@ -225,7 +225,7 @@ const handleStepClick = (stepIdx: number, step: StepItem) => {
 }
 
 .crml-stepper--lime .step-node-item.is-active {
-  background-color: var(--crt-electric-lime, #ccff00);
+  background-color: var(--crt-electric-lime, var(--crml-action-primary));
   color: var(--crt-obsidian, #0d0d0d);
   box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   transform: translate(-1px, -1px);
@@ -247,7 +247,7 @@ const handleStepClick = (stepIdx: number, step: StepItem) => {
 
 .crml-stepper--obsidian .step-node-item.is-active {
   background-color: var(--crt-obsidian, #0d0d0d);
-  color: var(--crt-electric-lime, #ccff00);
+  color: var(--crt-electric-lime, var(--crml-action-primary));
   box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D);
   transform: translate(-1px, -1px);
 }

@@ -132,7 +132,7 @@ function onInput(e: Event) {
 
 .input-unit-chip {
   background: var(--crt-obsidian, #0d0d0d);
-  color: var(--crt-electric-lime, #ccff00);
+  color: var(--crt-electric-lime, var(--crml-action-primary));
   border: 1px solid var(--crml-border-ink, #0D0D0D);
   padding: 1px 6px;
   border-radius: 4px;
@@ -161,7 +161,7 @@ function onInput(e: Event) {
   width: 40px;
   height: 100%;
   border: none;
-  background: var(--crt-electric-lime, #ccff00);
+  background: var(--crt-electric-lime, var(--crml-action-primary));
   color: var(--crt-obsidian, #0d0d0d);
   font-size: 18px;
   font-weight: 900;

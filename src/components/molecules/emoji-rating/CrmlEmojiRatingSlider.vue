@@ -100,7 +100,7 @@ const handleInput = (e: Event) => {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: var(--crt-electric-lime);
+  background: var(--crml-action-primary);
   border: 3px solid var(--crml-border-ink, #0D0D0D);
   box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   cursor: pointer;

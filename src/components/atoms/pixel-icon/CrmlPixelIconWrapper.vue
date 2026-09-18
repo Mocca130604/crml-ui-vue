@@ -36,8 +36,8 @@ withDefaults(defineProps<CrmlPixelIconWrapperProps>(), {
   align-items: center;
   justify-content: center;
   background-color: var(--crt-obsidian);
-  color: var(--crt-electric-lime);
-  border: 2px solid var(--crt-electric-lime);
+  color: var(--crml-action-primary);
+  border: 2px solid var(--crml-action-primary);
   border-radius: var(--crml-radius-sm);
   box-shadow: 3px 3px 0px var(--crt-hot-pink);
 }

@@ -188,7 +188,7 @@ function clearContent() {
 .editor-dot {
   width: 10px;
   height: 10px;
-  background: var(--crt-electric-lime, #ccff00);
+  background: var(--crt-electric-lime, var(--crml-action-primary));
   border: 1px solid #000;
   border-radius: 50%;
 }
@@ -197,7 +197,7 @@ function clearContent() {
   font-weight: 900;
   font-size: 12px;
   letter-spacing: 0.5px;
-  color: var(--crt-electric-lime, #ccff00);
+  color: var(--crt-electric-lime, var(--crml-action-primary));
 }
 
 .header-right {
@@ -270,7 +270,7 @@ function clearContent() {
 }
 
 .tool-btn:hover {
-  background: var(--crt-electric-lime, #ccff00);
+  background: var(--crt-electric-lime, var(--crml-action-primary));
   transform: translate(-1px, -1px);
 }
 

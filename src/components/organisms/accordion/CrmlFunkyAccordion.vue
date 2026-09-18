@@ -224,7 +224,7 @@ const getThemeColor = (index: number) => {
 .crml-accordion-item--color-lavender .crml-accordion-header { background-color: var(--crt-lavender); }
 .crml-accordion-item--color-peach .crml-accordion-header { background-color: var(--crt-peach); }
 .crml-accordion-item--color-mint .crml-accordion-header { background-color: var(--crt-mint); }
-.crml-accordion-item--color-lime .crml-accordion-header { background-color: var(--crt-electric-lime); }
+.crml-accordion-item--color-lime .crml-accordion-header { background-color: var(--crml-action-primary); }
 .crml-accordion-item--color-cyan .crml-accordion-header { background-color: var(--crt-cyber-cyan); }
 .crml-accordion-item--color-yellow .crml-accordion-header { background-color: var(--crt-sunburst-yellow); }
 </style>

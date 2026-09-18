@@ -61,14 +61,14 @@ withDefaults(defineProps<CrmlStickerBadgeProps>(), {
 .crml-sticker-badge--lg { font-size: 0.9375rem; padding: 0.35rem 0.85rem; }
 
 /* Variants */
-.crml-sticker-badge--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
+.crml-sticker-badge--lime { background-color: var(--crml-action-primary); color: var(--crt-obsidian); }
 .crml-sticker-badge--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .crml-sticker-badge--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .crml-sticker-badge--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }
 .crml-sticker-badge--lavender { background-color: var(--crt-lavender); color: var(--crt-obsidian); }
 .crml-sticker-badge--peach { background-color: var(--crt-peach); color: var(--crt-obsidian); }
 .crml-sticker-badge--mint { background-color: var(--crt-mint); color: var(--crt-obsidian); }
-.crml-sticker-badge--obsidian { background-color: var(--crt-obsidian); color: var(--crt-electric-lime); border-color: var(--crt-electric-lime); }
+.crml-sticker-badge--obsidian { background-color: var(--crt-obsidian); color: var(--crml-action-primary); border-color: var(--crml-action-primary); }
 .crml-sticker-badge--grad-y2k { background: var(--grad-y2k-sunset); color: var(--crt-pure-white); }
 .crml-sticker-badge--grad-acid { background: var(--grad-lime-acid); color: var(--crt-obsidian); }
 

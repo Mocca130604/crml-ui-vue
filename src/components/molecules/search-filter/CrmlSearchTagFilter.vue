@@ -355,7 +355,7 @@ const formatTagCount = (count: number, tag: FilterTag) => {
 
 /* Theme Focus Strokes */
 .crml-search-tag-filter[data-variant="lime"] .search-input-box:focus-within {
-  box-shadow: 4px 4px 0px #ccff00;
+  box-shadow: 4px 4px 0px var(--crml-action-primary);
 }
 .crml-search-tag-filter[data-variant="pink"] .search-input-box:focus-within {
   box-shadow: 4px 4px 0px #ff007f;
@@ -463,7 +463,7 @@ const formatTagCount = (count: number, tag: FilterTag) => {
 
 /* Active Tag Theme Styles */
 .crml-search-tag-filter[data-variant="lime"] .filter-tag-pill.is-active {
-  background-color: var(--crt-electric-lime, #ccff00);
+  background-color: var(--crt-electric-lime, var(--crml-action-primary));
   color: var(--crt-obsidian, #0d0d0d) !important;
   box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0d0d0d);
 }
@@ -488,7 +488,7 @@ const formatTagCount = (count: number, tag: FilterTag) => {
 
 /* Individual Tag Color Override */
 .filter-tag-pill.is-active[data-tag-color="lime"] {
-  background-color: #ccff00 !important;
+  background-color: var(--crml-action-primary) !important;
   color: #0d0d0d !important;
 }
 .filter-tag-pill.is-active[data-tag-color="pink"] {
@@ -518,7 +518,7 @@ const formatTagCount = (count: number, tag: FilterTag) => {
 
 .tag-badge-inline {
   background-color: var(--crt-obsidian, #0d0d0d);
-  color: var(--crt-electric-lime, #ccff00);
+  color: var(--crt-electric-lime, var(--crml-action-primary));
   font-size: 0.65rem;
   padding: 0.05rem 0.3rem;
   border-radius: 3px;

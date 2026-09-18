@@ -109,20 +109,20 @@ const handleClick = (e: MouseEvent) => {
 .crml-bouncy-button--lg { padding: 0.85rem 1.85rem; font-size: 1.0625rem; }
 
 /* Variants */
-.crml-bouncy-button--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
+.crml-bouncy-button--lime { background-color: var(--crml-action-primary); color: var(--crt-obsidian); }
 .crml-bouncy-button--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .crml-bouncy-button--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .crml-bouncy-button--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }
 .crml-bouncy-button--white { background-color: var(--crt-pure-white); color: var(--crt-obsidian); }
-.crml-bouncy-button--obsidian { background-color: var(--crt-obsidian); color: var(--crt-electric-lime); border-color: var(--crt-electric-lime); box-shadow: 4px 4px 0px var(--crt-electric-lime); }
+.crml-bouncy-button--obsidian { background-color: var(--crt-obsidian); color: var(--crml-action-primary); border-color: var(--crml-action-primary); box-shadow: 4px 4px 0px var(--crml-action-primary); }
 .crml-bouncy-button--grad-y2k { background: var(--grad-y2k-sunset); color: var(--crt-pure-white); }
 .crml-bouncy-button--grad-acid { background: var(--grad-lime-acid); color: var(--crt-obsidian); }
 
 /* Micro-interaction Hover & Active */
 .crml-bouncy-button:hover:not(:disabled) { transform: translate(-2px, -2px); box-shadow: 6px 6px 0px var(--crml-shadow-ink, #0D0D0D); }
-.crml-bouncy-button--obsidian:hover:not(:disabled) { box-shadow: 6px 6px 0px var(--crt-electric-lime); }
+.crml-bouncy-button--obsidian:hover:not(:disabled) { box-shadow: 6px 6px 0px var(--crml-action-primary); }
 .crml-bouncy-button:active:not(:disabled) { transform: translate(2px, 2px); box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D); }
-.crml-bouncy-button--obsidian:active:not(:disabled) { box-shadow: 2px 2px 0px var(--crt-electric-lime); }
+.crml-bouncy-button--obsidian:active:not(:disabled) { box-shadow: 2px 2px 0px var(--crml-action-primary); }
 
 .crml-bouncy-button--disabled { opacity: 0.6; cursor: not-allowed; transform: none !important; box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D) !important; }
 

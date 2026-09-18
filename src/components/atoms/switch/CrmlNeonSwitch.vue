@@ -165,7 +165,7 @@ const handleChange = (e: Event) => {
 
 /* Color variants */
 .crml-neon-switch__input:checked + .crml-neon-switch__track--lime {
-  background-color: var(--crt-electric-lime);
+  background-color: var(--crml-action-primary);
   box-shadow: 2px 2px 0px var(--crt-obsidian), 0 0 16px var(--crt-lime-glow);
 }
 .crml-neon-switch__input:checked + .crml-neon-switch__track--pink {

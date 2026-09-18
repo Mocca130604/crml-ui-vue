@@ -161,7 +161,7 @@ const defaultStatusIcon = (status: StatusType) => {
 /* Status variants */
 .status-active,
 .status-lime {
-  background-color: var(--crt-electric-lime, #ccff00);
+  background-color: var(--crt-electric-lime, var(--crml-action-primary));
   color: var(--crt-obsidian, #0d0d0d);
 }
 
@@ -184,7 +184,7 @@ const defaultStatusIcon = (status: StatusType) => {
 
 .status-obsidian {
   background-color: var(--crt-obsidian, #0d0d0d);
-  color: var(--crt-electric-lime, #ccff00);
+  color: var(--crt-electric-lime, var(--crml-action-primary));
 }
 
 .status-idle {

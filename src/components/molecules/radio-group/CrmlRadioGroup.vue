@@ -217,7 +217,7 @@ const selectOption = (val: string, option: RadioOption) => {
   font-family: var(--crml-font-mono, monospace);
   font-weight: 800;
   background-color: var(--crt-obsidian, #0d0d0d);
-  color: var(--crt-electric-lime, #ccff00);
+  color: var(--crt-electric-lime, var(--crml-action-primary));
   padding: 0.05rem 0.3rem;
   border-radius: 3px;
   margin-left: auto;
@@ -232,7 +232,7 @@ const selectOption = (val: string, option: RadioOption) => {
 
 /* Selected Variants */
 .crml-radio-tile--lime.crml-radio-tile--selected {
-  background-color: var(--crt-electric-lime, #ccff00);
+  background-color: var(--crt-electric-lime, var(--crml-action-primary));
 }
 
 .crml-radio-tile--pink.crml-radio-tile--selected {
@@ -254,11 +254,11 @@ const selectOption = (val: string, option: RadioOption) => {
 
 .crml-radio-tile--obsidian.crml-radio-tile--selected {
   background-color: var(--crt-obsidian, #0d0d0d);
-  color: var(--crt-electric-lime, #ccff00);
+  color: var(--crt-electric-lime, var(--crml-action-primary));
 }
 .crml-radio-tile--obsidian.crml-radio-tile--selected .tile-label,
 .crml-radio-tile--obsidian.crml-radio-tile--selected .tile-desc {
-  color: var(--crt-electric-lime, #ccff00);
+  color: var(--crt-electric-lime, var(--crml-action-primary));
 }
 
 .is-disabled {

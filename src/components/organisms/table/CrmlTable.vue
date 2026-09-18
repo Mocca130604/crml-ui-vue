@@ -187,7 +187,7 @@ const emit = defineEmits<{
 
 .accent-pink .crml-table th { background-color: var(--crt-hot-pink); color: #ffffff; }
 .accent-cyan .crml-table th { background-color: var(--crt-cyber-cyan); }
-.accent-lime .crml-table th { background-color: var(--crt-electric-lime); }
+.accent-lime .crml-table th { background-color: var(--crml-action-primary); }
 .accent-violet .crml-table th { background-color: var(--crml-color-violet, #9B59B6); color: #ffffff; }
 
 .crml-table td {

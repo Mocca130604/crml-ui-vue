@@ -85,7 +85,7 @@ const closeDrawer = () => {
   align-items: center;
   justify-content: space-between;
   padding: 1.15rem 1.25rem;
-  background-color: var(--crt-electric-lime, #ccff00);
+  background-color: var(--crt-electric-lime, var(--crml-action-primary));
   border-bottom: 2.5px solid var(--crml-border-ink, #0D0D0D);
 }
 
@@ -171,7 +171,7 @@ const closeDrawer = () => {
 
 .apply-btn {
   flex: 1;
-  background-color: var(--crt-electric-lime, #ccff00);
+  background-color: var(--crt-electric-lime, var(--crml-action-primary));
   color: var(--crt-obsidian, #0d0d0d);
 }
 

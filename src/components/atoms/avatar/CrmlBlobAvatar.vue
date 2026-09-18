@@ -128,7 +128,7 @@ defineEmits<{
   box-shadow: 1px 1px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
-.crml-blob-avatar__status--online { background-color: var(--crt-electric-lime); }
+.crml-blob-avatar__status--online { background-color: var(--crml-action-primary); }
 .crml-blob-avatar__status--busy { background-color: var(--crt-hot-pink); color: white; }
 .crml-blob-avatar__status--fire { background-color: var(--crt-sunburst-yellow); }
 .crml-blob-avatar__status--star { background-color: var(--crt-cyber-cyan); }

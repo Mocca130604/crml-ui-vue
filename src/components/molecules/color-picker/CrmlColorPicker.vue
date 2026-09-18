@@ -8,10 +8,10 @@ const props = withDefaults(
     swatches?: string[]
   }>(),
   {
-    modelValue: '#CCFF00',
+    modelValue: 'var(--crml-action-primary)',
     label: 'NEUBRUTAL PALETTE PICKER',
     swatches: () => [
-      '#CCFF00', // Electric Lime
+      'var(--crml-action-primary)', // Electric Lime
       '#FF007F', // Hot Pink
       '#00F0FF', // Cyber Cyan
       '#FFD600', // Sunburst Yellow

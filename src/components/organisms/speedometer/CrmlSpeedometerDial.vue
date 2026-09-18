@@ -98,7 +98,7 @@ const progressColor = computed(() => {
   if (props.variant === 'pink') return '#FF007F'
   if (props.variant === 'cyan') return '#00F0FF'
   if (props.variant === 'yellow') return '#FFD600'
-  return '#CCFF00'
+  return 'var(--crml-action-primary)'
 })
 
 function selectMode(m: SpeedometerMode) {
@@ -241,7 +241,7 @@ function formattedValue(val: number): string {
 }
 
 .speedo-unit-pill {
-  background: var(--crt-electric-lime, #ccff00);
+  background: var(--crt-electric-lime, var(--crml-action-primary));
   color: var(--crt-obsidian, #0d0d0d);
   border: 2px solid var(--crml-border-ink, #0D0D0D);
   padding: 2px 6px;
@@ -301,7 +301,7 @@ function formattedValue(val: number): string {
   color: var(--crt-cyber-cyan, #00f0ff);
   border: 3px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 50%;
-  box-shadow: 3px 3px 0px var(--crt-electric-lime, #ccff00);
+  box-shadow: 3px 3px 0px var(--crt-electric-lime, var(--crml-action-primary));
   display: flex;
   flex-direction: column;
   align-items: center;

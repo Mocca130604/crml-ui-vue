@@ -46,10 +46,10 @@ const props = withDefaults(
       { id: 11, label: 'VOX SHOUT', key: 'C', color: '#00F0FF' },
       { id: 12, label: 'LASER', key: 'V', color: '#00F0FF' },
 
-      { id: 13, label: 'CHORD A', key: '1', color: '#CCFF00' },
-      { id: 14, label: 'CHORD B', key: '2', color: '#CCFF00' },
-      { id: 15, label: 'FX RUN', key: '3', color: '#CCFF00' },
-      { id: 16, label: 'AIRHORN', key: '4', color: '#CCFF00' }
+      { id: 13, label: 'CHORD A', key: '1', color: 'var(--crml-action-primary)' },
+      { id: 14, label: 'CHORD B', key: '2', color: 'var(--crml-action-primary)' },
+      { id: 15, label: 'FX RUN', key: '3', color: 'var(--crml-action-primary)' },
+      { id: 16, label: 'AIRHORN', key: '4', color: 'var(--crml-action-primary)' }
     ]
   }
 )
@@ -177,7 +177,7 @@ const gridStyle = computed(() => ({
 
 .soundboard-lcd {
   background-color: var(--crt-obsidian, #0d0d0d);
-  color: var(--crt-electric-lime, #ccff00);
+  color: var(--crt-electric-lime, var(--crml-action-primary));
   border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 8px;
   padding: 12px 16px;
@@ -217,8 +217,8 @@ const gridStyle = computed(() => ({
 }
 
 .status-dot.is-playing {
-  background-color: var(--crt-electric-lime, #ccff00);
-  box-shadow: 0 0 8px var(--crt-electric-lime, #ccff00);
+  background-color: var(--crt-electric-lime, var(--crml-action-primary));
+  box-shadow: 0 0 8px var(--crt-electric-lime, var(--crml-action-primary));
 }
 
 .lcd-right {
@@ -243,7 +243,7 @@ const gridStyle = computed(() => ({
   width: 54px;
   background-color: var(--crml-bg-input, #1a1a1a);
   border: 1.5px solid var(--crml-border-subtle, #444);
-  color: var(--crt-electric-lime, #ccff00);
+  color: var(--crt-electric-lime, var(--crml-action-primary));
   border-radius: 4px;
   padding: 4px 6px;
   font-weight: 900;
@@ -252,7 +252,7 @@ const gridStyle = computed(() => ({
 }
 
 .play-btn {
-  background-color: var(--crt-electric-lime, #ccff00);
+  background-color: var(--crt-electric-lime, var(--crml-action-primary));
   color: var(--crt-obsidian, #0d0d0d);
   border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 6px;
@@ -303,7 +303,7 @@ const gridStyle = computed(() => ({
   left: 0;
   right: 0;
   height: 4px;
-  background-color: var(--pad-accent, var(--crt-electric-lime, #ccff00));
+  background-color: var(--pad-accent, var(--crt-electric-lime, var(--crml-action-primary)));
 }
 
 .sound-pad:hover {
@@ -315,7 +315,7 @@ const gridStyle = computed(() => ({
 .sound-pad.active {
   transform: translate(2px, 2px);
   box-shadow: 1px 1px 0px var(--crml-shadow-ink, #0D0D0D);
-  background-color: var(--pad-accent, var(--crt-electric-lime, #ccff00));
+  background-color: var(--pad-accent, var(--crt-electric-lime, var(--crml-action-primary)));
   color: var(--crt-obsidian, #0d0d0d);
 }
 

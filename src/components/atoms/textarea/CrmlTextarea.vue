@@ -156,7 +156,7 @@ const handleFocus = (event: FocusEvent) => {
 .crml-textarea::placeholder { color: var(--crml-text-muted); }
 
 /* Focus color variants */
-.crml-textarea-wrapper--lime .crml-textarea:focus { box-shadow: 3px 3px 0px var(--crt-electric-lime); }
+.crml-textarea-wrapper--lime .crml-textarea:focus { box-shadow: 3px 3px 0px var(--crml-action-primary); }
 .crml-textarea-wrapper--pink .crml-textarea:focus { box-shadow: 3px 3px 0px var(--crt-hot-pink); }
 .crml-textarea-wrapper--cyan .crml-textarea:focus { box-shadow: 3px 3px 0px var(--crt-cyber-cyan); }
 .crml-textarea-wrapper--yellow .crml-textarea:focus { box-shadow: 3px 3px 0px var(--crt-sunburst-yellow); }

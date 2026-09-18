@@ -199,7 +199,7 @@ onUnmounted(() => { document.removeEventListener('click', handleClickOutside); }
 
 .crml-dropdown-trigger:hover { transform: translate(-1px, -1px); box-shadow: var(--crml-shadow-brutal); }
 
-.crml-dropdown-trigger--lime { background-color: var(--crt-electric-lime); color: var(--crt-obsidian); }
+.crml-dropdown-trigger--lime { background-color: var(--crml-action-primary); color: var(--crt-obsidian); }
 .crml-dropdown-trigger--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .crml-dropdown-trigger--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .crml-dropdown-trigger--white { background-color: var(--crt-pure-white); color: var(--crt-obsidian); }
@@ -261,7 +261,7 @@ onUnmounted(() => { document.removeEventListener('click', handleClickOutside); }
 }
 
 .crml-dropdown-item:hover:not(.crml-dropdown-item--disabled) {
-  background-color: var(--crt-electric-lime);
+  background-color: var(--crml-action-primary);
   color: var(--crt-obsidian);
 }
 

@@ -275,7 +275,7 @@ function emitTime() {
 
 .format-toggle-btn.active {
   background: var(--crt-obsidian, #0d0d0d);
-  color: var(--crt-electric-lime, #ccff00);
+  color: var(--crt-electric-lime, var(--crml-action-primary));
 }
 
 .variant-pink .format-toggle-btn.active {
@@ -291,7 +291,7 @@ function emitTime() {
 }
 
 .time-readout-pill {
-  background: var(--crt-electric-lime, #ccff00);
+  background: var(--crt-electric-lime, var(--crml-action-primary));
   color: var(--crt-obsidian, #0d0d0d);
   border: 1.5px solid var(--crml-border-ink, #0D0D0D);
   padding: 1px 6px;
@@ -366,7 +366,7 @@ function emitTime() {
   width: 44px;
   height: 38px;
   background: var(--crt-obsidian, #0d0d0d);
-  color: var(--crt-electric-lime, #ccff00);
+  color: var(--crt-electric-lime, var(--crml-action-primary));
   border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 6px;
   font-size: 20px;
@@ -374,7 +374,7 @@ function emitTime() {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 2px 2px 0px var(--crt-electric-lime, #ccff00);
+  box-shadow: 2px 2px 0px var(--crt-electric-lime, var(--crml-action-primary));
 }
 
 .variant-pink .digit-box {

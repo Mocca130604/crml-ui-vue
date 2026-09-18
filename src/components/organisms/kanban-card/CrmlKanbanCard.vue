@@ -217,10 +217,39 @@ const emit = defineEmits<{
 }
 
 .status-progress { background-color: var(--crt-cyber-cyan, #00f0ff); color: var(--crt-obsidian); }
-.status-done { background-color: var(--crml-action-primary, #1B6FFF); color: var(--crt-obsidian); }
+.status-done { background-color: var(--crml-action-primary, #1B6FFF); color: #ffffff; }
 .status-review { background-color: var(--crt-sunburst-yellow, #ffd600); color: var(--crt-obsidian); }
 .status-blocked { background-color: var(--crt-hot-pink, #ff007f); color: white; }
-.status-todo { background-color: var(--crml-bg-elevated, #e0e0e0); color: var(--crt-obsidian); }
+.status-todo { background-color: var(--crml-bg-elevated, #e0e0e0); color: var(--crml-text-main, #0d0d0d); }
+
+/* Dark Mode Status Badges */
+:root[data-theme="dark"] .status-progress,
+[data-theme="dark"] .status-progress,
+.dark-mode .status-progress {
+  background-color: rgba(6, 182, 212, 0.2);
+  color: #38BDF8;
+}
+
+:root[data-theme="dark"] .status-review,
+[data-theme="dark"] .status-review,
+.dark-mode .status-review {
+  background-color: rgba(245, 158, 11, 0.2);
+  color: #FBBF24;
+}
+
+:root[data-theme="dark"] .status-blocked,
+[data-theme="dark"] .status-blocked,
+.dark-mode .status-blocked {
+  background-color: rgba(244, 63, 94, 0.2);
+  color: #FB7185;
+}
+
+:root[data-theme="dark"] .status-todo,
+[data-theme="dark"] .status-todo,
+.dark-mode .status-todo {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #E2E8F0;
+}
 
 .card-extra-footer {
   border-top: 1.5px dashed var(--crt-obsidian);

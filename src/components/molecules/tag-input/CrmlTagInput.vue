@@ -108,7 +108,7 @@ const handleBackspace = () => {
   gap: 0.35rem;
   padding: 0.25rem 0.6rem;
   background-color: var(--crml-action-primary);
-  color: var(--crt-obsidian);
+  color: var(--crml-text-on-primary, #FFFFFF);
   border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: var(--crml-radius-sm);
   font-family: var(--crml-font-heading);
@@ -123,7 +123,7 @@ const handleBackspace = () => {
   font-size: 0.75rem;
   font-weight: 900;
   cursor: pointer;
-  color: var(--crt-obsidian);
+  color: var(--crml-text-on-primary, #FFFFFF);
   padding: 0;
   line-height: 1;
 }

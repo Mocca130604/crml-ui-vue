@@ -374,22 +374,25 @@ function emitTime() {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 2px 2px 0px var(--crml-action-primary, #1B6FFF);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .variant-pink .digit-box {
   color: var(--crt-hot-pink, #ff007f);
-  box-shadow: 2px 2px 0px var(--crt-hot-pink, #ff007f);
+  border-color: var(--crt-hot-pink, #ff007f);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .variant-cyan .digit-box {
   color: var(--crt-cyber-cyan, #00f0ff);
-  box-shadow: 2px 2px 0px var(--crt-cyber-cyan, #00f0ff);
+  border-color: var(--crt-cyber-cyan, #00f0ff);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .variant-yellow .digit-box {
   color: var(--crt-sunburst-yellow, #ffd600);
-  box-shadow: 2px 2px 0px var(--crt-sunburst-yellow, #ffd600);
+  border-color: var(--crt-sunburst-yellow, #ffd600);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 .period-toggle-btn {

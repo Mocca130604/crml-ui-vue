@@ -122,11 +122,11 @@ onMounted(() => {
 .crml-toast--md { padding: 0.85rem 1.15rem; }
 .crml-toast--lg { padding: 1.1rem 1.5rem; }
 
-.crml-toast--lime { background-color: var(--crml-action-primary); color: var(--crt-obsidian); }
+.crml-toast--lime { background-color: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF); }
 .crml-toast--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .crml-toast--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .crml-toast--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }
-.crml-toast--obsidian { background-color: var(--crt-obsidian); color: var(--crml-action-primary); border-color: var(--crml-action-primary); box-shadow: 4px 4px 0px var(--crml-action-primary); }
+.crml-toast--obsidian { background-color: var(--crt-obsidian); color: var(--crml-action-primary); border-color: var(--crml-action-primary); box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0D0D0D); }
 
 .crml-toast__icon { font-size: 1.35rem; line-height: 1; }
 .crml-toast--sm .crml-toast__icon { font-size: 1rem; }

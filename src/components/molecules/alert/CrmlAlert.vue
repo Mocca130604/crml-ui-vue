@@ -91,6 +91,39 @@ const dismiss = () => {
 .crml-alert--cyan { background-color: var(--crt-cyan-100); color: var(--crt-cyan-900); }
 .crml-alert--yellow { background-color: var(--crt-yellow-100); color: var(--crt-yellow-900); }
 
+/* Dark Mode Support (clean translucent background with crisp vibrant text) */
+:root[data-theme="dark"] .crml-alert--pink,
+[data-theme="dark"] .crml-alert--pink,
+.dark-mode .crml-alert--pink {
+  background-color: rgba(244, 63, 94, 0.18);
+  color: #FDA4AF;
+  border-color: rgba(244, 63, 94, 0.4);
+}
+
+:root[data-theme="dark"] .crml-alert--cyan,
+[data-theme="dark"] .crml-alert--cyan,
+.dark-mode .crml-alert--cyan {
+  background-color: rgba(6, 182, 212, 0.18);
+  color: #7DD3FC;
+  border-color: rgba(6, 182, 212, 0.4);
+}
+
+:root[data-theme="dark"] .crml-alert--yellow,
+[data-theme="dark"] .crml-alert--yellow,
+.dark-mode .crml-alert--yellow {
+  background-color: rgba(245, 158, 11, 0.18);
+  color: #FCD34D;
+  border-color: rgba(245, 158, 11, 0.4);
+}
+
+:root[data-theme="dark"] .crml-alert--lime,
+[data-theme="dark"] .crml-alert--lime,
+.dark-mode .crml-alert--lime {
+  background-color: rgba(16, 185, 129, 0.18);
+  color: #6EE7B7;
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
 .crml-alert__icon { line-height: 1; }
 .crml-alert--sm .crml-alert__icon { font-size: 1rem; }
 .crml-alert--md .crml-alert__icon { font-size: 1.35rem; }

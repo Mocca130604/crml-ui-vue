@@ -207,10 +207,10 @@ const handleClear = () => {
 }
 
 /* Focus variants */
-.crml-input-wrapper--lime .crml-input:focus { box-shadow: 3px 3px 0px var(--crml-action-primary); }
-.crml-input-wrapper--pink .crml-input:focus { box-shadow: 3px 3px 0px var(--crt-hot-pink); }
-.crml-input-wrapper--cyan .crml-input:focus { box-shadow: 3px 3px 0px var(--crt-cyber-cyan); }
-.crml-input-wrapper--yellow .crml-input:focus { box-shadow: 3px 3px 0px var(--crt-sunburst-yellow); }
+.crml-input-wrapper--lime .crml-input:focus { border-color: var(--crml-action-primary); box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D); }
+.crml-input-wrapper--pink .crml-input:focus { border-color: var(--crt-hot-pink); box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D); }
+.crml-input-wrapper--cyan .crml-input:focus { border-color: var(--crt-cyber-cyan); box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D); }
+.crml-input-wrapper--yellow .crml-input:focus { border-color: var(--crt-sunburst-yellow); box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D); }
 
 .crml-input:disabled {
   background-color: var(--crml-bg-elevated);
@@ -220,7 +220,7 @@ const handleClear = () => {
 
 .crml-input-group--error .crml-input {
   border-color: var(--crt-hot-pink);
-  box-shadow: 3px 3px 0px var(--crt-hot-pink);
+  box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
 }
 
 /* Prefix & Suffix */

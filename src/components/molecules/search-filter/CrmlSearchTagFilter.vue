@@ -355,16 +355,20 @@ const formatTagCount = (count: number, tag: FilterTag) => {
 
 /* Theme Focus Strokes */
 .crml-search-tag-filter[data-variant="lime"] .search-input-box:focus-within {
-  box-shadow: 4px 4px 0px var(--crml-action-primary);
+  border-color: var(--crml-action-primary);
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0d0d0d);
 }
 .crml-search-tag-filter[data-variant="pink"] .search-input-box:focus-within {
-  box-shadow: 4px 4px 0px #ff007f;
+  border-color: #ff007f;
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0d0d0d);
 }
 .crml-search-tag-filter[data-variant="cyan"] .search-input-box:focus-within {
-  box-shadow: 4px 4px 0px #00f0ff;
+  border-color: #00f0ff;
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0d0d0d);
 }
 .crml-search-tag-filter[data-variant="yellow"] .search-input-box:focus-within {
-  box-shadow: 4px 4px 0px #ffd600;
+  border-color: #ffd600;
+  box-shadow: 4px 4px 0px var(--crml-shadow-ink, #0d0d0d);
 }
 
 .search-icon {
@@ -464,7 +468,7 @@ const formatTagCount = (count: number, tag: FilterTag) => {
 /* Active Tag Theme Styles */
 .crml-search-tag-filter[data-variant="lime"] .filter-tag-pill.is-active {
   background-color: var(--crml-action-primary, #1B6FFF);
-  color: var(--crt-obsidian, #0d0d0d) !important;
+  color: var(--crml-text-on-primary, #FFFFFF) !important;
   box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0d0d0d);
 }
 
@@ -489,7 +493,7 @@ const formatTagCount = (count: number, tag: FilterTag) => {
 /* Individual Tag Color Override */
 .filter-tag-pill.is-active[data-tag-color="lime"] {
   background-color: var(--crml-action-primary) !important;
-  color: #0d0d0d !important;
+  color: var(--crml-text-on-primary, #FFFFFF) !important;
 }
 .filter-tag-pill.is-active[data-tag-color="pink"] {
   background-color: #ff007f !important;

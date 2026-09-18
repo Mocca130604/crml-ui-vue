@@ -75,7 +75,7 @@ withDefaults(defineProps<CrmlStickyNoteProps>(), {
 .crml-sticky-note--peach { background-color: var(--crt-peach-100); }
 .crml-sticky-note--mint { background-color: var(--crt-mint); }
 .crml-sticky-note--lavender { background-color: var(--crt-lavender-100); }
-.crml-sticky-note--lime { background-color: var(--crml-action-primary); }
+.crml-sticky-note--lime { background-color: var(--crml-action-primary); color: #ffffff; }
 .crml-sticky-note--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 
 .push-pin {

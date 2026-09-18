@@ -40,10 +40,10 @@ withDefaults(defineProps<CrmlSpeechBubbleProps>(), {
 
 /* Variants */
 .crml-speech-bubble--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }
-.crml-speech-bubble--lime { background-color: var(--crml-action-primary); color: var(--crt-obsidian); }
+.crml-speech-bubble--lime { background-color: var(--crml-action-primary); color: #ffffff; }
 .crml-speech-bubble--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .crml-speech-bubble--white { background-color: var(--crt-pure-white); color: var(--crt-obsidian); }
-.crml-speech-bubble--obsidian { background-color: var(--crt-obsidian); color: var(--crml-action-primary); border-color: var(--crml-action-primary); box-shadow: 2px 2px 0px var(--crml-action-primary); }
+.crml-speech-bubble--obsidian { background-color: var(--crt-obsidian); color: var(--crml-action-primary); border-color: var(--crml-action-primary); box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D); }
 
 /* Tail Pointer Styling */
 .crml-speech-bubble__tail {

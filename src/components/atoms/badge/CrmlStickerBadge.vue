@@ -74,4 +74,45 @@ withDefaults(defineProps<CrmlStickerBadgeProps>(), {
 .crml-sticker-badge--grad-acid { background: var(--grad-lime-acid); color: var(--crt-obsidian); }
 
 .crml-sticker-badge__star { font-size: 0.85em; }
+
+/* Dark Mode Support */
+:root[data-theme="dark"] .crml-sticker-badge--lime,
+[data-theme="dark"] .crml-sticker-badge--lime,
+.dark-mode .crml-sticker-badge--lime {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #34D399;
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+:root[data-theme="dark"] .crml-sticker-badge--yellow,
+[data-theme="dark"] .crml-sticker-badge--yellow,
+.dark-mode .crml-sticker-badge--yellow {
+  background-color: rgba(245, 158, 11, 0.2);
+  color: #FBBF24;
+  border-color: rgba(245, 158, 11, 0.4);
+}
+
+:root[data-theme="dark"] .crml-sticker-badge--cyan,
+[data-theme="dark"] .crml-sticker-badge--cyan,
+.dark-mode .crml-sticker-badge--cyan {
+  background-color: rgba(6, 182, 212, 0.2);
+  color: #38BDF8;
+  border-color: rgba(6, 182, 212, 0.4);
+}
+
+:root[data-theme="dark"] .crml-sticker-badge--pink,
+[data-theme="dark"] .crml-sticker-badge--pink,
+.dark-mode .crml-sticker-badge--pink {
+  background-color: rgba(244, 63, 94, 0.2);
+  color: #FB7185;
+  border-color: rgba(244, 63, 94, 0.4);
+}
+
+:root[data-theme="dark"] .crml-sticker-badge--primary,
+[data-theme="dark"] .crml-sticker-badge--primary,
+.dark-mode .crml-sticker-badge--primary {
+  background-color: rgba(27, 111, 255, 0.25);
+  color: #60A5FA;
+  border-color: rgba(27, 111, 255, 0.5);
+}
 </style>

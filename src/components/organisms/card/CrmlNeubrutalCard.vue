@@ -70,7 +70,7 @@ withDefaults(defineProps<CrmlNeubrutalCardProps>(), {
 .crml-neubrutal-card--header-lavender .crml-neubrutal-card__header { background-color: var(--crt-lavender); color: var(--crt-obsidian); }
 .crml-neubrutal-card--header-peach .crml-neubrutal-card__header { background-color: var(--crt-peach); color: var(--crt-obsidian); }
 .crml-neubrutal-card--header-mint .crml-neubrutal-card__header { background-color: var(--crt-mint); color: var(--crt-obsidian); }
-.crml-neubrutal-card--header-lime .crml-neubrutal-card__header { background-color: var(--crml-action-primary); color: var(--crt-obsidian); }
+.crml-neubrutal-card--header-lime .crml-neubrutal-card__header { background-color: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF); }
 .crml-neubrutal-card--header-pink .crml-neubrutal-card__header { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .crml-neubrutal-card--header-cyan .crml-neubrutal-card__header { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .crml-neubrutal-card--header-yellow .crml-neubrutal-card__header { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }

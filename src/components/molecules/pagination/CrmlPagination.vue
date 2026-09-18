@@ -194,7 +194,7 @@ const goToPage = (page: number) => {
 }
 
 /* Active variant colors */
-.page-tile--active.page-tile--lime { background-color: var(--crml-action-primary); color: var(--crt-obsidian); }
+.page-tile--active.page-tile--lime { background-color: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF); }
 .page-tile--active.page-tile--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .page-tile--active.page-tile--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .page-tile--active.page-tile--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }

@@ -324,7 +324,7 @@ onUnmounted(() => {
 
 .radar-blip.is-selected .blip-ping {
   transform: scale(1.3);
-  outline: 2.5px solid var(--crt-cyber-cyan, #00f0ff);
+  outline: 2.5px solid var(--crml-action-primary, #1B6FFF);
 }
 
 .blip-label {

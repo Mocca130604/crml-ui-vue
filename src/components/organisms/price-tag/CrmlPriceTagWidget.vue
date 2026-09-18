@@ -146,7 +146,7 @@ const displayPrice = computed(() => {
   border-radius: var(--crml-radius-sm);
 }
 
-.widget-badge--lime { background-color: var(--crml-action-primary); color: var(--crt-obsidian); }
+.widget-badge--lime { background-color: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF); }
 .widget-badge--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .widget-badge--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .widget-badge--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }
@@ -232,7 +232,7 @@ const displayPrice = computed(() => {
   margin-top: 0.25rem;
 }
 
-.buy-now-btn--lime { background-color: var(--crml-action-primary); color: var(--crt-obsidian); }
+.buy-now-btn--lime { background-color: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF); }
 .buy-now-btn--pink { background-color: var(--crt-hot-pink); color: var(--crt-pure-white); }
 .buy-now-btn--cyan { background-color: var(--crt-cyber-cyan); color: var(--crt-obsidian); }
 .buy-now-btn--yellow { background-color: var(--crt-sunburst-yellow); color: var(--crt-obsidian); }

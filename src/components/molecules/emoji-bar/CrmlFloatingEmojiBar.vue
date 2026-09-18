@@ -115,7 +115,7 @@ const triggerReaction = (index: number, event: MouseEvent) => {
 .crml-emoji-btn:hover {
   transform: scale(1.15) translateY(-2px);
   background-color: var(--crml-action-primary);
-  color: var(--crt-obsidian);
+  color: var(--crml-text-on-primary, #FFFFFF);
 }
 .crml-emoji-btn:active { transform: scale(0.95); }
 

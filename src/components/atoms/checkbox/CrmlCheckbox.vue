@@ -142,7 +142,7 @@ const handleChange = (e: Event) => {
 
 .crml-checkbox--lime .crml-checkbox__input:checked + .crml-checkbox__box,
 .crml-checkbox--lime.crml-checkbox--indeterminate .crml-checkbox__box {
-  background-color: var(--crml-action-primary); color: var(--crt-obsidian);
+  background-color: var(--crml-action-primary); color: var(--crml-text-on-primary, #FFFFFF);
 }
 
 .crml-checkbox--pink .crml-checkbox__input:checked + .crml-checkbox__box,

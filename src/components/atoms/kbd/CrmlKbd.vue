@@ -63,7 +63,7 @@ withDefaults(defineProps<CrmlKbdProps>(), {
 
 .crml-kbd--lime {
   background-color: var(--crml-action-primary, #1B6FFF);
-  color: var(--crt-obsidian, #0d0d0d) !important;
+  color: #ffffff !important;
 }
 
 .crml-kbd--pink {
@@ -79,5 +79,39 @@ withDefaults(defineProps<CrmlKbdProps>(), {
 .crml-kbd--yellow {
   background-color: var(--crt-sunburst-yellow, #ffd600);
   color: var(--crt-obsidian, #0d0d0d) !important;
+}
+
+/* Dark Mode Support */
+:root[data-theme="dark"] .crml-kbd--default,
+[data-theme="dark"] .crml-kbd--default,
+.dark-mode .crml-kbd--default {
+  background-color: #1A2234;
+  color: #E2E8F0;
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 2px 0px #000000;
+}
+
+:root[data-theme="dark"] .crml-kbd--cyan,
+[data-theme="dark"] .crml-kbd--cyan,
+.dark-mode .crml-kbd--cyan {
+  background-color: rgba(6, 182, 212, 0.2);
+  color: #38BDF8 !important;
+  border-color: rgba(6, 182, 212, 0.4);
+}
+
+:root[data-theme="dark"] .crml-kbd--yellow,
+[data-theme="dark"] .crml-kbd--yellow,
+.dark-mode .crml-kbd--yellow {
+  background-color: rgba(245, 158, 11, 0.2);
+  color: #FBBF24 !important;
+  border-color: rgba(245, 158, 11, 0.4);
+}
+
+:root[data-theme="dark"] .crml-kbd--pink,
+[data-theme="dark"] .crml-kbd--pink,
+.dark-mode .crml-kbd--pink {
+  background-color: rgba(244, 63, 94, 0.2);
+  color: #FB7185 !important;
+  border-color: rgba(244, 63, 94, 0.4);
 }
 </style>

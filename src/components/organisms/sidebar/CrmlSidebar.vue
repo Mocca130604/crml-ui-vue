@@ -209,7 +209,8 @@ function selectItem(item: SidebarItem) {
 }
 
 .sidebar-item-btn.active {
-  background: var(--crt-electric-lime, var(--crml-action-primary));
+  background: var(--crml-action-primary, #1B6FFF);
+  color: #FFFFFF;
   border-color: var(--crml-border-ink, #0D0D0D);
   box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0D0D0D);
 }

@@ -128,7 +128,7 @@ const selectCmd = (cmd: CommandItem) => {
   gap: 0.75rem;
   padding: 0.85rem 1.15rem;
   border-bottom: 2.5px solid var(--crml-border-ink, #0D0D0D);
-  background-color: var(--crt-electric-lime, var(--crml-action-primary));
+  background-color: var(--crml-action-primary, #1B6FFF);
 }
 
 .cmd-icon {

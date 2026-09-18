@@ -146,7 +146,7 @@ const emit = defineEmits<{
 
 .priority-P0 { background-color: var(--crt-hot-pink, #ff007f); color: #ffffff; }
 .priority-P1 { background-color: var(--crt-sunburst-yellow, #ffd600); color: var(--crml-text-on-accent, #0d0d0d); }
-.priority-P2 { background-color: var(--crt-electric-lime, var(--crml-action-primary)); color: var(--crml-text-on-accent, #0d0d0d); }
+.priority-P2 { background-color: var(--crml-action-primary, #1B6FFF); color: var(--crml-text-on-accent, #0d0d0d); }
 .priority-P3 { background-color: var(--crml-bg-elevated, #e0e0e0); color: var(--crml-text-main, #0d0d0d); }
 
 .task-title {
@@ -189,7 +189,7 @@ const emit = defineEmits<{
   height: 1.35rem;
   border-radius: 50%;
   border: 1.5px solid var(--crml-border-ink, #0D0D0D);
-  background-color: var(--crt-electric-lime, var(--crml-action-primary));
+  background-color: var(--crml-action-primary, #1B6FFF);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,7 +217,7 @@ const emit = defineEmits<{
 }
 
 .status-progress { background-color: var(--crt-cyber-cyan, #00f0ff); color: var(--crt-obsidian); }
-.status-done { background-color: var(--crt-electric-lime, var(--crml-action-primary)); color: var(--crt-obsidian); }
+.status-done { background-color: var(--crml-action-primary, #1B6FFF); color: var(--crt-obsidian); }
 .status-review { background-color: var(--crt-sunburst-yellow, #ffd600); color: var(--crt-obsidian); }
 .status-blocked { background-color: var(--crt-hot-pink, #ff007f); color: white; }
 .status-todo { background-color: var(--crml-bg-elevated, #e0e0e0); color: var(--crt-obsidian); }

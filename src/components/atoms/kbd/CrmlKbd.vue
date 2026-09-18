@@ -62,7 +62,7 @@ withDefaults(defineProps<CrmlKbdProps>(), {
 }
 
 .crml-kbd--lime {
-  background-color: var(--crt-electric-lime, var(--crml-action-primary));
+  background-color: var(--crml-action-primary, #1B6FFF);
   color: var(--crt-obsidian, #0d0d0d) !important;
 }
 

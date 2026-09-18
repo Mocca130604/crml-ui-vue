@@ -164,11 +164,11 @@ const isMobileOpen = ref(false)
   font-size: 15px;
   letter-spacing: -0.5px;
   background: var(--crt-obsidian, #0d0d0d);
-  color: var(--crt-electric-lime, var(--crml-action-primary));
+  color: var(--crml-action-primary, #1B6FFF);
   border: 2px solid var(--crml-border-ink, #0D0D0D);
   padding: 3px 8px;
   border-radius: 6px;
-  box-shadow: 2px 2px 0px var(--crt-electric-lime, var(--crml-action-primary));
+  box-shadow: 2px 2px 0px var(--crml-action-primary, #1B6FFF);
   white-space: nowrap;
 }
 
@@ -222,8 +222,8 @@ const isMobileOpen = ref(false)
 }
 
 .nav-item-link.active {
-  background: var(--crt-electric-lime, var(--crml-action-primary));
-  color: var(--crt-obsidian, #0d0d0d);
+  background: var(--crml-action-primary, #1B6FFF);
+  color: #FFFFFF;
   border-color: var(--crml-border-ink, #0D0D0D);
   box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
 }
@@ -332,6 +332,7 @@ const isMobileOpen = ref(false)
 }
 
 .mobile-nav-link.active {
-  background: var(--crt-electric-lime, var(--crml-action-primary));
+  background: var(--crml-action-primary, #1B6FFF);
+  color: #FFFFFF;
 }
 </style>

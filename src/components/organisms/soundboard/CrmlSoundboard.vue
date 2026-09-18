@@ -177,7 +177,7 @@ const gridStyle = computed(() => ({
 
 .soundboard-lcd {
   background-color: var(--crt-obsidian, #0d0d0d);
-  color: var(--crt-electric-lime, var(--crml-action-primary));
+  color: var(--crml-action-primary, #1B6FFF);
   border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 8px;
   padding: 12px 16px;
@@ -217,8 +217,8 @@ const gridStyle = computed(() => ({
 }
 
 .status-dot.is-playing {
-  background-color: var(--crt-electric-lime, var(--crml-action-primary));
-  box-shadow: 0 0 8px var(--crt-electric-lime, var(--crml-action-primary));
+  background-color: var(--crml-action-primary, #1B6FFF);
+  box-shadow: 0 0 8px var(--crml-action-primary, #1B6FFF);
 }
 
 .lcd-right {
@@ -243,7 +243,7 @@ const gridStyle = computed(() => ({
   width: 54px;
   background-color: var(--crml-bg-input, #1a1a1a);
   border: 1.5px solid var(--crml-border-subtle, #444);
-  color: var(--crt-electric-lime, var(--crml-action-primary));
+  color: var(--crml-action-primary, #1B6FFF);
   border-radius: 4px;
   padding: 4px 6px;
   font-weight: 900;
@@ -252,7 +252,7 @@ const gridStyle = computed(() => ({
 }
 
 .play-btn {
-  background-color: var(--crt-electric-lime, var(--crml-action-primary));
+  background-color: var(--crml-action-primary, #1B6FFF);
   color: var(--crt-obsidian, #0d0d0d);
   border: 2px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 6px;
@@ -303,7 +303,7 @@ const gridStyle = computed(() => ({
   left: 0;
   right: 0;
   height: 4px;
-  background-color: var(--pad-accent, var(--crt-electric-lime, var(--crml-action-primary)));
+  background-color: var(--pad-accent, var(--crml-action-primary, #1B6FFF));
 }
 
 .sound-pad:hover {
@@ -315,7 +315,7 @@ const gridStyle = computed(() => ({
 .sound-pad.active {
   transform: translate(2px, 2px);
   box-shadow: 1px 1px 0px var(--crml-shadow-ink, #0D0D0D);
-  background-color: var(--pad-accent, var(--crt-electric-lime, var(--crml-action-primary)));
+  background-color: var(--pad-accent, var(--crml-action-primary, #1B6FFF));
   color: var(--crt-obsidian, #0d0d0d);
 }
 

@@ -463,7 +463,7 @@ const formatTagCount = (count: number, tag: FilterTag) => {
 
 /* Active Tag Theme Styles */
 .crml-search-tag-filter[data-variant="lime"] .filter-tag-pill.is-active {
-  background-color: var(--crt-electric-lime, var(--crml-action-primary));
+  background-color: var(--crml-action-primary, #1B6FFF);
   color: var(--crt-obsidian, #0d0d0d) !important;
   box-shadow: 3px 3px 0px var(--crml-shadow-ink, #0d0d0d);
 }
@@ -518,7 +518,7 @@ const formatTagCount = (count: number, tag: FilterTag) => {
 
 .tag-badge-inline {
   background-color: var(--crt-obsidian, #0d0d0d);
-  color: var(--crt-electric-lime, var(--crml-action-primary));
+  color: var(--crml-action-primary, #1B6FFF);
   font-size: 0.65rem;
   padding: 0.05rem 0.3rem;
   border-radius: 3px;

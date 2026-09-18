@@ -241,7 +241,7 @@ function formattedValue(val: number): string {
 }
 
 .speedo-unit-pill {
-  background: var(--crt-electric-lime, var(--crml-action-primary));
+  background: var(--crml-action-primary, #1B6FFF);
   color: var(--crt-obsidian, #0d0d0d);
   border: 2px solid var(--crml-border-ink, #0D0D0D);
   padding: 2px 6px;
@@ -301,7 +301,7 @@ function formattedValue(val: number): string {
   color: var(--crt-cyber-cyan, #00f0ff);
   border: 3px solid var(--crml-border-ink, #0D0D0D);
   border-radius: 50%;
-  box-shadow: 3px 3px 0px var(--crt-electric-lime, var(--crml-action-primary));
+  box-shadow: 3px 3px 0px var(--crml-action-primary, #1B6FFF);
   display: flex;
   flex-direction: column;
   align-items: center;

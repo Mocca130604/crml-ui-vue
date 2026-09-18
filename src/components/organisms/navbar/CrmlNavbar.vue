@@ -168,7 +168,7 @@ const isMobileOpen = ref(false)
   border: 2px solid var(--crml-border-ink, #0D0D0D);
   padding: 3px 8px;
   border-radius: 6px;
-  box-shadow: 2px 2px 0px var(--crml-action-primary, #1B6FFF);
+  box-shadow: 2px 2px 0px var(--crml-shadow-ink, #0D0D0D);
   white-space: nowrap;
 }
 
